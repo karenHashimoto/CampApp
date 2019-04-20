@@ -11,6 +11,8 @@ services:
       - ./src:/var/www
     depends_on:
       - php-fpm
+    volumes:
+      - ./src:/var/www
   php-fpm:
     build: ./docker/php-fpm
     container_name: "php-fpm"
