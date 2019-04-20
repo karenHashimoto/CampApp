@@ -1,0 +1,284 @@
+/* html, body {
+                  background-color: #fff;
+                  color: #636b6f;
+                  font-family: 'Nunito', sans-serif;
+                  font-weight: 200;
+                  height: 100vh;
+                  margin: 0;
+              }
+  
+              .full-height {
+                  height: 100vh;
+              }
+  
+              .flex-center {
+                  align-items: center;
+                  display: flex;
+                  justify-content: center;
+              }
+  
+              .position-ref {
+                  position: relative;
+              }
+  
+              .top-right {
+                   right: 10px;
+                  top: 18px;
+              }
+  
+              .content {
+                  text-align: center;
+              }
+  
+              .title {
+                  font-size: 84px;
+              }
+  
+              .links > a {
+                  color: #636b6f;
+                  padding: 0 25px;
+                  font-size: 13px;
+                  font-weight: 600;
+                  letter-spacing: .1rem;
+                  text-decoration: none;
+                  text-transform: uppercase;
+              }
+  
+              .m-b-md {
+                  margin-bottom: 30px;
+              }
+   */
+
+              /* ヘッダー等 */
+.body{
+                  font-family: 'Roboto', sans-serif;
+                  font-family: 'Noto Sans JP', sans-serif;
+                  /* width: 100%; */
+                }
+                
+                  .header{
+                    height:80px;
+                    /* padding:10px 0px 5px 20px; */
+                    font-size:18px;				
+                    /* font-family:Arial, Helvetica, sans-serif;	 */
+                    text-decoration:none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    }
+                    
+                    .nav{
+                    display: flex;
+                    justify-content: center;
+                    }
+                
+                    .nav_title_img img{
+                        width: 100vw;
+                    }
+                
+                
+                /* タブ */
+                .tab{
+                    display: flex;
+                    justify-content: center;
+                    width:100%;
+                    border-bottom: 5px solid whitesmoke;
+                    /* border: 1px solid black; */
+                }
+                
+                .tab_item{
+                    /* display: flex;
+                    justify-content: center; */
+                    border: 1px solid black;
+                    width: 100%;
+                    margin: 0px 7px;
+                    text-align: center;
+                    border-radius: 5px 5px 0 0;
+                }
+                
+                
+                .tabmenu{
+                    position: relative;
+                    width: 320px;
+                    height: 200px;
+                    font-size: 0;
+                }
+                
+                
+                .tabmenu span{
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                    display: block;
+                    margin: 4px 0 0;
+                    padding: 10px;
+                    width: 100%;
+                    height: 140px;
+                    border: 1px solid #0ae;
+                    -webkit-border-radius: 0 6px 6px 6px;
+                    border-radius: 0 6px 6px 6px;
+                    font-size: 14px;
+                }
+                .tabmenu input[type="radio"]{
+                    display: none;
+                }
+                .tabmenu input[type="radio"] + em{
+                    position: relative;
+                    z-index: 100;
+                    display: inline-block;
+                    margin: 0 4px 0 0;
+                    padding: 4px 0 0;
+                    min-width: 80px;
+                    -webkit-border-radius: 6px 6px 0 0;
+                    border-radius: 6px 6px 0 0;
+                    background: #ddd;
+                    color: #000;
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    line-height: 30px;
+                    cursor: pointer;
+                }
+                .tabmenu input[type="radio"]:checked + em{
+                    background: #0ae;
+                    color: #fff;
+                }
+                .tabmenu input[type="radio"]:checked + em::after {
+                    position: absolute;
+                    left: 50%;
+                    display: block;
+                    margin-left: -9px;
+                    /* border: 9px solid transparent; */
+                    /* border-top: 9px solid #0ae; */
+                    content: "";
+                }
+                .tabmenu input[type="radio"] + em ~ span{
+                    display: none;
+                }
+                .tabmenu input[type="radio"]:checked + em ~ span{
+                    display: block;
+                }
+                
+                /* Material iconsを利用する */
+                .material-icons {
+                    font-family: 'Material Icons';
+                    font-weight: normal;
+                    font-style: normal;
+                    font-size: 24px;  /* 推奨サイズ */
+                    display: inline-block;
+                    width: 1em;
+                    height: 1em;
+                    line-height: 1;
+                    text-transform: none;
+                   
+                    /* WebKitブラウザサポート */
+                    -webkit-font-smoothing: antialiased;
+                    /* Chrome、Safariサポート */
+                    text-rendering: optimizeLegibility;
+                   
+                    /* Firefoxサポート */
+                    -moz-osx-font-smoothing: grayscale;
+                   
+                    /* IEサポート */
+                    font-feature-settings: 'liga';
+                  }
+                
+                
+                /* キャンプ詳細ボタン */
+                
+                .btn-square-little-rich {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0.25em 0.5em;
+                    text-decoration: none;
+                    color: #FFF;
+                    background: #03A9F4;/*色*/
+                    border: solid 1px #0f9ada;/*線色*/
+                    border-radius: 4px;
+                    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+                    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+                  }
+                  
+                
+                  .btn-square-little-rich:active {
+                    /*押したとき*/
+                    border: solid 1px #03A9F4;
+                    box-shadow: none;
+                    text-shadow: none;
+                  }
+                
+                
+                /* キャンプ場の３つのおすすめポイント */
+                .btn-gradient-radius {
+                    display: inline-block;
+                    padding: 7px 20px;
+                    border-radius: 25px;
+                    text-decoration: none;
+                    color: #FFF;
+                    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+                    transition: .4s;
+                  }
+                  
+                  .btn-gradient-radius:hover {
+                    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+                  }
+                
+                
+                /* カード */
+                
+                .card {
+                    /* width: 300px;
+                    margin: 20px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    box-shadow: 0 3px 6px #ccc; */
+                
+                    margin: 8px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    box-shadow: 0 3px 6px #ccc;
+                }
+                .box2 {
+                    display: flex;
+                }
+                .icon2 {
+                    width: 48px;
+                    height: 48px;
+                    margin: 10px;
+                    border-radius: 24px;
+                    object-fit: cover;
+                }
+                .name2 {
+                    font-size: 60%;
+                    margin-bottom: 10px;
+                    color: #888;
+                }
+                .camp_img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+                .title2 {
+                    font-size: 150%;
+                    margin: 10px 0;
+                    color: #444;
+                }
+                /* １枚目カード */
+                .top_var{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: red;
+                    padding: 8px; 
+                }
+                .nav_title{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                align-items: center;
+                /* background-color: red; */
+                padding: 8px;
+                
+                
+                }
+                

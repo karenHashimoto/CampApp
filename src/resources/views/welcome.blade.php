@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -81,7 +82,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    CAMPAPP
+                   dockerて何！！
                 </div>
 
                 <div class="links">
