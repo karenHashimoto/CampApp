@@ -1,4 +1,4 @@
 <?php
-Route::get('/', 'topController@index');
+Route::get('/', 'TopController@index');
 
 Route::get('/detail/{id}', 'InformationController@show');
