@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\imformations;
+use App\information;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class topController extends Controller
+class TopController extends Controller
 {
     public function index(Request $request)
     {
-        // $imformations =DB::table(information);
+        $campInfo = Information::find(1);
         return view('top');
     }
 }

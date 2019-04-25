@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -6,17 +5,18 @@
                   <meta charset="utf-8" />
                   <title>camcierge</title>
                   <meta name="viewport" content="width=device-width; initial-scale=1.0" />
-               
-                  <link rel="stylesheet" href="top.css">
+                  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet'
+                                    type='text/css'> -->
+                  <!-- <link rel="stylesheet" href="style.css" /> -->
+                  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+                  <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+                  <!-- css -->
+                  <link rel="stylesheet" href="{{ asset('css/top.css') }}">
 				  <!-- material fonts -->
 				  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto" rel="stylesheet">
 				  <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
-                  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-                  <!-- css -->
-                  <link rel="stylesheet" href="{{ asset('css/top.css') }}">
-                  <!-- javascript -->
-                  <link rel="stylesheet" href="{{ asset('js/top.js') }}">
-
+				  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				  <!-- <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -24,14 +24,34 @@
 		<div class="header">
 			<a class="logo" href="index.html">camcierge</a>
 		</div>
-				
+				<!-- <div class="nav">
+					<div class="nav1"><a href="#drive_eta"><i class="material-icons">drive_eta</i>2時間</a></div>
+					<div class="nav2"><a href="#pets"><i class="material-icons">pets</i>ペット</a></div>
+					<div class="nav3"><a href="#spa"><i class="material-icons">spa</i>ゆったり</a></div>
+				</div> -->
+			<!-- <div class="tabmenu">
+				<label>
+					<input name="tab" type="radio" checked>
+					<em><div class="nav1"><a href="#drive_eta"><i class="material-icons">drive_eta</i>2時間</a></div></em>
+					<span>TEXT1</span>
+				</label>
+				<label>
+					<input name="tab" type="radio">
+					<em><div class="nav2"><a href="#pets"><i class="material-icons">pets</i>ペット</a></div></em><span>TEXT2</span>
+				</label>
+				<label>
+					<input name="tab" type="radio">
+					<em><div class="nav3"><a href="#spa"><i class="material-icons">spa</i>ゆったり</a></div></em><span>TEXT3</span>
+				</label>
+				</div> -->
 		<div class="tab">
 			<div class="tab_item"><div><i class="material-icons small-size">departure_board</i></div><div>２時間</div></div>
 			<div class="tab_item"><div><i class="material-icons small-size">sentiment_satisfied_alt</i></div><div>豪華</div></div>
 			<div class="tab_item"><div><i class="material-icons small-size">hot_tub</i></div><div>ゆったり</div></div>
 
 
-			
+			<!-- <div class="tab_item"><i class="material-icons small-size">sentiment_satisfied_alt</i>豪華</div>
+			<div class="tab_item"><i class="material-icons small-size">hot_tub</i>ゆったり</div> -->
 		</div>
 
 		<div class="top_var">キャンプ女子におすすめのキャンプ場</div>
@@ -62,13 +82,19 @@
 					<!-- <img src="icon.jpg" class="icon2"> -->
 					<div>
 						<div class="title2">
-							<div class="camp_id">ボイボイキャンプ場</div>
+                                                                                                                              @foreach ($informations as $information)
+							<div class="camp_id">{{$information->camp_id}}</div>
 							<!-- 仮でイメージ入力 -->
-							<div class="camp_area">(大分/久住高原)</div>	
+                                                                                                                              <div class="camp_area">{{$information->state}}/{{$information->city}}</div>	
+                                                                                                                              @endforeach
 						</div>
 					</div>
 				</div>
-				
+				<!-- <img src="sample.jpg" class="image2">-->
+				<!-- <div class="camp_pc"> 
+				<img src="sample.jpg" alt=""  class="camp_img">
+				<img src="sample.jpg" alt=""  class="camp_img"> -->
+
 
 				<div class="camp_pc-a">
 					<div class="camp_pc">
@@ -102,22 +128,31 @@
 					</div>
 		
 
-					<div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
-				</div>
-			</div>
+    <div class="detail">
+    @foreach($campInfo => $child)
+    <div><a href="/detail/{{ $child->id }}"詳細をみる</a></div>
+     @endforeach
+</div>
+</div>
 			
 			<div class="card">
 				<div class="box2">
 					<!-- <img src="icon.jpg" class="icon2"> -->
 					<div>
 						<div class="title2">
-							<div class="camp_id">ボイボイキャンプ場</div>
+                                                                                                            @foreach ($informations as $information)
+							<div class="camp_id">{{$information->camp_id}}</div>
 							<!-- 仮でイメージ入力 -->
-							<div class="camp_area">(大分/久住高原)</div>	
+                                                                                                                              <div class="camp_area">{{$information->state}}/{{$information->city}}</div>	
+                                                                                                                              @endforeach
 						</div>
 					</div>
 				</div>
-				
+				<!-- <img src="sample.jpg" class="image2">-->
+				<!-- <div class="camp_pc"> 
+				<img src="sample.jpg" alt=""  class="camp_img">
+				<img src="sample.jpg" alt=""  class="camp_img"> -->
+
 
 				<div class="camp_pc-a">
 					<div class="camp_pc">
@@ -160,9 +195,11 @@
 					<!-- <img src="icon.jpg" class="icon2"> -->
 					<div>
 						<div class="title2">
-							<div class="camp_id">ボイボイキャンプ場</div>
+                                                                                                            @foreach ($informations as $information)
+							<div class="camp_id">{{$information->camp_id}}</div>
 							<!-- 仮でイメージ入力 -->
-							<div class="camp_area">(大分/久住高原)</div>	
+                                                                                                                              <div class="camp_area">{{$information->state}}/{{$information->city}}</div>	
+                                                                                                                              @endforeach	
 						</div>
 					</div>
 				</div>
@@ -292,9 +329,11 @@
 						<!-- <img src="icon.jpg" class="icon2"> -->
 						<div>
 							<div class="title2">
-								<div class="camp_id">ボイボイキャンプ場</div>
-								<!-- 仮でイメージ入力 -->
-								<div class="camp_area">(大分/久住高原)</div>	
+                                                                                                                              @foreach ($informations as $information)
+							<div class="camp_id">{{$information->camp_id}}</div>
+							<!-- 仮でイメージ入力 -->
+                                                                                                                              <div class="camp_area">{{$information->state}}/{{$information->city}}</div>	
+                                                                                                                              @endforeach
 							</div>
 						</div>
 					</div>
@@ -345,9 +384,11 @@
 						<!-- <img src="icon.jpg" class="icon2"> -->
 						<div>
 							<div class="title2">
-								<div class="camp_id">ボイボイキャンプ場</div>
-								<!-- 仮でイメージ入力 -->
-								<div class="camp_area">(大分/久住高原)</div>	
+                                                                                                                              @foreach ($informations as $information)
+							<div class="camp_id">{{$information->camp_id}}</div>
+							<!-- 仮でイメージ入力 -->
+                                                                                                                              <div class="camp_area">{{$information->state}}/{{$information->city}}</div>	
+                                                                                                                              @endforeach
 							</div>
 						</div>
 					</div>
@@ -424,9 +465,11 @@
 							<!-- <img src="icon.jpg" class="icon2"> -->
 							<div>
 								<div class="title2">
-									<div class="camp_id">ボイボイキャンプ場</div>
-									<!-- 仮でイメージ入力 -->
-									<div class="camp_area">(大分/久住高原)</div>	
+                                                                                                                                                @foreach ($informations as $information)
+							<div class="camp_id">{{$information->camp_id}}</div>
+							<!-- 仮でイメージ入力 -->
+                                                                                                                              <div class="camp_area">{{$information->state}}/{{$information->city}}</div>	
+                                                                                                                              @endforeach
 								</div>
 							</div>
 						</div>
@@ -477,9 +520,11 @@
 							<!-- <img src="icon.jpg" class="icon2"> -->
 							<div>
 								<div class="title2">
-									<div class="camp_id">ボイボイキャンプ場</div>
-									<!-- 仮でイメージ入力 -->
-									<div class="camp_area">(大分/久住高原)</div>	
+                                                                                                                                                @foreach ($informations as $information)
+							<div class="camp_id">{{$information->camp_id}}</div>
+							<!-- 仮でイメージ入力 -->
+                                                                                                                              <div class="camp_area">{{$information->state}}/{{$information->city}}</div>	
+                                                                                                                              @endforeach	
 								</div>
 							</div>
 						</div>
@@ -530,9 +575,11 @@
 							<!-- <img src="icon.jpg" class="icon2"> -->
 							<div>
 								<div class="title2">
-									<div class="camp_id">ボイボイキャンプ場</div>
-									<!-- 仮でイメージ入力 -->
-									<div class="camp_area">(大分/久住高原)</div>	
+                                                                                                                                                @foreach ($informations as $information)
+							<div class="camp_id">{{$information->camp_id}}</div>
+							<!-- 仮でイメージ入力 -->
+                                                                                                                              <div class="camp_area">{{$information->state}}/{{$information->city}}</div>	
+                                                                                                                              @endforeach	
 								</div>
 							</div>
 						</div>
@@ -586,6 +633,9 @@
 		
 
 
+	<!-- <div id="footer">
+						<p>&copy; camcierge</p>
+	</div> -->
 </body>
 
 </html>

@@ -8,8 +8,8 @@ class InformationController extends Controller
 {
     public function detail($id)
     {
-        dd($id);
-        // $campInfo = Camp::find($id);
+        // dd($id);
+        $campInfo = Camp::find($id);
         return view('detail');
     }
 }

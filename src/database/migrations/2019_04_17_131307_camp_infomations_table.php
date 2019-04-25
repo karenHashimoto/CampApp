@@ -13,7 +13,7 @@ class CampInfomationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('informations', function (Blueprint $table) {
+        Schema::create('information', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('camp_name', 30);
             $table->string('title', 50);
@@ -46,6 +46,6 @@ class CampInfomationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('informations');
+        Schema::dropIfExists('information');
     }
 }
