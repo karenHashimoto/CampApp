@@ -15,7 +15,8 @@ class FacilitiesTable extends Migration
     {
         Schema::create('facilities', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
+            $table->string('information_id', 30);//キャンプ場名
+            $table->string('facility_id', 50);//設備id
         });
     }
 

@@ -1,0 +1,396 @@
+ /* ヘッダー等 */
+ a{
+    text-decoration: none;
+}
+  .body{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  /* width: 100%; */
+  background-color: #FEFFFE;
+  }
+
+.header{
+  height:80px;
+  /* color:#FE7B93; */
+  /* padding:10px 0px 5px 20px; */
+  /* font-size:18px; */
+  font-family: 'Gaegu', cursive;
+  font-weight: bold;
+  text-decoration:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEFFFE;
+  
+  }
+
+  .header_fixed{
+      position:sticky;
+      top:0;
+      z-index: 9999;
+  }
+
+  .logo {
+   color: #FE7B93;
+   font-size: 2em;   }
+
+  .nav{
+  display: flex;
+  justify-content: center;
+  }
+
+  .nav_title_img img{
+      width: 100%;
+      border-bottom: 3px solid #777777;
+  }
+
+  .recommend_head{
+      border-bottom: 3px solid #D4D4D4;
+  }
+
+  .top_var{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#F2A28B;
+      color: #F4F4F4;
+      font-weight: bold;
+      padding: 8px;
+  }
+
+
+/* タブ */
+  .tab{
+      display: flex;
+      justify-content: center;
+      width:100%;
+      border-bottom: 3px solid #777777;
+      color:#777777;
+      font-size:0.9em;
+      background-color: #FEFFFE;
+      /* border: 1px solid black; */
+  }
+
+  .tab_item{
+      display: flex;
+      justify-content: center; /* 子要素をflexboxにより中央に配置する */
+      align-items: center;  /* 子要素をflexboxにより中央に配置する */
+      border: 1px solid #777777;
+      width: 100%;
+      margin: -2px 7px;
+      padding: 3px;
+      text-align: center;
+      border-radius: 5px 5px 0 0;
+  }
+
+
+  .tabmenu{
+      position: relative;
+      width: 320px;
+      height: 200px;
+      font-size: 0;
+  }
+
+
+  .tabmenu span{
+      position: absolute;
+      top: 30px;
+      left: 0;
+      display: block;
+      margin: 4px 0 0;
+      padding: 10px;
+      width: 100%;
+      height: 140px;
+      border: 1px solid #0ae;
+      -webkit-border-radius: 0 6px 6px 6px;
+      border-radius: 0 6px 6px 6px;
+      font-size: 14px;
+  }
+  .tabmenu input[type="radio"]{
+      display: none;
+  }
+  .tabmenu input[type="radio"] + em{
+      position: relative;
+      z-index: 100;
+      display: inline-block;
+      margin: 0 4px 0 0;
+      padding: 4px 0 0;
+      min-width: 80px;
+      -webkit-border-radius: 6px 6px 0 0;
+      border-radius: 6px 6px 0 0;
+      background: #ddd;
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      line-height: 30px;
+      cursor: pointer;
+  }
+  .tabmenu input[type="radio"]:checked + em{
+      background: #0ae;
+      color: #fff;
+  }
+  .tabmenu input[type="radio"]:checked + em::after {
+      position: absolute;
+      left: 50%;
+      display: block;
+      margin-left: -9px;
+      /* border: 9px solid transparent; */
+      /* border-top: 9px solid #0ae; */
+      content: "";
+  }
+  .tabmenu input[type="radio"] + em ~ span{
+      display: none;
+  }
+  .tabmenu input[type="radio"]:checked + em ~ span{
+      display: block;
+  }
+
+/* Material iconsを利用する */
+  .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      /* font-size: 24px;  推奨サイズ */
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      font-size: 18px;
+      line-height: 1;
+      text-transform: none;
+
+      /* WebKitブラウザサポート */
+      -webkit-font-smoothing: antialiased;
+      /* Chrome、Safariサポート */
+      text-rendering: optimizeLegibility;
+
+      /* Firefoxサポート */
+      -moz-osx-font-smoothing: grayscale;
+
+      /* IEサポート */
+      font-feature-settings: 'liga';
+
+  }
+
+      /* アイコンサイズ */
+      .material-icons.md-18 { font-size: 18px; }
+      .material-icons.md-24 { font-size: 24px; }
+      .material-icons.md-36 { font-size: 36px; }
+      .material-icons.md-48 { font-size: 48px; }
+      
+      /* 背景が明るいとき用のアイコン色 */
+      .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+      .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+      
+      /* 背景が暗いとき用のアイコン色 */
+      .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+      .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+      .material-icons.large-size {
+          font-size: 32px;
+      }
+      .material-icons.small-size {
+          font-size: 15px;
+      }
+
+/* テントのマーク */
+
+
+
+  .tent_mark{
+      display: flex;
+      justify-content: center;
+      /* padding: 10px; */
+
+      position: relative;
+      /* display: inline-block; */
+      margin: 1em;
+      color:#C7A570;
+
+      
+      }
+      
+      /*以下で線を表示*/
+      .tent_mark:before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -15px;/*線の上下位置*/
+          display: inline-block;
+          width: 80px;/*線の長さ*/
+          height: 2px;/*線の太さ*/
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);/*位置調整*/
+          background-color:#C7A570;/*線の色*/
+          border-radius: 2px;/*線の丸み*/
+      }
+
+  testSVG > svg { fill: currentColor; }
+
+/* コンテナ */
+
+.container{
+  background-color: #F3F3F3;
+  padding:4px 0px 0px 0px;
+  padding-bottom: 0.1px;
+}
+
+/* キャンプ詳細ボタン */
+
+.btn-square-little-rich {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1em;
+  color: #FFF;
+  width: 90%;
+  background: #FCA0B1;/*色*/
+  /* border: solid 1px #0f9ada;線色 */
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+
+.btn-square-little-rich:active {
+  /*押したとき*/
+  border: solid 1px #03A9F4;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+
+/* キャンプ場の３つのおすすめポイント */
+.btn-gradient-radius {
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: .4s;
+}
+
+.btn-gradient-radius:hover {
+  background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+.btn-a{
+  text-align: center;
+  margin:12px 0px -4px 0px;
+}
+
+
+/* カード */
+
+.card {
+  /* width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px #ccc; */
+
+  margin: 24px 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px #ccc;
+  border: 3px solid #D2D2D2;
+}
+.box2 {
+  /* display: flex; */
+  text-align: center;
+}
+.icon2 {
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+.camp_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.title2 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.8em;
+  font-weight: bolder;
+  padding: 16px;
+  color: #777777;
+  text-align: center;
+}
+
+/* .camp_area {
+  /* font-size: 60%; 
+  margin-bottom: 8px;
+  color: #888;
+} */
+
+
+
+/* １枚目カード */
+.nav_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+align-items: center;
+/* background-color: red; */
+padding: 8px;
+font-size: 1.3em;
+  font-weight: bold;
+  color: #5F5F5F;
+}
+
+.nav_textbox{
+  color:#383838;
+  font-size:0.8em;
+  margin:4px;
+}
+
+/* 画像横並び */
+
+.camp_pc-a .camp_pc {
+  float: left;
+  margin-left: 1px;
+}
+
+.camp_pc-a .camp_pc {
+  width: 24%;
+}
+
+/*floatの解除*/
+.camp_pc-a:after {
+  content: '';
+  display: block;
+  clear: both; 
+  height: 0;
+}
+
+/*画像のサムネイル*/
+.camp_img {
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+/*スマホの場合を想定*/
+@media only screen and (max-width : 480px){
+  .camp_pc-a .camp_pc:first-child{
+      margin-left: 1px;
+  }
+  .camp_pc-a .camp_pc{
+    margin-bottom:1px;
+      width: 48%; /*幅48%で横に2つ並べる*/
+  }
+}
+
+.detail{
+  text-align : center ;
+  padding: 16px;
+}
