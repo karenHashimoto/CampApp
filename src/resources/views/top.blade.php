@@ -1,22 +1,15 @@
-<!DOCTYPE html>
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>camcierge</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
-    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet'
-                                    type='text/css'> -->
-    <!-- <link rel="stylesheet" href="style.css" /> -->
-    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
-    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-    <!-- css -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/top.css') }}">
-    <!-- material fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Pacifico|Gaegu|Sacramento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"> -->
+
+
 </head>
 
 <body>
@@ -24,26 +17,6 @@
         <div class="header">
             <a class="logo" href="index.html">camcierge</a>
         </div>
-        <!-- <div class="nav">
-                                                                                          <div class="nav1"><a href="#drive_eta"><i class="material-icons">drive_eta</i>2時間</a></div>
-                                                                                          <div class="nav2"><a href="#pets"><i class="material-icons">pets</i>ペット</a></div>
-                                                                                          <div class="nav3"><a href="#spa"><i class="material-icons">spa</i>ゆったり</a></div>
-                                                                        </div> -->
-        <!-- <div class="tabmenu">
-                                                                        <label>
-                                                                                          <input name="tab" type="radio" checked>
-                                                                                          <em><div class="nav1"><a href="#drive_eta"><i class="material-icons">drive_eta</i>2時間</a></div></em>
-                                                                                          <span>TEXT1</span>
-                                                                        </label>
-                                                                        <label>
-                                                                                          <input name="tab" type="radio">
-                                                                                          <em><div class="nav2"><a href="#pets"><i class="material-icons">pets</i>ペット</a></div></em><span>TEXT2</span>
-                                                                        </label>
-                                                                        <label>
-                                                                                          <input name="tab" type="radio">
-                                                                                          <em><div class="nav3"><a href="#spa"><i class="material-icons">spa</i>ゆったり</a></div></em><span>TEXT3</span>
-                                                                        </label>
-                                                                        </div> -->
         <div class="tab">
             <div class="tab_item">
                 <div><i class="material-icons small-size">departure_board</i></div>
@@ -55,603 +28,294 @@
             </div>
             <div class="tab_item">
                 <div><i class="material-icons small-size">hot_tub</i></div>
-                <div>ゆったり</div>
+                <div>海が見える</div>
             </div>
-
-
-            <!-- <div class="tab_item"><i class="material-icons small-size">sentiment_satisfied_alt</i>豪華</div>
-                                                      <div class="tab_item"><i class="material-icons small-size">hot_tub</i>ゆったり</div> -->
         </div>
-
-        <div class="top_var">キャンプ女子におすすめのキャンプ場</div>
+        <div class="top_var">Recommend Campground</div>
     </div>
 
-    <div class="card_wrap">
-
-        <div class="card_head">
-            <!-- <div class="tent_mark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.014 11.421l-2.656-4.625.867-.498 2.656 4.625-.867.498zm3.298 1.579l-2.656-4.625.867-.498 2.656 4.625-.867.498zm-.209 1.598c-.509-1.504-2.306-2.497-3.806-1.91l-6.235-10.688-11.062 20h20.25c2.067 0 3.75-1.682 3.75-3.75 0-1.774-1.239-3.265-2.897-3.652zm-.853 5.402h-16.858l4.822-8.718 1.067 2.135 1.922-3.651 1.67 2.815 1.116-1.597 2.636 4.516c.875-1.781 3.328-.688 2.688 1.104 1.271-.5 2.687.224 2.687 1.646 0 .965-.785 1.75-1.75 1.75z"/></svg></div> -->
-            <div class="tent_mark"><i class="material-icons large-size">
-                    change_history
-                </i>
-                <div class="card_headText">キャンシェルジュのキャンプ場予約</div>
-            </div>
-
-            <div class="nav_title"><a id="drive_eta">福岡から2時間以内のキャンプ場</a></div>
-
+    <div class="card_head">
+        <div class="nav_title_wrap">
             <div class="nav_title_img">
-                <img src="images/main-img.jpg" width=max alt="">
+                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
             </div>
-            <div class="nav_textbox">キャンシェルジュオススメの福岡県から車で2時間以内のキャンプ場をピックアップ。気軽にキャンプにいけるキャンシェルジュ特別プランでたのしもう♪</div>
+            <div class="nav_layertext">deperture</div>
+
+            <div class="nav_title">
+                <div><i class="material-icons">departure_board</i></div>
+                <div>{{$titles1->top_title}}</div>
+            </div>
         </div>
+        <div class="nav_textbox">{{$titles1->top_subtitle}}</div>
+    </div>
+
+    @foreach($camps1 as $camps1)
+    <div class="card">
+
+        <div class="card_img_wrap">
+            <div class="card_img">
+                <img src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker">
+            </div>
 
 
-        <div class="card_container">
-
-            <div class="card">
-                <div class="box2">
-                    <!-- <img src="icon.jpg" class="icon2"> -->
-                    <div>
-                        <div class="title2">
-                            {{-- @foreach ($informations as $information) --}}
-                            <div class="camp_id">
-                                <p>{{$info1->camp_name}}</p>
-                            </div>
-                            <!-- 仮でイメージ入力 -->
-                            <div class="camp_area">
-                                <p>{{ $info1->state }}</p>/<p>{{$info1->city}}
-                            </div>
-                            {{-- @endforeach --}}
-                        </div>
+            <div class="layer_padding">
+                <div class="card_layer">
+                    <div class="title2">
+                        <div class="camp_id">{{$camps1->camp_name}}</div>
+                        <div class="camp_area">（{{$camps1->state}}/
+                            {{$camps1->city}})</div>
                     </div>
                 </div>
-                <!-- <img src="sample.jpg" class="image2">-->
-                <!-- <div class="camp_pc"> 
-                                                                        <img src="sample.jpg" alt=""  class="camp_img">
-                                                                        <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                <div class="camp_pc-a">
-                    <div class="camp_pc">
-                        <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                    </div>
-                    <div class="camp_pc">
-                        <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                    </div>
-                </div>
-
-
-                <div class="recommend">
-
-                    <!-- 仮でイメージ入力 -->
-                    <div class="reco_point_wrap">
-                        <div class="reco_point">
-
-                            <i class="material-icons large-size">departure_board</i>
-                            <div class="reco_title">広々</div>
-                        </div>
-                        <div class="reco_point">
-
-                            <i class="material-icons large-size">departure_board</i>
-                            <div class="reco_title">広々</div>
-                        </div>
-                        <div class="reco_point">
-
-                            <i class="material-icons large-size">departure_board</i>
-                            <div class="reco_title">広々</div>
-                        </div>
-                    </div>
-
-
-                    <div class="detail">
-                        @foreach($campInfo as $hoge)
-                        <div><a href="/detail/{{ $child->id }}">詳細をみる</a></div>
-                        @endforeach
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box2">
-                        <!-- <img src="icon.jpg" class="icon2"> -->
-                        <div>
-                            <div class="title2">
-                                @foreach ($informations as $information)
-                                <div class="camp_id">{{$information->camp_id}}</div>
-                                <!-- 仮でイメージ入力 -->
-                                <div class="camp_area">{{$information->state}}/{{$information->city}}</div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <img src="sample.jpg" class="image2">-->
-                    <!-- <div class="camp_pc"> 
-                                                                        <img src="sample.jpg" alt=""  class="camp_img">
-                                                                        <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                    <div class="camp_pc-a">
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                        </div>
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                        </div>
-                    </div>
-
-
-                    <div class="recommend">
-
-                        <!-- 仮でイメージ入力 -->
-                        <div class="reco_point_wrap">
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                        </div>
-
-
-                        <div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box2">
-                        <!-- <img src="icon.jpg" class="icon2"> -->
-                        <div>
-                            <div class="title2">
-                                @foreach ($informations as $information)
-                                <div class="camp_id">{{$information->camp_id}}</div>
-                                <!-- 仮でイメージ入力 -->
-                                <div class="camp_area">{{$information->state}}/{{$information->city}}</div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <img src="sample.jpg" class="image2">-->
-                    <!-- <div class="camp_pc"> 
-                                                                        <img src="sample.jpg" alt=""  class="camp_img">
-                                                                        <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                    <div class="camp_pc-a">
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                        </div>
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                        </div>
-                    </div>
-
-
-                    <div class="recommend">
-
-                        <!-- 仮でイメージ入力 -->
-                        <div class="reco_point_wrap">
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                        </div>
-
-
-                        <div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
 
-        <div class="box_empty"></div>
-
-        <div class="card_wrap">
-
-            <div class="card_head">
-                <!-- <div class="tent_mark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.014 11.421l-2.656-4.625.867-.498 2.656 4.625-.867.498zm3.298 1.579l-2.656-4.625.867-.498 2.656 4.625-.867.498zm-.209 1.598c-.509-1.504-2.306-2.497-3.806-1.91l-6.235-10.688-11.062 20h20.25c2.067 0 3.75-1.682 3.75-3.75 0-1.774-1.239-3.265-2.897-3.652zm-.853 5.402h-16.858l4.822-8.718 1.067 2.135 1.922-3.651 1.67 2.815 1.116-1.597 2.636 4.516c.875-1.781 3.328-.688 2.688 1.104 1.271-.5 2.687.224 2.687 1.646 0 .965-.785 1.75-1.75 1.75z"/></svg></div> -->
-                <div class="tent_mark"><i class="material-icons large-size">
-                        change_history
-                    </i>
-                    <div class="card_headText">キャンシェルジュのキャンプ場予約</div>
+        <div class="reco_container">
+            <div class="cg_title_margin">
+                <div class="cg_title">{{$camps1->cg_title}}</div>
+            </div>
+            <div class="cg_title_under">Point</div>
+            <div class="reco_point_wrap">
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">1</div>
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="nav_title"><a id="drive_eta">福岡から2時間以内のキャンプ場</a></div>
-
-                <div class="nav_title_img">
-                    <img src="images/main-img.jpg" width=max alt="">
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">2</div>
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="nav_textbox">キャンシェルジュオススメの福岡県から車で2時間以内のキャンプ場をピックアップ。気軽にキャンプにいけるキャンシェルジュ特別プランでたのしもう♪</div>
+
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">3</div>
+
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="detail_btn_width">
+
+                <div class="detail_btn"><a href="test_detail/{{$camps1->id}}">もっと詳しくみる</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endforeach
+    <div class="box_empty"></div>
+    <div class="card_head">
+        <div class="nav_title_wrap">
+            <div class="nav_title_img">
+                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
+            </div>
+            <div class="nav_layertext">deperture</div>
+
+            <div class="nav_title">
+                <div><i class="material-icons">departure_board</i></div>
+                <div>{{$titles2->top_title}}</div>
+            </div>
+        </div>
+        <div class="nav_textbox">{{$titles2->top_subtitle}}</div>
+    </div>
+
+    @foreach($camps2 as $camps2)
+    <div class="card">
+
+        <div class="card_img_wrap">
+            <div class="card_img">
+                <img src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker">
             </div>
 
 
-            <div class="card_container">
-
-                <div class="card">
-                    <div class="box2">
-                        <!-- <img src="icon.jpg" class="icon2"> -->
-                        <div>
-                            <div class="title2">
-                                <div class="camp_id">ボイボイキャンプ場</div>
-                                <!-- 仮でイメージ入力 -->
-                                <div class="camp_area">(大分/久住高原)</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <img src="sample.jpg" class="image2">-->
-                    <!-- <div class="camp_pc"> 
-                                                                                          <img src="sample.jpg" alt=""  class="camp_img">
-                                                                                          <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                    <div class="camp_pc-a">
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                        </div>
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                        </div>
-                    </div>
-
-
-                    <div class="recommend">
-
-                        <!-- 仮でイメージ入力 -->
-                        <div class="reco_point_wrap">
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                        </div>
-
-
-                        <div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
+            <div class="layer_padding">
+                <div class="card_layer">
+                    <div class="title2">
+                        <div class="camp_id">{{$camps2->camp_name}}</div>
+                        <div class="camp_area">（{{$camps2->state}}/
+                            {{$camps2->city}})</div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="box2">
-                        <!-- <img src="icon.jpg" class="icon2"> -->
-                        <div>
-                            <div class="title2">
-                                @foreach ($informations as $information)
-                                <div class="camp_id">{{$information->camp_id}}</div>
-                                <!-- 仮でイメージ入力 -->
-                                <div class="camp_area">{{$information->state}}/{{$information->city}}</div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <img src="sample.jpg" class="image2">-->
-                    <!-- <div class="camp_pc"> 
-                                                                                          <img src="sample.jpg" alt=""  class="camp_img">
-                                                                                          <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                    <div class="camp_pc-a">
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                        </div>
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                        </div>
-                    </div>
-
-
-                    <div class="recommend">
-
-                        <!-- 仮でイメージ入力 -->
-                        <div class="reco_point_wrap">
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                        </div>
-
-
-                        <div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box2">
-                        <!-- <img src="icon.jpg" class="icon2"> -->
-                        <div>
-                            <div class="title2">
-                                @foreach ($informations as $information)
-                                <div class="camp_id">{{$information->camp_id}}</div>
-                                <!-- 仮でイメージ入力 -->
-                                <div class="camp_area">{{$information->state}}/{{$information->city}}</div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <img src="sample.jpg" class="image2">-->
-                    <!-- <div class="camp_pc"> 
-                                                                                          <img src="sample.jpg" alt=""  class="camp_img">
-                                                                                          <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                    <div class="camp_pc-a">
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                        </div>
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                        </div>
-                    </div>
-
-
-                    <div class="recommend">
-
-                        <!-- 仮でイメージ入力 -->
-                        <div class="reco_point_wrap">
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                        </div>
-
-
-                        <div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
 
-        <div class="box_empty"></div>
-
-        <div class="card_wrap">
-
-            <div class="card_head">
-                <!-- <div class="tent_mark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M18.014 11.421l-2.656-4.625.867-.498 2.656 4.625-.867.498zm3.298 1.579l-2.656-4.625.867-.498 2.656 4.625-.867.498zm-.209 1.598c-.509-1.504-2.306-2.497-3.806-1.91l-6.235-10.688-11.062 20h20.25c2.067 0 3.75-1.682 3.75-3.75 0-1.774-1.239-3.265-2.897-3.652zm-.853 5.402h-16.858l4.822-8.718 1.067 2.135 1.922-3.651 1.67 2.815 1.116-1.597 2.636 4.516c.875-1.781 3.328-.688 2.688 1.104 1.271-.5 2.687.224 2.687 1.646 0 .965-.785 1.75-1.75 1.75z"/></svg></div> -->
-                <div class="tent_mark"><i class="material-icons large-size">
-                        change_history
-                    </i>
-                    <div class="card_headText">キャンシェルジュのキャンプ場予約</div>
+        <div class="reco_container">
+            <div class="cg_title_margin">
+                <div class="cg_title">{{$camps2->cg_title}}</div>
+            </div>
+            <div class="cg_title_under">Point</div>
+            <div class="reco_point_wrap">
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">1</div>
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="nav_title"><a id="drive_eta">福岡から2時間以内のキャンプ場</a></div>
-
-                <div class="nav_title_img">
-                    <img src="images/main-img.jpg" width=max alt="">
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">2</div>
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="nav_textbox">キャンシェルジュオススメの福岡県から車で2時間以内のキャンプ場をピックアップ。気軽にキャンプにいけるキャンシェルジュ特別プランでたのしもう♪</div>
+
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">3</div>
+
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="detail_btn_width">
+
+                <div class="detail_btn"><a href="test_detail/{{$camps2->id}}">もっと詳しくみる</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endforeach
+    <div class="card_head">
+        <div class="nav_title_wrap">
+            <div class="nav_title_img">
+                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
+            </div>
+            <div class="nav_layertext">deperture</div>
+
+            <div class="nav_title">
+                <div><i class="material-icons">departure_board</i></div>
+                <div>{{$titles3->top_title}}</div>
+            </div>
+        </div>
+        <div class="nav_textbox">{{$titles3->top_subtitle}}</div>
+    </div>
+
+    @foreach($camps3 as $camps3)
+    <div class="card">
+
+        <div class="card_img_wrap">
+            <div class="card_img">
+                <img src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker">
             </div>
 
 
-            <div class="card_container">
-
-                <div class="card">
-                    <div class="box2">
-                        <!-- <img src="icon.jpg" class="icon2"> -->
-                        <div>
-                            <div class="title2">
-                                @foreach ($informations as $information)
-                                <div class="camp_id">{{$information->camp_id}}</div>
-                                <!-- 仮でイメージ入力 -->
-                                <div class="camp_area">{{$information->state}}/{{$information->city}}</div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <img src="sample.jpg" class="image2">-->
-                    <!-- <div class="camp_pc"> 
-                                                                                                            <img src="sample.jpg" alt=""  class="camp_img">
-                                                                                                            <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                    <div class="camp_pc-a">
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                        </div>
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                        </div>
-                    </div>
-
-
-                    <div class="recommend">
-
-                        <!-- 仮でイメージ入力 -->
-                        <div class="reco_point_wrap">
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                        </div>
-
-
-                        <div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
+            <div class="layer_padding">
+                <div class="card_layer">
+                    <div class="title2">
+                        <div class="camp_id">{{$camps3->camp_name}}</div>
+                        <div class="camp_area">（{{$camps3->state}}/
+                            {{$camps3->city}})</div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="box2">
-                        <!-- <img src="icon.jpg" class="icon2"> -->
-                        <div>
-                            <div class="title2">
-                                @foreach ($informations as $information)
-                                <div class="camp_id">{{$information->camp_id}}</div>
-                                <!-- 仮でイメージ入力 -->
-                                <div class="camp_area">{{$information->state}}/{{$information->city}}</div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <img src="sample.jpg" class="image2">-->
-                    <!-- <div class="camp_pc"> 
-                                                                                                            <img src="sample.jpg" alt=""  class="camp_img">
-                                                                                                            <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                    <div class="camp_pc-a">
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                        </div>
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                        </div>
-                    </div>
-
-
-                    <div class="recommend">
-
-                        <!-- 仮でイメージ入力 -->
-                        <div class="reco_point_wrap">
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                        </div>
-
-
-                        <div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box2">
-                        <!-- <img src="icon.jpg" class="icon2"> -->
-                        <div>
-                            <div class="title2">
-                                @foreach ($informations as $information)
-                                <div class="camp_id">{{$information->camp_id}}</div>
-                                <!-- 仮でイメージ入力 -->
-                                <div class="camp_area">{{$information->state}}/{{$information->city}}</div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <img src="sample.jpg" class="image2">-->
-                    <!-- <div class="camp_pc"> 
-                                                                                                            <img src="sample.jpg" alt=""  class="camp_img">
-                                                                                                            <img src="sample.jpg" alt=""  class="camp_img"> -->
-
-
-                    <div class="camp_pc-a">
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5061739933397">
-                        </div>
-                        <div class="camp_pc">
-                            <img class="camp_img" src="https://tabelog.com/imgview/original?id=r5070939933449">
-                        </div>
-                    </div>
-
-
-                    <div class="recommend">
-
-                        <!-- 仮でイメージ入力 -->
-                        <div class="reco_point_wrap">
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                            <div class="reco_point">
-
-                                <i class="material-icons large-size">departure_board</i>
-                                <div class="reco_title">広々</div>
-                            </div>
-                        </div>
-
-
-                        <div class="detail"><a href="detail.html" class="btn-square-little-rich">△詳細を見る</a></div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
 
-        <div class="box_empty"></div>
+        <div class="reco_container">
+            <div class="cg_title_margin">
+                <div class="cg_title">{{$camps3->cg_title}}</div>
+            </div>
+            <div class="cg_title_under">Point</div>
+            <div class="reco_point_wrap">
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">1</div>
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">2</div>
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="reco_point_unit">
+                    <div class="reco_point_left">
+                        <i class="material-icons large-size">departure_board</i>
+                    </div>
+                    <div class="main_wrap">
+                        <div class="full_area">
+                            <div class="reco_number">3</div>
 
-        <!-- <div id="footer">
-                                                                                                            <p>&copy; camcierge</p>
-                  </div> -->
+                            <div class="text_area">
+                                <div class="reco_title2">満点の星空</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="detail_btn_width">
+
+                <div class="detail_btn"><a href="test_detail/{{$camps3->id}}">もっと詳しくみる</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endforeach
 </body>
+
+
 
 </html>
