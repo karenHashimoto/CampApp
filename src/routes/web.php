@@ -1,4 +1,9 @@
 <?php
-Route::get('/', 'TopController@index');
 
-Route::get('/detail/{id}', 'InformationController@show');
+use App\Camp;
+use App\Title;
+use Illuminate\Http\Request;
+
+
+Route::get('/', 'CampsController@index');
+// Route::get('/test_detail/{id}', 'CampsController@index');
