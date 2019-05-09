@@ -14,7 +14,7 @@ class CampsTable extends Migration
     public function up()
     {
         Schema::create('camps', function (Blueprint $table) {
-            $table->bigIncrements('id');//id
+            $table->increments('id');//id
             $table->string('camp_name', 30);//キャンプ場名
             $table->string('cg_title', 50);//キャンプ場見出し
             $table->string('cg_subtitle', 100);//キャンプ場サブ見出し
@@ -25,11 +25,11 @@ class CampsTable extends Migration
             $table->string('city', 24);//市町村名
             $table->string('address', 64);//番地
             $table->string('phone', 13);//電話番号
-            $table->string('map_link', 191);//mapのリンク
+            $table->string('map_link', 300);//mapのリンク
             $table->string('access_comment', 100);//アクセス方法コメント
             $table->string('owner_name', 20);//オーナー名前
             $table->string('owner_pic', 128);//オーナー画像
-            $table->string('owner_comment', 191);//オーナー紹介
+            $table->string('owner_comment', 200);//オーナー紹介
             $table->string('plan_name', 15);//プラン名
             $table->string('plan_comment', 25);//プランコメント
             $table->string('plan_fee', 10);//金額
