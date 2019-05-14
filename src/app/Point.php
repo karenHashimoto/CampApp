@@ -10,4 +10,11 @@ class Point extends Model
     {
         return $this->belongsTo('App\Camp');
     }
+
+    public function point_masters()
+    {
+        return $this->hasOne('App\Point_Master');
+    }
+
+
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class FacilitiesTable extends Migration
+class PointMastersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class FacilitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('facilities', function (Blueprint $table) {
+        Schema::create('point_masters', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('camp_id', 10);//キャンプid
-            $table->string('facility_id', 10);//設備id
+            $table->string('path', 25);//画像Path
         });
     }
 
@@ -27,6 +26,6 @@ class FacilitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('facilities');
+        Schema::dropIfExists('point_masters');
     }
 }

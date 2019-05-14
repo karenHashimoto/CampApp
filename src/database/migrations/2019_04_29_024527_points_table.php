@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class FacilitiesTable extends Migration
+class PointsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class FacilitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('facilities', function (Blueprint $table) {
+        Schema::create('points', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('camp_id', 10);//キャンプid
-            $table->string('facility_id', 10);//設備id
+            $table->string('camp_id', 10);//キャンプ場id
+            $table->string('point_id', 10);//ポイントアイコン
+            $table->string('point_comment', 5);//ポイントコメント
         });
     }
 
@@ -27,6 +28,6 @@ class FacilitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('facilities');
+        Schema::dropIfExists('points');
     }
 }
