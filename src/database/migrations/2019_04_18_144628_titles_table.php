@@ -16,7 +16,7 @@ class TitlesTable extends Migration
         Schema::create('titles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('top_title', 30); //TOPタイトル
-            $table->string('top_subtitle', 50); //TOPサブタイトル
+            $table->string('top_subtitle', 50); //TOPサブタイトル!
             $table->string('top_img', 100); //TOP画像!
         });
     }

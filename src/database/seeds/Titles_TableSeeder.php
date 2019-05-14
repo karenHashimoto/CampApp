@@ -23,7 +23,7 @@ class Titles_TableSeeder extends Seeder
                 'id' => '2',
                 'top_title' => '初心者安心快適キャンプ場。',
                 'top_subtitle' => '設備の整ったキャンプ場。',
-                'top_img' => 'hoge.jpeg'
+                'top_img' => 'hoge.jpg'
             ],
             [
                 'id' => '3',
