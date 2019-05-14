@@ -29,7 +29,7 @@ class Titles_TableSeeder extends Seeder
                 'id' => '3',
                 'top_title' => '海の見えるキャンプ場',
                 'top_subtitle' => '夕日が綺麗なキャンプ場です',
-                'top_img' => 'hoge.jpeg'
+                'top_img' => 'hoge.jpg'
             ]
         ]);
     }
