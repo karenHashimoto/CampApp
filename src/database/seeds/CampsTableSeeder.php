@@ -15,6 +15,7 @@ class CampsTableSeeder extends Seeder
         DB::table('camps')->insert([
             [
                 'id' => '1',
+                'camp_img' => 'cg1.jpg',
                 'camp_name' => 'ボイボイキャンプ場',
                 'cg_title' => '何も遮るものがない、大分・くじゅう高原約1万坪もの広大な草原が広がる解放感抜群のキャンプ場！',
                 'cg_subtitle' => '野原のはるか向こうに阿蘇五岳、九州山地が一望出来る贅沢な景色が広がるオートキャンプ場☆お気に入りの場所を見つけ、自由にテントを張っていただけるフリーサイトスペースが自慢。',
@@ -28,7 +29,7 @@ class CampsTableSeeder extends Seeder
                 'map_link' => 'maplink',
                 'access_comment' => '大分自動車道玖珠インターから県道３８７号線で宝泉寺温泉を通り国道４４２号線で黒川温泉～瀬の本～ボイボイキャンプ場まで５０分',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner1.jpg',
                 'owner_comment' => '"ボイボイキャンプ場＆カフェボイを夢見てオープンしました。スタッフ一同、皆様のお越しをこころよりお待ちしておリます。"',
                 'plan_name' => '広々フリーサイト',
                 'plan_comment' => '自由にテントを張っていただけます。',
@@ -39,6 +40,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '2',
+                'camp_img' => 'cg13.jpg',
                 'camp_name' => '平尾台自然の郷キャンプ場',
                 'cg_title' => 'カルスト台地の開放的なキャンプ場',
                 'cg_subtitle' => '芝生の開放的なキャンプ場です。体験工房や遊具、草ソリ場など子供も楽しめるので家族連れにおすすめです。',
@@ -53,7 +55,7 @@ class CampsTableSeeder extends Seeder
                 'access_comment' => '九州自動車道小倉南ICから国道322号で田川方面へ。 
                 平尾台入口交差点で県道28号線に入り、平尾台方面へ進み約20分。',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner2.jpg',
                 'owner_comment' => '芝刈り頑張っています！ぜひ遊びに来てください。',
                 'plan_name' => '広々フリーサイト',
                 'plan_comment' => '自由にテントを張っていただけます。',
@@ -64,6 +66,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '3',
+                'camp_img' => 'cg22.jpg',
                 'camp_name' => '大野城いこいの森キャンプ場',
                 'cg_title' => '福岡市内から車で約40分♪',
                 'cg_subtitle' => '各テントサイトは整備が整っていて水はけも良く、安心して利用出来ます♪',
@@ -77,7 +80,7 @@ class CampsTableSeeder extends Seeder
                 'map_link' => 'maplink',
                 'access_comment' => '福岡市内から県道31号線を鳥栖方面へ。春日神社入口(マクドナルド有り）の信号を右折し直進。',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner3.jpg',
                 'owner_comment' => 'スタッフ一同、皆様のお越しを心よりお待ちしています。',
                 'plan_name' => '清潔久区画サイトサイト',
                 'plan_comment' => '整地された地面にテントを張っていtだきます。',
@@ -88,6 +91,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '4',
+                'camp_img' => 'cg34.jpg',
                 'camp_name' => 'くじゅうエイドステーション',
                 'cg_title' => '標高1,000mの飯田高原に位置する、山々に囲まれたキャンプ場です。',
                 'cg_subtitle' => 'テント＆タープを1区画に４～５張を設置できる広々とした区画サイトで、また隣の区画と離れているので、開放感を味わえます！各サイトにはコンセルリンクがあり、キャンプの醍醐味、焚火も可能！',
@@ -101,7 +105,7 @@ class CampsTableSeeder extends Seeder
                 'map_link' => 'maplink',
                 'access_comment' => '福岡市から大分自動車道九重インター経由２時間',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner4.jpg',
                 'owner_comment' => '飯田高原が大好きで熊本から家族で移住してきました。キャンプ場開業から30年。なんでも聞いてくださいね♫',
                 'plan_name' => '5組限定フリーサイト',
                 'plan_comment' => '自由にテントを張っていただけます。',
@@ -112,6 +116,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '5',
+                'camp_img' => 'cg44.jpg',
                 'camp_name' => '三愛オートキャンプ場',
                 'cg_title' => '大分県湯布院水分峠と熊本県一の宮町城山を結ぶ「やまなみハイウェイ」で隣接しています♪
                 ',
@@ -127,7 +132,7 @@ class CampsTableSeeder extends Seeder
                 'map_link' => 'maplink',
                 'access_comment' => '大分自動車道・湯布院ICから約60分',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner5.jpg',
                 'owner_comment' => '黒川温泉にほど近い場所に位置します。ぜひ、お越しください。',
                 'plan_name' => '広々フリーサイト',
                 'plan_comment' => '自由にテントを張っていただけます。',
@@ -138,6 +143,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '6',
+                'camp_img' => 'cg52.jpg',
                 'camp_name' => 'スパージュ キャンプ場',
                 'cg_title' => '1日5組限定！貸切露天風呂でごゆっくり♪',
                 'cg_subtitle' => '1日5組限定でゆったりと過ごせるとともに、眺めが抜群！',
@@ -151,7 +157,7 @@ class CampsTableSeeder extends Seeder
                 'map_link' => 'maplink',
                 'access_comment' => '九州自動車道→鳥栖JCT→大分自動車道→日田IC→国道212→国道442→赤川温泉スパージュ・スパージュキャンプ場',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner6.jpg',
                 'owner_comment' => '夫婦二人で経営しています。妻が韓国人で、本場の美味しい韓国家庭料理を食べてください。',
                 'plan_name' => '広々フリーサイト',
                 'plan_comment' => '自由にテントを張っていただけます。',
@@ -162,6 +168,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '7',
+                'camp_img' => 'cg68.jpg',
                 'camp_name' => '四本堂公園キャンプ場',
                 'cg_title' => '海に面した開放的なサイト。大村湾に沈む夕日が絶景です。',
                 'cg_subtitle' => '区画も整備され広々スペース。',
@@ -175,7 +182,7 @@ class CampsTableSeeder extends Seeder
                 'map_link' => 'maplink',
                 'access_comment' => '太宰府ICより２時間30分。',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner7.jpg',
                 'owner_comment' => '海に沈む夕日とBBQをお楽しみください。',
                 'plan_name' => '広々フリーサイト',
                 'plan_comment' => '自由にテントを張っていただけます。',
@@ -186,6 +193,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '8',
+                'camp_img' => 'cg77.jpg',
                 'camp_name' => '波止岬キャンプ場',
                 'cg_title' => '2018年7月リニューアルオープン！海を臨む絶景キャンプ場！',
                 'cg_subtitle' => '場内設備も十分揃い、初心者でも安心してキャンプを楽しむことができます。芝生が綺麗に整備され、オート・一般・フリーと1日1組限定のプレミアムサイトから選ぶことができます。',
@@ -199,7 +207,7 @@ class CampsTableSeeder extends Seeder
                 'map_link' => 'maplink',
                 'access_comment' => '長崎道多久ICから国道203・204号経由45km1時間30分 ',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner8.jpg',
                 'owner_comment' => '昨年8月にリニューアルしたばかり！きれいなサイトでお待ちしています。',
                 'plan_name' => '広々フリーサイト',
                 'plan_comment' => '自由にテントを張っていただけます。',
@@ -210,6 +218,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '9',
+                'camp_img' => 'cg89.jpg',
                 'camp_name' => '長崎鼻ビーチリゾート',
                 'cg_title' => '海蝕洞穴や、敷地に点在するアートや四季折々の花々など楽しみが詰まったキャンプ場です!!
                 ',
@@ -224,7 +233,7 @@ class CampsTableSeeder extends Seeder
                 'map_link' => 'maplonk',
                 'access_comment' => '豊後高田市から車で30分',
                 'owner_name' => 'namenamenaem',
-                'owner_pic' => 'picpicpic',
+                'owner_pic' => 'owner9.jpg',
                 'owner_comment' => '海の見えるキャンプ場でゆっくりすごしてください！',
                 'plan_name' => '広々フリーサイト',
                 'plan_comment' => '自由にテントを張っていただけます。',

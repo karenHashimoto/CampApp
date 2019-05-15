@@ -15,6 +15,7 @@ class CampsTable extends Migration
     {
         Schema::create('camps', function (Blueprint $table) {
             $table->increments('id'); //id
+            $table->string('camp_img', 30); //キャンプimage
             $table->string('camp_name', 30); //キャンプ場名
             $table->string('cg_title', 50); //キャンプ場見出し
             $table->string('cg_subtitle', 100); //キャンプ場サブ見出し
