@@ -25,7 +25,7 @@ class CampsTable extends Migration
             $table->string('city', 24); //市町村名
             $table->string('address', 64); //番地
             $table->string('phone', 13); //電話番号
-            $table->string('map_link', 191); //mapのリンク
+            $table->string('map_link', 500); //mapのリンク
             $table->string('access_comment', 100); //アクセス方法コメント
             $table->string('owner_name', 20); //オーナー名前
             $table->string('owner_pic', 128); //オーナー画像
@@ -36,6 +36,8 @@ class CampsTable extends Migration
             $table->string('max_people', 5); //最大人数
             $table->string('reception_time', 15); //受付時間
             $table->string('checkout_time', 5); //チェックアウト時間
+            $table->string('longitude', 10); //緯度
+            $table->string('latitude', 11); //経度
 
 
         });

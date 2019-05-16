@@ -25,7 +25,7 @@ class CampsTableSeeder extends Seeder
                 'city' => '竹田市',
                 'address' => '久住町大字久住４０４８ー８',
                 'phone' => '0940-76-0009',
-                'map_link' => 'maplink',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d853441.1330058764!2d130.26025588813894!3d33.32523506699939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541336fa8b6fb39%3A0x7c8730805bc443cb!2z44Oc44Kk44Oc44Kk44Kt44Oj44Oz44OX5aC077yI5pen77ya44Oi44O844Oi44O844Op44Oz44OJ5LmF5L2P44Kq44O844OI44Kt44Oj44Oz44OX5aC077yJ!5e0!3m2!1sja!2sjp!4v1557394017505!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '大分自動車道玖珠インターから県道３８７号線で宝泉寺温泉を通り国道４４２号線で黒川温泉～瀬の本～ボイボイキャンプ場まで５０分',
                 'owner_name' => 'namenamenaem',
                 'owner_pic' => 'picpicpic',
@@ -35,7 +35,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '5,500',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.0454442',
+                'latitude' => '131.2468206'
             ],
             [
                 'id' => '2',
@@ -49,7 +51,7 @@ class CampsTableSeeder extends Seeder
                 'city' => '北九州市',
                 'address' => '小倉南区平尾台1-1-1',
                 'phone' => '0940-76-0009',
-                'map_link' => 'maplink',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.3699386662392!2d130.88939221495397!3d33.75110508068893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3543c371127b81af%3A0xa1c3aa1aa4decf7d!2z5bmz5bC-5Y-w6Ieq54S244Gu6YO3IOOCreODo-ODs-ODl-WgtA!5e0!3m2!1sja!2sjp!4v1557394158974!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '九州自動車道小倉南ICから国道322号で田川方面へ。 
                 平尾台入口交差点で県道28号線に入り、平尾台方面へ進み約20分。',
                 'owner_name' => 'namenamenaem',
@@ -60,7 +62,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '3,000',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.7511051',
+                'latitude' => '130.8893922'
             ],
             [
                 'id' => '3',
@@ -74,7 +78,7 @@ class CampsTableSeeder extends Seeder
                 'city' => '大野城市',
                 'address' => '大字牛頸667-58',
                 'phone' => '092-595-2110',
-                'map_link' => 'maplink',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13311.571547530637!2d130.46886467980997!3d33.4781393922542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541982d35f2dae7%3A0xd7c11da8dc30ce41!2z5aSn6YeO5Z-O44GE44GT44GE44Gu5qOu!5e0!3m2!1sja!2sjp!4v1557394189327!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '福岡市内から県道31号線を鳥栖方面へ。春日神社入口(マクドナルド有り）の信号を右折し直進。',
                 'owner_name' => 'namenamenaem',
                 'owner_pic' => 'picpicpic',
@@ -84,7 +88,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '3,400',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.4781394',
+                'latitude' => '130.4688647'
             ],
             [
                 'id' => '4',
@@ -98,7 +104,7 @@ class CampsTableSeeder extends Seeder
                 'city' => '玖珠郡',
                 'address' => '九重町田野1726-366',
                 'phone' => '0940-76-0009',
-                'map_link' => 'maplink',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.463675047941!2d131.24339531493675!3d33.14945198086114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35414a8cad69c833%3A0xa35f5138305214e1!2z44GP44GY44KF44GG44Ko44Kk44OJ44K544OG44O844K344On44Oz!5e0!3m2!1sja!2sjp!4v1557394214786!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '福岡市から大分自動車道九重インター経由２時間',
                 'owner_name' => 'namenamenaem',
                 'owner_pic' => 'picpicpic',
@@ -108,7 +114,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '5,500',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.149452',
+                'latitude' => '131.2433953'
             ],
             [
                 'id' => '5',
@@ -124,7 +132,7 @@ class CampsTableSeeder extends Seeder
                 'address' => '南小国町大字満願寺',
                 'phone' => '0967-44-0011
                 ',
-                'map_link' => 'maplink',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.485753326954!2d131.18333681493448!3d33.0700029808845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35413145e253eef7%3A0xe330c956877cd18f!2z5LiJ5oSb44Kq44O844OI44Kt44Oj44Oz44OX5aC0!5e0!3m2!1sja!2sjp!4v1557394237233!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '大分自動車道・湯布院ICから約60分',
                 'owner_name' => 'namenamenaem',
                 'owner_pic' => 'picpicpic',
@@ -134,7 +142,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '2000',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.070003',
+                'latitude' => '131.1833368'
             ],
             [
                 'id' => '6',
@@ -148,7 +158,7 @@ class CampsTableSeeder extends Seeder
                 'city' => '竹田市',
                 'address' => '久住4026-1赤川温泉スパージュ',
                 'phone' => '0974-76-1055',
-                'map_link' => 'maplink',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.228201286598!2d131.22684001493383!3d33.05045848089028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354133906b1262c9%3A0x2019f546d258c665!2z6LWk5bed5rip5rOJ44K544OR44O844K444OlKFNQQUpVKQ!5e0!3m2!1sja!2sjp!4v1557394258906!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '九州自動車道→鳥栖JCT→大分自動車道→日田IC→国道212→国道442→赤川温泉スパージュ・スパージュキャンプ場',
                 'owner_name' => 'namenamenaem',
                 'owner_pic' => 'picpicpic',
@@ -158,7 +168,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '2000',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.0504585',
+                'latitude' => '131.22684'
             ],
             [
                 'id' => '7',
@@ -172,7 +184,7 @@ class CampsTableSeeder extends Seeder
                 'city' => '西海市',
                 'address' => '西彼町白崎郷',
                 'phone' => '0959-37-0222',
-                'map_link' => 'maplink',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.3416425845353!2d129.7621979149331!3d33.02112858089906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356abb907cbdf4bb%3A0xc7b8d0edfe2541d5!2z5Zub5pys5aCC5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1557394311041!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '太宰府ICより２時間30分。',
                 'owner_name' => 'namenamenaem',
                 'owner_pic' => 'picpicpic',
@@ -182,7 +194,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '2000',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.0211286',
+                'latitude' => '129.7621979'
             ],
             [
                 'id' => '8',
@@ -196,7 +210,7 @@ class CampsTableSeeder extends Seeder
                 'city' => '唐津市',
                 'address' => '鎮西町名護屋7324',
                 'phone' => '0940-76-0009',
-                'map_link' => 'maplink',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.2948553077417!2d129.8470842149481!3d33.54571468074676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356a7067b36ec2cb%3A0xe5f96dcae88af349!2z5rOi5oi45bKs44Kt44Oj44Oz44OX5aC0!5e0!3m2!1sja!2sjp!4v1557394334748!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '長崎道多久ICから国道203・204号経由45km1時間30分 ',
                 'owner_name' => 'namenamenaem',
                 'owner_pic' => 'picpicpic',
@@ -206,7 +220,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '2000',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.5506096',
+                'latitude' => '129.8434509'
             ],
             [
                 'id' => '9',
@@ -221,7 +237,7 @@ class CampsTableSeeder extends Seeder
                 'city' => '豊後高田市',
                 'address' => '見目4080',
                 'phone' => '0940-76-0009',
-                'map_link' => 'maplonk',
+                'map_link' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.0349966398003!2d131.52264831495202!3d33.68215798070822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35446bf946608a3b%3A0x1b59d19581cf1266!2z6ZW35bSO6by744Oq44K-44O844OI44Kt44Oj44Oz44OX5aC0!5e0!3m2!1sja!2sjp!4v1557394367357!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>',
                 'access_comment' => '豊後高田市から車で30分',
                 'owner_name' => 'namenamenaem',
                 'owner_pic' => 'picpicpic',
@@ -231,7 +247,9 @@ class CampsTableSeeder extends Seeder
                 'plan_fee' => '2000',
                 'max_people' => '5',
                 'reception_time' => '13:00〜16:00',
-                'checkout_time' => '12:00'
+                'checkout_time' => '12:00',
+                'longitude' => '33.682158',
+                'latitude' => '131.5226483'
             ]
 
         ]);
