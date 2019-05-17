@@ -17,7 +17,7 @@ class PointsTable extends Migration
             $table->increments('id');
             $table->string('camp_id', 10);//キャンプ場id
             $table->string('point_id', 10);//ポイントアイコン
-            $table->string('point_comment', 5);//ポイントコメント
+            
         });
     }
 

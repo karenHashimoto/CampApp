@@ -16,6 +16,7 @@ class PointMastersTable extends Migration
         Schema::create('point_masters', function (Blueprint $table) {
             $table->increments('id');
             $table->string('path', 25);//画像Path
+            $table->string('point_comment', 5);//ポイントコメント
         });
     }
 

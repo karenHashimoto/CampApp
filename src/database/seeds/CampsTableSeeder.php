@@ -218,7 +218,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '9',
-                'camp_img' => 'cg89.jpg',
+                'camp_img' => 'cg81.jpg',
                 'camp_name' => '長崎鼻ビーチリゾート',
                 'cg_title' => '海蝕洞穴や、敷地に点在するアートや四季折々の花々など楽しみが詰まったキャンプ場です!!
                 ',

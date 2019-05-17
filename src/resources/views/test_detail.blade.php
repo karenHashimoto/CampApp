@@ -28,11 +28,16 @@
     <p>アクセス方法コメント</p><td>{{$camps->access_comment}}</td>
     <p>オーナー名</p><td>{{$camps->owner_name}}</td>
     <p>オーナー画像</p><td>{{$camps->owner_pic}}</td>
+    <p>オーナー画像</p><td><img src="/image/owner/{{$camps->owner_pic}}"></td>
     <p>オーナー情報</p><td>{{$camps->owner_comment}}</td>
     <p>プラン名</p><td>{{$camps->plan_name}}</td>
     <p>プラン名に対するコメント</p><td>{{$camps->plan_comment}}</td>
     <p>プラン金額</p><td>{{$camps->plan_fee}}</td>
     <p>最大人数</p><td>{{$camps->max_people}}</td>
+    @foreach($camps->points as $point)
+        <div class='city'><img src="/image/point/{{$point->point_masters->path}}"></div>
+        <div class='city'>{{$point->point_masters->point_comment}}</div>
+        @endforeach
 
 
 
