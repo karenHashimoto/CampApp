@@ -23,11 +23,11 @@ class PhotosController extends Controller
 
   $image = \Image::make(file_get_contents($file->getRealPath()));
   $image
-      ->save(public_path().'/images/'.$file->hashName())
-      ->resize(300, 300)
-      ->save(public_path().'/images/300-300-'.$file->hashName())
-      ->resize(500, 500)
-      ->save(public_path().'/images/500-500-'.$file->hashName());
+      ->save(public_path().'/images/'.$file->hashName());
+    //   ->resize(300, 300)
+    //   ->save(public_path().'/images/300-300-'.$file->hashName())
+    //   ->resize(500, 500)
+    //   ->save(public_path().'/images/500-500-'.$file->hashName());
 
   return redirect('/images/'.$file->hashName());
 }
