@@ -10,10 +10,16 @@ ul {
 a {
   text-decoration: none;
 }
+<<<<<<< HEAD
 
 .body {
   font-family: 'Roboto', sans-serif;
+=======
+  body{
+>>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
   font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
   /* width: 100%; */
   background-color: #FEFFFE;
   margin: 0px;
@@ -326,12 +332,12 @@ testSVG>svg {
 
 .cg_title {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* text-align: center; */
   padding: 4px 0px 8px 0px;
   color: #86929D;
   font-size: 0.8em;
-  font-weight: bold;
+  /* font-weight: bold; */
   /* width: 80%; */
   /* border-bottom: solid 1px #FDB3AD; */
 }
@@ -423,6 +429,16 @@ testSVG>svg {
   padding: 12px;
 
 }
+.recommend_column_noline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 1px solid #DEDDDD; */
+  padding:12px;
+
+}
+
+
 
 
 .recommend_text_area {
@@ -720,7 +736,7 @@ html {
 .nav_textbox {
   color: #86929D;
   font-size: 0.8em;
-  margin: 16px 8px 24px;
+  margin: 16px 12px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -808,6 +824,7 @@ html {
   /* font-weight: bold; */
   margin: 16px 16px 0px;
 }
+<<<<<<< HEAD
 
 .cg_name {
   font-size: 1.4em;
@@ -815,6 +832,14 @@ html {
 }
 
 .cg_title2 {
+=======
+.cg_name{
+  font-size: 1.6em;
+  margin: 0px 8px 0px 16px;
+}
+
+.cg_title2{
+>>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
   display: flex;
   justify-content: center;
   align-items: center;
@@ -831,8 +856,8 @@ html {
 .global-nav {
   position: relative;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  height: 40px;
+  line-height: 40px;
   max-width: 1000px;
   margin: 0 auto;
   /* border: solid 1px #FDB3AD; */
@@ -901,8 +926,13 @@ html {
   text-align: left;
 }
 
+<<<<<<< HEAD
 .topic {
   /* display: flex; */
+=======
+.topic{
+  /* display: flex;  */
+>>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
   /* justify-content: center; */
   /* text-align: center; */
   /* padding: 8px 0px 4px 0px; */
@@ -911,7 +941,11 @@ html {
   font-weight: bold;
   /* width: 80%; */
   /* border-bottom: solid 1px #FDB3AD; */
+<<<<<<< HEAD
   padding: 16px 0px 8px 16px;
+=======
+  padding: 32px 0px 8px 16px;
+>>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
   border-bottom: solid 1.4px #86929D;
   margin-bottom: 16px;
 }
@@ -947,15 +981,25 @@ html {
   margin-top: 16px;
 }
 
+<<<<<<< HEAD
 .reco3_title {
   text-align: center;
   color: #62A0B9;
+=======
+.reco3_title{
+    text-align: center;
+    color:#62A0B9;
+    display:flex;
+    align-items: center;
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+  
+>>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
 }
 
 .parenthesis {
   position: relative;
   margin: 8px;
-  padding: 0px 15px 8px;
+  padding: 8px 15px 8px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -998,6 +1042,7 @@ html {
   margin: 1vw;
 }
 
+<<<<<<< HEAD
 .image-container {
   overflow: hidden;
   width: 32vw;
@@ -1024,6 +1069,63 @@ html {
   width: 18.8vw;
   height: 18.8vw;
 
+=======
+/* 20グリッド */
+  .grid-5images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    margin: 1vw;
+  }
+
+ .image-5container{
+   overflow:hidden;
+   width:18.8vw;
+   height:18.8vw;
+   background-color:#86929D;
+ }
+ .image-5container_white{
+  overflow:hidden;
+  width:18.8vw;
+  height:18.8vw;
+  background-color:rgba(134, 146, 157, 0.28);
+}
+
+
+
+.facility_icon{
+  height:80%;
+  padding-top:20%;
+  display:flex;
+  align-items: center;
+  justify-content: center; /* 子要素をflexboxにより中央に配置する */
+
+}
+
+ .facility_text{
+  color: #FFFFFF;
+  height: 20%;
+  font-size: 0.4em;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  margin-top: -5px;
+ }
+
+.facility_explain{
+  font-weight: bold;
+  font-size: 0.7em;
+  color: #86929D;
+  margin: 0 0 0 auto;
+  display: flex;
+  width: fit-content;
+  margin-right: 8px;
+}
+
+.facility_off{
+  color: rgba(134, 146, 157, 0.28);
+  margin-left: 4px;
+>>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
 }
 
 
@@ -1075,6 +1177,7 @@ html {
 
 /* キャンプ場情報 */
 
+<<<<<<< HEAD
 .cg_detail {
   color: #86929D;
   font-size: 0.7em;
@@ -1082,6 +1185,15 @@ html {
   margin: 0 5vw;
   padding: 12px 0;
   width: 90vw;
+=======
+.cg_detail{
+    color: #86929D;
+    font-size: 0.7em;
+    border-bottom: solid 1px #D4D4D4;
+    margin: 0 5vw;
+    padding: 12px 0;
+    width: 90vw;
+>>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
 }
 
 .cg_detail_noborder {
