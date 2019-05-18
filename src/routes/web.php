@@ -17,5 +17,3 @@ Route::get('/test_02/{id}', 'Test_02Controller@index');
 Route::resource('/photos', 'PhotosController', ['only' => ['create', 'store']]);
 
 Route::get('/peoplaaae/{id}', 'PersonController@index')->name('aaa');
-
-Route::get('/peoplaaae/{id}', 'PersonController@person')->name('aaa');

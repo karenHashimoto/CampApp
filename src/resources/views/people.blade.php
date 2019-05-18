@@ -20,11 +20,9 @@
     <div class="camp_id">{{$camps->camp_name}}</div>
     <div class="camp_area">（{{$camps->state}}/
         {{$camps->city}})</div>
-    <div class="cg_img">cg_img</div>
+    <div class="cg_img"><img src="/image/camps_img/{{$camps->camp_img}}" width="200" height="150"></div>
     <div class="plan_comment">{{$camps->plan_comment}}</div>
     <div class="plan_name">{{$camps->plan_name}}</div>
-
-
     大人の人数
     <form>
         <select name="adlut_number">
@@ -45,9 +43,9 @@
             <option value="4">4</option>
         </select>
     </form>
-    合計人数○○人
+    <input type="submit" name="submit" value="送信">
 
-    <div class="btn">日時の選択へ進む</div>
+
 </body>
 
 </html>
