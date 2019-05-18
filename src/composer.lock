@@ -490,7 +490,8 @@
                 "MIT"
             ],
             "authors": [
-                {
+                { 
+                    
                     "name": "Oliver Vogel",
                     "email": "oliver@olivervogel.com",
                     "homepage": "http://olivervogel.com/"

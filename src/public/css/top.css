@@ -353,9 +353,10 @@ testSVG>svg {
 }
 
 .reco_number {
-    font-size: 3em;
-    font-family: 'Gaegu', cursive;
+    /* font-size: 3em; */
+    /* font-family: 'Gaegu', cursive; */
     width: 60px;
+    height: 20px;
     color: rgba(252, 168, 153, 0.2);
 }
 

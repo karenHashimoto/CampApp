@@ -7,11 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <p>{{$camp}}</p>
-
-        
-
-
+<div>
+{{$camp}}
+</div>
 
 
 

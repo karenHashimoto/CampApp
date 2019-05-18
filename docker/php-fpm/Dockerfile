@@ -15,9 +15,7 @@ RUN apk update && apk upgrade --update && apk --no-cache add \
     && rm -r /var/cache/apk/*
 
 RUN docker-php-ext-configure \
-    gd --with-png-dir=/usr/include --with-jpeg-dir=/usr/include && \  
-
-
+    gd --with-png-dir=/usr/include --with-jpeg-dir=/usr/include && \
     docker-php-ext-install -j$(nproc) \
     iconv \
     intl \
@@ -25,7 +23,5 @@ RUN docker-php-ext-configure \
     mbstring \
     pdo_mysql 
     
-
-
 COPY  ./php.ini /usr/local/etc/php-fpm.d/my-php.ini
 COPY  ./php-fpm.conf /usr/local/etc/php-fpm.d/my-php-fpm.conf
