@@ -6,6 +6,8 @@ use App\Information;
 
 use Illuminate\Http\Request;
 use App\Camp;
+use App\Point;
+use App\Titles;
 
 class TopController extends Controller
 {
