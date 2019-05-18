@@ -82,7 +82,7 @@
                     </div>
                     <div class="main_wrap">
                         <div class="full_area">
-                            <div class="reco_number"><img src="/image/title/{{$camps1->camp_img}}"></div>
+                            <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
                             <div class="text_area">
                                 <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
                             </div>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="main_wrap">
                         <div class="full_area">
-                            <div class="reco_number"><img src="/image/title/{{$camps1->camp_img}}"></div>
+                            <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
                             <div class="text_area">
                                 <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
                             </div>
@@ -218,7 +218,7 @@
                     </div>
                     <div class="main_wrap">
                         <div class="full_area">
-                            <div class="reco_number"><img src="/image/title/{{$camps1->camp_img}}"></div>
+                            <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
                             <div class="text_area">
                                 <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
                             </div>
