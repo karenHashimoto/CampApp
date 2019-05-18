@@ -37,7 +37,7 @@
     <div class="card_head">
         <div class="nav_title_wrap">
             <div class="nav_title_img">
-                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
+                <img width="max" src="/image/title/titles1.jpg"></a>
             </div>
             <div class="nav_layertext">deperture</div>
 
@@ -131,9 +131,9 @@
     <div class="card_head">
         <div class="nav_title_wrap">
             <div class="nav_title_img">
-                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
+                <img width="max" src="/image/title/titles2.jpg"></a>
             </div>
-            <div class="nav_layertext">deperture</div>
+            <div class="nav_layertext">Comfort</div>
 
             <div class="nav_title">
                 <div><i class="material-icons">departure_board</i></div>
@@ -224,9 +224,9 @@
     <div class="card_head">
         <div class="nav_title_wrap">
             <div class="nav_title_img">
-                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
+                <img width="max" src="/image/title/titles3.jpg"></a>
             </div>
-            <div class="nav_layertext">deperture</div>
+            <div class="nav_layertext">Ocian</div>
 
             <div class="nav_title">
                 <div><i class="material-icons">departure_board</i></div>
@@ -314,7 +314,6 @@
         </div>
     </div>
     @endforeach
-    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d853441.1330058764!2d130.26025588813894!3d33.32523506699939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541336fa8b6fb39%3A0x7c8730805bc443cb!2z44Oc44Kk44Oc44Kk44Kt44Oj44Oz44OX5aC077yI5pen77ya44Oi44O844Oi44O844Op44Oz44OJ5LmF5L2P44Kq44O844OI44Kt44Oj44Oz44OX5aC077yJ!5e0!3m2!1sja!2sjp!4v1557394017505!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 </body>
 
 
