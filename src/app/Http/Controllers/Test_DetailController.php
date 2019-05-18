@@ -7,7 +7,10 @@ use Illuminate\Support\Facades\DB;
 use App\Camp;
 use App\Title;
 use App\Point;
-use App\Point＿Master;
+use App\Point_Master;
+use App\Facility;
+use App\Facility_Master;
+
 use Illuminate\Http\Request;
 
 class Test_DetailController extends Controller
@@ -23,6 +26,25 @@ class Test_DetailController extends Controller
         public function index($id){
             $camps = Camp::find($id);
             $titles = Title::find($id);
+
+            // $facility_masters = Facility_Master::all();
+            //   foreach($facility_masters as $facility_master){
+
+            //   }
+            
+            
+
+
+
+            foreach($camps as $camp){
+                $facility = $camp->facilities;
+          
+                foreach($facilitiese as $facility){
+                   $path = $facilitiy->facility_master->path;
+                }
+             }
+             
+           
 
         
             //  $points = $camps->points[0];
@@ -57,7 +79,7 @@ class Test_DetailController extends Controller
 
 
 
-            return view('test_detail',['camps' => $camps , 'titles' => $titles]);
+            return view('test_detail',['camps' => $camps , 'titles' => $titles, 'facility_masters' => $facility_masters]);
             // return view('test_detail',['titles' => $titles]);         
    
    

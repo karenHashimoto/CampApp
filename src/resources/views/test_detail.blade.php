@@ -34,35 +34,44 @@
     <p>プラン名に対するコメント</p><td>{{$camps->plan_comment}}</td>
     <p>プラン金額</p><td>{{$camps->plan_fee}}</td>
     <p>最大人数</p><td>{{$camps->max_people}}</td>
+
     @foreach($camps->points as $point)
         <div class='city'><img src="/image/point/{{$point->point_masters->path}}"></div>
         <div class='city'>{{$point->point_masters->point_comment}}</div>
-        @endforeach
+    @endforeach
 
 
 
 
 
-
-    <div class='a'>設備</div>
-    <div class='b'>設備</div>
-    <div class='c'>設備</div>
-    <div class='d'>設備</div>
-    <div class='e'>設備</div>
-    <div class='f'>設備</div>
-    <div class='g'>設備</div>
-    <div class='h'>設備</div>
-    <div class='i'>設備</div>
-    <div class='j'>設備</div>
-    <div class='k'>設備</div>
-    <div class='l'>設備</div>
-    <div class='m'>設備</div>
-    <div class='n'>設備</div>
-    <div class='o'>設備</div>
-    <div class='p'>設備</div>
+    <p>設備</p>
+    @foreach($facility_masters as $facility_master)    
+    {{$facility_masters->path}}
+    @endforeach
     
+   
+
+
+
+
+
+
+
+
+    <div>設備</div>
+    @foreach($camps->facilities as $facility)
+        <div class='city'><img src="/image/facility/{{$facility->facility_masters->path}}"></div>
+        <div class='city'>{{$facility->facility_masters->facility_comment}}</div>
+    @endforeach
+
+
     
-    
+
+
+
+
+
+   
    
     
         

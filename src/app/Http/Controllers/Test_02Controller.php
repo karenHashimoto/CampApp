@@ -44,14 +44,22 @@ class Test_02Controller extends Controller
    
    
    $camps = Camp::all();
-   foreach($camps as $camp){
-      $points = $camp->points;
+   // foreach($camps as $camp){
+   //    $points = $camp->points;
 
-      foreach($points as $point){
-         $path = $point->point_master->path;
+   //    foreach($points as $point){
+   //       $path = $point->point_master->path;
+   //    }
+   // }
+
+   foreach($camps as $camp){
+      $facility = $camp->facilities;
+
+      foreach($facilitiese as $facility){
+         $path = $facilitiy->facility_master->path;
       }
    }
-
+   dd($path);
 
 
    // foreach($camps  as $a){
@@ -96,7 +104,7 @@ class Test_02Controller extends Controller
    
    // // $point = $camps->points;
    // dd($camps);
-   return view('test_02',['camps' => $camp]);
+   return view('test_detail', ['camps' => $camp]);
    
 
 
