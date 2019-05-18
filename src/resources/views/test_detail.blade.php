@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <title>Test_detail</title>
     <link rel="stylesheet" href="{{ asset('css/test.css') }}">
 </head>
+
 <body>
 
-    
+
 
     <div>
         
@@ -40,18 +42,19 @@
         <div class='city'>{{$point->point_masters->point_comment}}</div>
     @endforeach
 
-
-
-
-
-    <p>設備</p>
-    @foreach($facility_masters as $facility_master)    
-    {{$facility_masters->path}}
+    @foreach($camps->cg_pictures as $cg_picture)
+        <div class='city'><img src="/image/camps_img/{{$cg_picture->cg_picture_masters->path}}"></div>
     @endforeach
+
+
+
     
-   
 
 
+
+
+
+    
 
 
 
@@ -59,10 +62,7 @@
 
 
     <div>設備</div>
-    @foreach($camps->facilities as $facility)
-        <div class='city'><img src="/image/facility/{{$facility->facility_masters->path}}"></div>
-        <div class='city'>{{$facility->facility_masters->facility_comment}}</div>
-    @endforeach
+    
 
 
     
@@ -78,7 +78,6 @@
         
         
 
-        
 
 
 
@@ -101,4 +100,5 @@
 
 
 </body>
+
 </html>

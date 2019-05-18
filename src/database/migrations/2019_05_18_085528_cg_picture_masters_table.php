@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CgPicturesTable extends Migration
+class CgPictureMastersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CgPicturesTable extends Migration
      */
     public function up()
     {
-        Schema::create('cg_pictures', function (Blueprint $table) {
+        Schema::create('cg_picture_masters', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('camp_id',10);//camp_id
-            $table->string('cg_pic_id',10);//キャンプ場画像
-            // $table->string('cg_pic_comment',10);//写真コメント
-            
-
+            $table->string('path', 25);//画像Path
+            // $table->string('point_comment', 25);//コメント
         });
     }
 
@@ -30,6 +27,6 @@ class CgPicturesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cg_pictures');
+        Schema::dropIfExists('cg_picture_masters');
     }
 }

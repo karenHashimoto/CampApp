@@ -37,7 +37,7 @@
     <div class="card_head">
         <div class="nav_title_wrap">
             <div class="nav_title_img">
-                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
+                <img width="max" src="/image/title/titles1.jpg"></a>
             </div>
             <div class="nav_layertext">deperture</div>
 
@@ -54,7 +54,7 @@
 
         <div class="card_img_wrap">
             <div class="card_img">
-                <img src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker">
+                <img src="/image/camps_img/{{$camps1->camp_img}}">
             </div>
 
 
@@ -75,48 +75,23 @@
             </div>
             <div class="cg_title_under">Point</div>
             <div class="reco_point_wrap">
+                @foreach($camps1->points as $point)
                 <div class="reco_point_unit">
                     <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
+
                     </div>
                     <div class="main_wrap">
                         <div class="full_area">
-                            <div class="reco_number">1</div>
+                            <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
                             <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
+                                <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                <div class="reco_point_unit">
-                    <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
-                    </div>
-                    <div class="main_wrap">
-                        <div class="full_area">
-                            <div class="reco_number">2</div>
-                            <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="reco_point_unit">
-                    <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
-                    </div>
-                    <div class="main_wrap">
-                        <div class="full_area">
-                            <div class="reco_number">3</div>
-
-                            <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
             <div class="detail_btn_width">
@@ -131,9 +106,9 @@
     <div class="card_head">
         <div class="nav_title_wrap">
             <div class="nav_title_img">
-                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
+                <img width="max" src="/image/title/titles2.jpg"></a>
             </div>
-            <div class="nav_layertext">deperture</div>
+            <div class="nav_layertext">Comfort</div>
 
             <div class="nav_title">
                 <div><i class="material-icons">departure_board</i></div>
@@ -148,7 +123,7 @@
 
         <div class="card_img_wrap">
             <div class="card_img">
-                <img src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker">
+                <img src="/image/camps_img/{{$camps2->camp_img}}">
             </div>
 
 
@@ -169,48 +144,22 @@
             </div>
             <div class="cg_title_under">Point</div>
             <div class="reco_point_wrap">
+                @foreach($camps2->points as $point)
                 <div class="reco_point_unit">
                     <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
+
                     </div>
                     <div class="main_wrap">
                         <div class="full_area">
-                            <div class="reco_number">1</div>
+                            <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
                             <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
+                                <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                <div class="reco_point_unit">
-                    <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
-                    </div>
-                    <div class="main_wrap">
-                        <div class="full_area">
-                            <div class="reco_number">2</div>
-                            <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="reco_point_unit">
-                    <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
-                    </div>
-                    <div class="main_wrap">
-                        <div class="full_area">
-                            <div class="reco_number">3</div>
-
-                            <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
             <div class="detail_btn_width">
@@ -224,9 +173,9 @@
     <div class="card_head">
         <div class="nav_title_wrap">
             <div class="nav_title_img">
-                <img width="max" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker"></a>
+                <img width="max" src="/image/title/titles3.jpg"></a>
             </div>
-            <div class="nav_layertext">deperture</div>
+            <div class="nav_layertext">Ocian</div>
 
             <div class="nav_title">
                 <div><i class="material-icons">departure_board</i></div>
@@ -241,7 +190,7 @@
 
         <div class="card_img_wrap">
             <div class="card_img">
-                <img src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" class="photoembed-maker">
+                <img src="/image/camps_img/{{$camps3->camp_img}}">
             </div>
 
 
@@ -262,48 +211,21 @@
             </div>
             <div class="cg_title_under">Point</div>
             <div class="reco_point_wrap">
+                @foreach($camps3->points as $point)
                 <div class="reco_point_unit">
                     <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
+
                     </div>
                     <div class="main_wrap">
                         <div class="full_area">
-                            <div class="reco_number">1</div>
+                            <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
                             <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
+                                <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="reco_point_unit">
-                    <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
-                    </div>
-                    <div class="main_wrap">
-                        <div class="full_area">
-                            <div class="reco_number">2</div>
-                            <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="reco_point_unit">
-                    <div class="reco_point_left">
-                        <i class="material-icons large-size">departure_board</i>
-                    </div>
-                    <div class="main_wrap">
-                        <div class="full_area">
-                            <div class="reco_number">3</div>
-
-                            <div class="text_area">
-                                <div class="reco_title2">満点の星空</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
             <div class="detail_btn_width">

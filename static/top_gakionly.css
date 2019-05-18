@@ -1,4 +1,12 @@
+/* リセット用 */
 
+ul{
+  padding:0;
+}
+
+
+  
+  
   /* ヘッダー等 */
   a{
     text-decoration: none;
@@ -779,3 +787,31 @@ object-fit:cover;
 .global-nav p:nth-child(5):hover ~ .global-nav--bar {
   left: 80%;
 }
+
+
+
+
+/* slick導入 */
+.single { max-width: 600px; margin: 0 auto 50px;}
+.single img{ width: 100%;}
+
+
+.slider{
+  margin: 100px auto;
+  width: 80%;
+}
+.slider img{
+  height: auto;
+  width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+.ul{
+  padding-inline-start: 0px;
+}
+
+
