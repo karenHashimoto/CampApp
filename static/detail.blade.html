@@ -11,6 +11,9 @@
   <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
   <!-- css -->
   <link rel="stylesheet" href="detail.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="reco_unit.css">
+
   <!-- material fonts -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
@@ -24,7 +27,7 @@
 </head>
 
 <body>
-  <div class="header_fixed">
+  <!-- <div class="fixed">
     <div class="header">
         <a href="◯◯" class="button_before"><i class="material-icons large-size">
             navigate_before
@@ -32,7 +35,26 @@
       <a class="logo" href="index.html">camcierge</a>
 
     </div>
-  </div>
+  </div> -->
+  <div class="fixed">
+      <div class="header">
+          <div class="before_button">
+              <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                  navigate_before
+              </i> </a>
+          </div>
+          <div class="logo_area">
+              <a class="logo" href="index.html"><img src="logo.svg"></a>
+          </div>
+          <div class="next_button">
+                  <!-- <a href="◯◯" class="button_before"><i class="material-icons large-size">
+                      navigate_before
+                  </i> </a> -->
+          </div>
+  
+      </div>
+    </div>
+
 
   <div class="camp_pic">
       <div class="cg_img" style="background-image: url(main-img.jpg)"></div>
@@ -83,19 +105,90 @@
       <div class="reco3_title">３つのおすすめポイント<i class="material-icons">beenhere</i>
       </div>
 
-      <div class="reco_point_unit">
+      <div class="recommend_column">
+        <div class="recommend_item">  
+            <!-- <div class="recommend_item_icon">
+              <img class="recommend_item_icon_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAACQElEQVR4Ae2aA6wYQRRFXxHWRlRbe2/tNmrDRj9mjagI6tipbSsoozJug1pxbQfftv9s3+xO8c6NcWfOGiMqDMMwDKPZ8D6cE63Fdp7FLT7GR+SzsP4gH5/whDd5DjuwhnPYV5pJIFpiJjbzDl8im4W/H2TzFW9jM2ZKS0mLaDYO8QcL/QbfcQizEj9ckIEnLEwueIKMxA6raBofsTCF3IumiXeaYwMKWJhOUICNnvcD97Mw5ewXf3AlC9MPVokfRvRGVhCBrOF9xAc4xcIwwWnRM6gTc0MJMIedRQsWsjBcsFC08HBIAR7WCzwMKvBIL/A+qMB70YKCkAIoEC21K8Wd8OOZgAmYgAmYgAmYgAkoMQETMAETMAETCBkTMAETMAETMAETMIE/TQBZ2F72D3d4H2x3/4vs0pOCAN5GQ6Qa0RC8dZiuU08KAsgfNUlqMWoi8h2m7NSTvMBBqQcciCng0JOUwHipB46LKeDQk5BAv7ZSD/3axhRw6ElIYGhrqYehrWMKOPfYIcSftQY+JPWAgzEFXHt+6QUe1/53Hk2QWkQTHP/nx+95Llpwoe4NiINqKA5yvZHF78E1vcCCoI8SK0S/Yivccg8UjOgqerA3mMBR8cGo9vwSZPpZUU/xAyczL4DCPPEHlqW+/deIX9IWEDGB/0RAlJiACfwtAnhb/xOlWuCdple/CPyIKMFRp149I7rWs63eRV30vfxQt3d4B/EPe+Aiv1YO8pVX2MNPL69U78VFt17DMAzDMAyjCNmNxVSrwW9fAAAAAElFTkSuQmCC" alt="">
+            </div> -->
+            <div class="reco_point_left">
+                <i class="material-icons large-size">departure_board</i>
+            </div>
+          
+            <div class="recommend_words">
+              <p class="recommend_word">満点の星空</p>
+              <p class="recommend_number">1</p>
+            </div>
+        </div>
+        <div class="recommend_text_item">
+          <div class="recommend_text_area">広々とした完全フリースペースの
+            オートキャンプ場です。
+          </div>
+        </div>
+      </div>
+
+      <div class="recommend_column">
+          <div class="recommend_item">  
+              <!-- <div class="recommend_item_icon">
+                <img class="recommend_item_icon_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAACQElEQVR4Ae2aA6wYQRRFXxHWRlRbe2/tNmrDRj9mjagI6tipbSsoozJug1pxbQfftv9s3+xO8c6NcWfOGiMqDMMwDKPZ8D6cE63Fdp7FLT7GR+SzsP4gH5/whDd5DjuwhnPYV5pJIFpiJjbzDl8im4W/H2TzFW9jM2ZKS0mLaDYO8QcL/QbfcQizEj9ckIEnLEwueIKMxA6raBofsTCF3IumiXeaYwMKWJhOUICNnvcD97Mw5ewXf3AlC9MPVokfRvRGVhCBrOF9xAc4xcIwwWnRM6gTc0MJMIedRQsWsjBcsFC08HBIAR7WCzwMKvBIL/A+qMB70YKCkAIoEC21K8Wd8OOZgAmYgAmYgAmYgAkoMQETMAETMAETCBkTMAETMAETMAETMIE/TQBZ2F72D3d4H2x3/4vs0pOCAN5GQ6Qa0RC8dZiuU08KAsgfNUlqMWoi8h2m7NSTvMBBqQcciCng0JOUwHipB46LKeDQk5BAv7ZSD/3axhRw6ElIYGhrqYehrWMKOPfYIcSftQY+JPWAgzEFXHt+6QUe1/53Hk2QWkQTHP/nx+95Llpwoe4NiINqKA5yvZHF78E1vcCCoI8SK0S/Yivccg8UjOgqerA3mMBR8cGo9vwSZPpZUU/xAyczL4DCPPEHlqW+/deIX9IWEDGB/0RAlJiACfwtAnhb/xOlWuCdple/CPyIKMFRp149I7rWs63eRV30vfxQt3d4B/EPe+Aiv1YO8pVX2MNPL69U78VFt17DMAzDMAyjCNmNxVSrwW9fAAAAAElFTkSuQmCC" alt="">
+              </div> -->
+              <div class="reco_point_left">
+                  <i class="material-icons large-size">departure_board</i>
+              </div>
+            
+              <div class="recommend_words">
+                <p class="recommend_word">満点の星空</p>
+                <p class="recommend_number">2</p>
+              </div>
+          </div>
+          <div class="recommend_text_item">
+            <div class="recommend_text_area">広々とした完全フリースペースの
+              オートキャンプ場です。
+            </div>
+          </div>
+      </div>
+
+
+      <div class="recommend_column">
+        <div class="recommend_item">  
+          <!-- <div class="recommend_item_icon">
+            <img class="recommend_item_icon_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAACQElEQVR4Ae2aA6wYQRRFXxHWRlRbe2/tNmrDRj9mjagI6tipbSsoozJug1pxbQfftv9s3+xO8c6NcWfOGiMqDMMwDKPZ8D6cE63Fdp7FLT7GR+SzsP4gH5/whDd5DjuwhnPYV5pJIFpiJjbzDl8im4W/H2TzFW9jM2ZKS0mLaDYO8QcL/QbfcQizEj9ckIEnLEwueIKMxA6raBofsTCF3IumiXeaYwMKWJhOUICNnvcD97Mw5ewXf3AlC9MPVokfRvRGVhCBrOF9xAc4xcIwwWnRM6gTc0MJMIedRQsWsjBcsFC08HBIAR7WCzwMKvBIL/A+qMB70YKCkAIoEC21K8Wd8OOZgAmYgAmYgAmYgAkoMQETMAETMAETCBkTMAETMAETMAETMIE/TQBZ2F72D3d4H2x3/4vs0pOCAN5GQ6Qa0RC8dZiuU08KAsgfNUlqMWoi8h2m7NSTvMBBqQcciCng0JOUwHipB46LKeDQk5BAv7ZSD/3axhRw6ElIYGhrqYehrWMKOPfYIcSftQY+JPWAgzEFXHt+6QUe1/53Hk2QWkQTHP/nx+95Llpwoe4NiINqKA5yvZHF78E1vcCCoI8SK0S/Yivccg8UjOgqerA3mMBR8cGo9vwSZPpZUU/xAyczL4DCPPEHlqW+/deIX9IWEDGB/0RAlJiACfwtAnhb/xOlWuCdple/CPyIKMFRp149I7rWs63eRV30vfxQt3d4B/EPe+Aiv1YO8pVX2MNPL69U78VFt17DMAzDMAyjCNmNxVSrwW9fAAAAAElFTkSuQmCC" alt="">
+          </div> -->
           <div class="reco_point_left">
               <i class="material-icons large-size">departure_board</i>
           </div>
-          <div class="main_wrap">
-              <div class="full_area">
-                  <div class="reco_number">1</div>
-                  <div class="text_area">
-                      <div class="reco_title2">満点の星空</div>
-                  </div>
-              </div>
+        
+          <div class="recommend_words">
+            <p class="recommend_word">満点の星空</p>
+            <p class="recommend_number">3</p>
           </div>
+        </div>
+        <div class="recommend_text_item">
+          <div class="recommend_text_area">広々とした完全フリースペースの
+            オートキャンプ場です。
+          </div>
+        </div>
       </div>
+
+
+      <!-- <div class="reco_point_unit">
+        <div class="reco_icon_wrap">
+          <div class="reco_point_left">
+              <i class="material-icons large-size">departure_board</i>
+          </div>
+
+          <div class="main_wrap">
+
+            <div class="reco_icon_area">
+              <div class="reco_number">1</div>
+              <div class="text_area">
+                  <div class="reco_title2">満点の星空</div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reco_text_area"></div> -->
+
+      <!-- </div>
 
       <div class="reco_point_unit">
           <div class="reco_point_left">
@@ -108,6 +201,7 @@
                       <div class="reco_title2">満点の星空</div>
                   </div>
               </div>
+              <div class="reco_textarea"></div>
           </div>
       </div>
     
@@ -123,7 +217,7 @@
                   </div>
               </div>
           </div>
-      </div>
+      </div> -->
     
 
 
@@ -148,7 +242,7 @@
 
 
 <div class="plan_wrap">
-  <div class="plan_pic"><img src=""></div>
+  <div class="plan_img"><img src="https://openweathermap.org/themes/openweathermap/assets/img/dashboardbanner.png"></div>
   <div class="plan_title_unit">
     <div class="plan_subtitle">好きな場所にテントを張れる</div>
     <div class="plan_name">フリーサイトプラン</div>
@@ -159,8 +253,12 @@
   </div>
 </div>
 
-<div class="facility">
-<div class="facility_title">
+<div class="reserve_button">
+  <div><button class="button_flat">いますぐ予約</button></div>
+</div>
+
+<!-- <div class="facility"> -->
+<!-- <div class="facility_title"> -->
 <div class="topic">設備</div>
 <!-- <div class="facility_icon">imag</div> -->
 <div class="grid-5images">
@@ -316,10 +414,25 @@
     <div class="access_comment">【電車】JR肥後本線豊後竹田駅より車で25分<br>
         【車】大分自動車道九重ICより約50分</div>
 
+<div class="cg_detail_wrap">
+  <div class="cg_detail">
+    <div class="cg_detail_column">
+      <div class="bold">キャンプ場名</div><div class="cg_detail_box">ボイボイキャンプ場</div>
+    </div>
+  </div>
 
-<div class="camp_name">ボイボイキャンプ場</div>
-<div class="camp_phone">0000-00-000</div>
-<div class="camp_adress">大分県竹田市hogehoge</div>
+  <div class="cg_detail">
+      <div class="cg_detail_column">
+        <div class="bold">電話番号</div><div class="cg_detail_box">0000-00-0000</div>
+      </div>
+  </div>
+
+  <div class="cg_detail_noborder">
+        <div class="cg_detail_column">
+          <div class="bold">住所</div><div class="cg_detail_box">大分県竹田市久住高原</div>
+        </div>
+  </div>
+</div>
 <!-- </div>
 <div class="owner_info">
 <div class="owner_img"><img src="" alt="" title="オーナー画像"></div>
@@ -353,20 +466,29 @@
 
 <div class="owner_comment">ボイボイキャンプ場の渡辺です。私が幼い頃から好きだったこの場所で、たくさんの人々にくつろいでもらい湯たりとした時間を過ごしていただく事を夢見てオープンしました。キャンプ場はお好みの場所にテントを張っていただけるフリーサイトなのでお気に入りの場所をみつけてゆっくりのんびり過ごしていただければ幸いです。スタッフ一同、皆様のお越しを心よりお待ちしています</div>
 
+
+
+
+<div class="fixed_bottom">
+  <div class="footer">
+    
+    <div class="plan_amount_unit">
+      <div class="plan_amount"><div>2,000</div><div class="fontsize_smaller">円/泊〜</div></div>
+      <div class="plan_max_people">（最大5名OK）</div>
+   </div>
+    <div class="reserve_button">
+      <div><button class="button_flat">いますぐ予約</button></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
 <!-- <div id="footer">
 <p>&copy; camcierge</p>
 </div> -->
-
-
-
-
-
-
-
-
-
-
-
 <!-- Bootstrap core JavaScript -->
 <!-- <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
