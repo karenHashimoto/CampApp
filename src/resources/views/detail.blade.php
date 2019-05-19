@@ -218,7 +218,7 @@
 <div class="grid-5images">
 @foreach($facilities as $facilities)
   <div class="image-5container">
-    <div class="facility_icon"><img src="/image/facility/{{$facilities->path}}"></div>
+    <div class="facility_icon"><img src="/image/facility/{{$facilities->path}}" width="32px" height="32px"></div>
     <div class="facility_text"><div></div>{{$facilities->facility_comment}}</div>
   </div>
 @endforeach
