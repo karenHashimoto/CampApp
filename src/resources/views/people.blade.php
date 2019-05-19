@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>camcierge</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/people.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/people.css') }}"> -->
 </head>
 
 <body>
@@ -23,27 +23,19 @@
     <div class="cg_img"><img src="/image/camps_img/{{$camps->camp_img}}" width="200" height="150"></div>
     <div class="plan_comment">{{$camps->plan_comment}}</div>
     <div class="plan_name">{{$camps->plan_name}}</div>
-    大人の人数
-    <form>
-        <select name="adlut_number">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-    </form>
-    小人の人数
-    <form>
-        <select name="child_number">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-    </form>
-    <input type="submit" name="submit" value="送信">
+    <div class="panel-body">
+
+        <form action="{{ url('people') }}" method="post" name="number">
+            {{ csrf_field()}}
+            <div>大人の人数</div>
+            <input type="text" name="adlut_child" id="adlut_child">
+            <div>子供の人数</div>
+            <input type="text" name="child_child" id="child_child">
+            <div>
+                <button type="submit"><a href="/date/{{$camps->id}}">日にちを予約</a></button></div>
+        </form>
+
+
 
 
 </body>
