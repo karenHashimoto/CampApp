@@ -1,29 +1,52 @@
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>camcierge</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('js/date.js') }}">
-    <script type="text/javascript" src="js/date.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Pacifico|Gaegu|Sacramento" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>キャンプ場日にち予約 </title>
 </head>
 
 <body>
+
     <div style="background-color:#CCC; padding : 20px;">
-        <label>CHECK IN</label>
-        <input type="text" id="fromDate">　
-        <label>～</label>
-        <label>CHECK OUT</label>
-        <input type="text" id="toDate">
+        <label>チェックイン</label>
+        <input type="text" id="inDate"><br>
+
+        <label>チェックアウト★</label>
+        <input type="text" id="outDate">
     </div>
 
+    <script>
+        < script src = "https://code.jquery.com/jquery-3.3.1.min.js" >
+    </script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
 
-
+    <script type="text/javascript">
+        $(function() {
+            $("#inDate").datepicker({
+                changeMonth: true,
+                numberOfMonths: 1,
+                onClose: function(pDate) {
+                    $("#outDate").datepicker("option", "minDate", pDate);
+                }
+            });
+            $("#outDate").datepicker({
+                changeMonth: true,
+                numberOfMonths: 1,
+                onClose: function(pDate) {
+                    $("#inDate").datepicker("option", "maxDate", pDate);
+                }
+            });
+        });
+    </script>
+</body>
 
 </html>
-</body>

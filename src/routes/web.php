@@ -19,6 +19,4 @@ Route::resource('/photos', 'PhotosController', ['only' => ['create', 'store']]);
 
 Route::get('/peoplaaae/{id}', 'PersonController@index')->name('aaa');
 
-Route::get('/number', 'NumberController@index');
-Route::post('/number', 'NumberController@confirm');
-Route::post('/number/complete', 'NumberController@complete');
+Route::get('/peoplaaae/{id}', 'PersonController@index')->name('aaa'); //

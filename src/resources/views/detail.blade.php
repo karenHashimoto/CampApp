@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>camcierge</title>
-  
+
   <meta name="viewport" content="width=device-width; initial-scale=1.0" />
   <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet'
                     type='text/css'> -->
@@ -63,7 +63,7 @@
 
 
   <div class="camp_pic">
-    <div class="cg_img" style="background-image: url(main-img.jpg)">{{$cg_imgs->path}}</div>
+    <div class="cg_img" style="background-image: url(main-img.jpg)"></div>
   </div>
 
 
@@ -133,7 +133,7 @@
         @endforeach
 
 
-       
+
 
 
         <!-- <div class="reco_point_unit">
@@ -207,59 +207,65 @@
       キャンシェルジュ限定プラン</div>
 
 
-<div class="reserve_button">
-  <div><button class="button_flat">いますぐ予約</button></div>
-</div>
+    <div class="reserve_button">
+      <div><button class="button_flat"><a href="people/{{$camps->id}}">もっと詳しくみる</a></button></div>
+    </div>
 
-<!-- <div class="facility"> -->
-<!-- <div class="facility_title"> -->
-<div class="topic">設備</div>
-<!-- <div class="facility_icon">imag</div> -->
-<div class="grid-5images">
+    <!-- <div class="facility"> -->
+    <!-- <div class="facility_title"> -->
+    <div class="topic">設備</div>
+    <!-- <div class="facility_icon">imag</div> -->
+    <div class="grid-5images">
 
-  <div class="image-5container">
-    <div class="facility_icon"><img src="http://via.placeholder.com/32x32" alt=""></div>
-    <div class="facility_text"><div>温水トイレ</div></div>
-  </div>
+      <div class="image-5container">
+        <div class="facility_icon"><img src="http://via.placeholder.com/32x32" alt=""></div>
+        <div class="facility_text">
+          <div>温水トイレ</div>
+        </div>
+      </div>
 
-  <div class="image-5container_white">
-      <div class="facility_icon"><img src="http://via.placeholder.com/32x32" alt=""></div>
-      <div class="facility_text"><div>温水トイレ</div></div>
-  </div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
+      <div class="image-5container_white">
+        <div class="facility_icon"><img src="http://via.placeholder.com/32x32" alt=""></div>
+        <div class="facility_text">
+          <div>温水トイレ</div>
+        </div>
+      </div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
+      <div class="image-5container"></div>
 
-  </div>
-  <div class="facility_explain"><div class="facility_on">■</div>設備あり  <div class="facility_off">■</div>なし</div>
+    </div>
+    <div class="facility_explain">
+      <div class="facility_on">■</div>設備あり <div class="facility_off">■</div>なし
+    </div>
 
 
   </div>
   <div class="topic">写真一覧</div>
 
   <div class="grid-3images">
-     
-      @foreach($camps->cg_pictures as $cg_picture)
+
+    @foreach($camps->cg_pictures as $cg_picture)
     <div class="image-container">
-        <img src="/image/camps_img/{{$cg_picture->cg_picture_masters->path}}">
+      <img src="/image/camps_img/{{$cg_picture->cg_picture_masters->path}}">
     </div>
-      @endforeach
-   
+    @endforeach
+
   </div>
 
 
@@ -297,7 +303,7 @@
   <!-- 地図アイコン用リンク -->
   <div class="map">
     <div>
-         {!! $camps->map_link !!}
+      {!! $camps->map_link !!}
     </div>
   </div>
 
@@ -361,7 +367,7 @@
   <div class="owner_pic"><img src="/image/owner/{{$camps->owner_pic}}"></div>
 
   <div class="owner_comment">
-      {{$camps->owner_comment}}
+    {{$camps->owner_comment}}
   </div>
 
 
@@ -378,7 +384,7 @@
         <div class="plan_max_people">{{$camps->max_people}}名</div>
       </div>
       <div class="reserve_button">
-        <div><button class="button_flat">いますぐ予約</button></div>
+        <div><button class="button_flat"><a href="people/{{$camps->id}}">もっと詳しくみる</a></button></div>
       </div>
 
     </div>

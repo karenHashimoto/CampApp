@@ -96,7 +96,7 @@
             </div>
             <div class="detail_btn_width">
 
-                <div class="detail_btn"><a href="test_detail/{{$camps1->id}}">もっと詳しくみる</a>
+                <div class="detail_btn"><a href="detail/{{$camps1->id}}">もっと詳しくみる</a>
                 </div>
             </div>
         </div>
@@ -164,7 +164,7 @@
             </div>
             <div class="detail_btn_width">
 
-                <div class="detail_btn"><a href="test_detail/{{$camps2->id}}">もっと詳しくみる</a>
+                <div class="detail_btn"><a href="detail/{{$camps2->id}}">もっと詳しくみる</a>
                 </div>
             </div>
         </div>
@@ -230,7 +230,7 @@
             </div>
             <div class="detail_btn_width">
 
-                <div class="detail_btn"><a href="test_detail/{{$camps3->id}}">もっと詳しくみる</a>
+                <div class="detail_btn"><a href="detail/{{$camps3->id}}">もっと詳しくみる</a>
                 </div>
             </div>
         </div>
