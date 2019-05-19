@@ -15,10 +15,10 @@
   <!-- <link rel="stylesheet" href="detail.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="reco_unit.css"> -->
-  <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
+  
   <link rel="stylesheet" href="{{ asset('css/header.css') }}">
   <link rel="stylesheet" href="{{ asset('css/reco_unit.css') }}">
-
+  <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
   <!-- material fonts -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet"> -->
