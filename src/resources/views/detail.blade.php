@@ -63,7 +63,7 @@
 
 
   <div class="camp_pic">
-    <div class="cg_img" style="background-image: url(main-img.jpg)"></div>
+    <div class="cg_img" style="background-image: url(/image/camps_img/{{$camps->camp_img}})"></div>
   </div>
 
 
@@ -208,7 +208,7 @@
 
 
     <div class="reserve_button">
-      <div><button class="button_flat"><a href="people/{{$camps->id}}">もっと詳しくみる</a></button></div>
+      <div><button class="button_flat"><a href="/people/{{$camps->id}}">今すぐ予約</a></button></div>
     </div>
 
     <!-- <div class="facility"> -->
@@ -303,7 +303,7 @@
   <!-- 地図アイコン用リンク -->
   <div class="map">
     <div>
-      {!! $camps->map_link !!}
+      <iframe src="{{$camps->map_link}}" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -384,7 +384,7 @@
         <div class="plan_max_people">{{$camps->max_people}}名</div>
       </div>
       <div class="reserve_button">
-        <div><button class="button_flat"><a href="people/{{$camps->id}}">もっと詳しくみる</a></button></div>
+        <div><button class="button_flat"><a href="/people/{{$camps->id}}">今すぐ予約</a></button></div>
       </div>
 
     </div>

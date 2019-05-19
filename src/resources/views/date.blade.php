@@ -10,6 +10,22 @@
 
 <body>
 
+    <div class="header_fixed">
+        <div class="header">camcierge</div>
+    </div>
+    <div class="tab">
+        <div class="top_var">一括予約
+            キャンシェルジュのキャンプ場予約
+        </div>
+    </div>
+
+    <div class="camp_id">{{$camps->camp_name}}</div>
+    <div class="camp_area">（{{$camps->state}}/
+        {{$camps->city}})</div>
+    <div class="cg_img"><img src="/image/camps_img/{{$camps->camp_img}}" width="200" height="150"></div>
+    <div class="plan_comment">{{$camps->plan_comment}}</div>
+    <div class="plan_name">{{$camps->plan_name}}</div>
+
     <div style="background-color:#CCC; padding : 20px;">
         <label>チェックイン</label>
         <input type="text" id="inDate"><br>
