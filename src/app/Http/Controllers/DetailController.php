@@ -19,7 +19,11 @@ class DetailController extends Controller
         {
             $camps = Camp::find($id);
             $titles = Title::find($id);
-            $cg_imgs = Cg_Picture_Master::whereIn('id',[1,10,19,28,38,46,55,64,73,81]);
+            // $cg_imgs = Cg_Picture_Master::whereIn('id',[1,10,19,28,38,46,55,64,73]);
+            // $cg_img = DB::table('cg_pictures')->where('camp_id')->first();
+            // dd($cg_img);
+            // $cg_img = $cg_imgs(0);
+            // dd($cg_imgs);
             // dd($cg_imgs);
             // $points1 = Point::whereIn('id',[1, 2, 3])->get();
             // $points2 = Point::whereIn('id',[2, 3, 4])->get();
@@ -30,7 +34,7 @@ class DetailController extends Controller
             // $points7 = Point::whereIn('id',[1, 1, 1])->get();
             // $points8 = Point::whereIn('id',[4, 1, 2])->get();
             // $points9 = Point::whereIn('id',[3, 2, 3])->get();
-
+            
         
             //  foreach ($cg_pictures as $cg_picture) {
             //     dd($path = $cg_picture->cg_picture_master);
@@ -39,7 +43,7 @@ class DetailController extends Controller
             //piture facility
                 
 
-        return view('detail', ['camps' => $camps, 'titles' => $titles, 'cg_imgs' => $cg_imgs]);
+        return view('detail', ['camps' => $camps, 'titles' => $titles]);
         // return view('test_detail',['titles' => $titles]);         
         }
 

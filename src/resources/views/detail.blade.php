@@ -63,7 +63,7 @@
 
 
   <div class="camp_pic">
-    <div class="cg_img" style="background-image: url(main-img.jpg)">{{$cg_imgs->path}}</div>
+    <div class="cg_img" style="background-image: url(/image/camps_img/{{$camps->camp_img}})"></div>                                          
   </div>
 
 
@@ -297,7 +297,7 @@
   <!-- 地図アイコン用リンク -->
   <div class="map">
     <div>
-         {!! $camps->map_link !!}
+   <iframe  src= "{{$camps->map_link}}" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
 
