@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 
 Route::get('/', 'CampsController@index');
 
-Route::get('/detail/{id}', 'Test_DetailController@index');
+Route::get('/detail/{id}', 'DetailController@index');
 
 Route::get('/test_02/{id}', 'Test_02Controller@index');
 

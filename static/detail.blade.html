@@ -70,11 +70,11 @@
   <div class="cg_title_unit">
     <div class="cg_subtext">キャンシェルジュのキャンプ場予約</div>
     <div class="cg_title">
-      <div class="cg_name">キャンプ場名</div>
+      <div class="cg_name">{{$camps->camp_name}}</div>
       <!-- <div class="cg_area_unit"> -->
       <div class="cg_area">(
-        <div class="cg_state_name">県名</div>/
-        <div class="cg_area_name">エリア名</div>)
+        <div class="cg_state_name">{{$camps->state}}</div>/
+        <div class="cg_area_name">{{$camps->city}}</div>)
       </div>
     </div>
   </div>
@@ -86,19 +86,12 @@
     <p><a href="#">アクセス</a></p>
     <p><a href="#">オーナー</a></p>
     <span class="global-nav--bar"></span>
-<<<<<<< HEAD
   </nav>
-=======
-
-
-    
-</nav>
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
 
   <div id="main">
 
-    <div class="font-serif">大分・久住高原で<br>大自然を体感しよう </div>
-    <div class="nav_textbox">広々とした完全フリースペースのオートキャンプ場です。隣が気にならないお気に入りの場所を見つけ、ゆったりとしたひと時をお楽しみください。</div>
+    <div class="font-serif">{{$camps->cg_title}}</div>
+    <div class="nav_textbox">{{$camps->cg_subtitle}}</div>
 
     <div class="reco3_wrap">
 
@@ -113,7 +106,7 @@
 
         <div class="reco3_title">３つのおすすめポイント<i class="material-icons">beenhere</i>
         </div>
-
+        @foreach($camps->points as $point)
         <div class="recommend_column">
           <div class="recommend_item">
             <!-- <div class="recommend_item_icon">
@@ -124,65 +117,19 @@
             </div>
 
             <div class="recommend_words">
-              <p class="recommend_word">満点の星空</p>
-              <p class="recommend_number">1</p>
+              <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
+              <p class="recommend_number"><img src="/image/point/{{$point->point_masters->path}}"></p>
             </div>
           </div>
           <div class="recommend_text_item">
-            <div class="recommend_text_area">広々とした完全フリースペースの
-              オートキャンプ場です。
+            <div class="recommend_text_area">{{$camps->reco_text1}}
             </div>
           </div>
         </div>
-
-        <div class="recommend_column">
-          <div class="recommend_item">
-            <!-- <div class="recommend_item_icon">
-                <img class="recommend_item_icon_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAACQElEQVR4Ae2aA6wYQRRFXxHWRlRbe2/tNmrDRj9mjagI6tipbSsoozJug1pxbQfftv9s3+xO8c6NcWfOGiMqDMMwDKPZ8D6cE63Fdp7FLT7GR+SzsP4gH5/whDd5DjuwhnPYV5pJIFpiJjbzDl8im4W/H2TzFW9jM2ZKS0mLaDYO8QcL/QbfcQizEj9ckIEnLEwueIKMxA6raBofsTCF3IumiXeaYwMKWJhOUICNnvcD97Mw5ewXf3AlC9MPVokfRvRGVhCBrOF9xAc4xcIwwWnRM6gTc0MJMIedRQsWsjBcsFC08HBIAR7WCzwMKvBIL/A+qMB70YKCkAIoEC21K8Wd8OOZgAmYgAmYgAmYgAkoMQETMAETMAETCBkTMAETMAETMAETMIE/TQBZ2F72D3d4H2x3/4vs0pOCAN5GQ6Qa0RC8dZiuU08KAsgfNUlqMWoi8h2m7NSTvMBBqQcciCng0JOUwHipB46LKeDQk5BAv7ZSD/3axhRw6ElIYGhrqYehrWMKOPfYIcSftQY+JPWAgzEFXHt+6QUe1/53Hk2QWkQTHP/nx+95Llpwoe4NiINqKA5yvZHF78E1vcCCoI8SK0S/Yivccg8UjOgqerA3mMBR8cGo9vwSZPpZUU/xAyczL4DCPPEHlqW+/deIX9IWEDGB/0RAlJiACfwtAnhb/xOlWuCdple/CPyIKMFRp149I7rWs63eRV30vfxQt3d4B/EPe+Aiv1YO8pVX2MNPL69U78VFt17DMAzDMAyjCNmNxVSrwW9fAAAAAElFTkSuQmCC" alt="">
-              </div> -->
-            <div class="reco_point_left">
-              <i class="material-icons large-size">departure_board</i>
-            </div>
-
-            <div class="recommend_words">
-              <p class="recommend_word">満点の星空</p>
-              <p class="recommend_number">2</p>
-            </div>
-          </div>
-          <div class="recommend_text_item">
-            <div class="recommend_text_area">広々とした完全フリースペースの
-              オートキャンプ場です。
-            </div>
-          </div>
-        </div>
+        @endforeach
 
 
-<<<<<<< HEAD
-        <div class="recommend_column">
-          <div class="recommend_item">
-            <!-- <div class="recommend_item_icon">
-=======
-      <div class="recommend_column_noline">
-        <div class="recommend_item">  
-          <!-- <div class="recommend_item_icon">
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
-            <img class="recommend_item_icon_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAACQElEQVR4Ae2aA6wYQRRFXxHWRlRbe2/tNmrDRj9mjagI6tipbSsoozJug1pxbQfftv9s3+xO8c6NcWfOGiMqDMMwDKPZ8D6cE63Fdp7FLT7GR+SzsP4gH5/whDd5DjuwhnPYV5pJIFpiJjbzDl8im4W/H2TzFW9jM2ZKS0mLaDYO8QcL/QbfcQizEj9ckIEnLEwueIKMxA6raBofsTCF3IumiXeaYwMKWJhOUICNnvcD97Mw5ewXf3AlC9MPVokfRvRGVhCBrOF9xAc4xcIwwWnRM6gTc0MJMIedRQsWsjBcsFC08HBIAR7WCzwMKvBIL/A+qMB70YKCkAIoEC21K8Wd8OOZgAmYgAmYgAmYgAkoMQETMAETMAETCBkTMAETMAETMAETMIE/TQBZ2F72D3d4H2x3/4vs0pOCAN5GQ6Qa0RC8dZiuU08KAsgfNUlqMWoi8h2m7NSTvMBBqQcciCng0JOUwHipB46LKeDQk5BAv7ZSD/3axhRw6ElIYGhrqYehrWMKOPfYIcSftQY+JPWAgzEFXHt+6QUe1/53Hk2QWkQTHP/nx+95Llpwoe4NiINqKA5yvZHF78E1vcCCoI8SK0S/Yivccg8UjOgqerA3mMBR8cGo9vwSZPpZUU/xAyczL4DCPPEHlqW+/deIX9IWEDGB/0RAlJiACfwtAnhb/xOlWuCdple/CPyIKMFRp149I7rWs63eRV30vfxQt3d4B/EPe+Aiv1YO8pVX2MNPL69U78VFt17DMAzDMAyjCNmNxVSrwW9fAAAAAElFTkSuQmCC" alt="">
-          </div> -->
-            <div class="reco_point_left">
-              <i class="material-icons large-size">departure_board</i>
-            </div>
-
-            <div class="recommend_words">
-              <p class="recommend_word">満点の星空</p>
-              <p class="recommend_number">3</p>
-            </div>
-          </div>
-          <div class="recommend_text_item">
-            <div class="recommend_text_area">広々とした完全フリースペースの
-              オートキャンプ場です。
-            </div>
-          </div>
-        </div>
+       
 
 
         <!-- <div class="reco_point_unit">
@@ -256,98 +203,6 @@
       キャンシェルジュ限定プラン</div>
 
 
-<<<<<<< HEAD
-    <div class="plan_wrap">
-      <div class="plan_img"><img src="https://openweathermap.org/themes/openweathermap/assets/img/dashboardbanner.png">
-      </div>
-      <div class="plan_title_unit">
-        <div class="plan_subtitle">好きな場所にテントを張れる</div>
-        <div class="plan_name">フリーサイトプラン</div>
-      </div>
-      <div class="plan_amount_unit">
-        <div class="plan_amount">
-          <div>2,000</div>
-          <div class="fontsize_smaller">円/泊〜</div>
-        </div>
-        <div class="plan_max_people">（最大5名OK）</div>
-      </div>
-    </div>
-
-    <div class="reserve_button">
-      <div><button class="button_flat">いますぐ予約</button></div>
-    </div>
-
-    <!-- <div class="facility"> -->
-    <!-- <div class="facility_title"> -->
-    <div class="topic">設備</div>
-    <!-- <div class="facility_icon">imag</div> -->
-    <div class="grid-5images">
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-      <div class="image-5container">
-        <img src="http://via.placeholder.com/200x400" alt="">
-      </div>
-
-    </div>
-=======
 <div class="reserve_button">
   <div><button class="button_flat">いますぐ予約</button></div>
 </div>
@@ -388,46 +243,19 @@
 
   </div>
   <div class="facility_explain"><div class="facility_on">■</div>設備あり  <div class="facility_off">■</div>なし</div>
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
 
 
   </div>
   <div class="topic">写真一覧</div>
 
   <div class="grid-3images">
+     
+      @foreach($camps->cg_pictures as $cg_picture)
     <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
+        <div class='city'><img src="/image/camps_img/{{$cg_picture->cg_picture_masters->path}}"></div>
     </div>
-    <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
-    </div>
-
-    <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
-    </div>
-    <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
-    </div>
-
-    <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
-    </div>
-    <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
-    </div>
-
-    <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
-    </div>
-    <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
-    </div>
-    <div class="image-container">
-      <img src="http://via.placeholder.com/200x400" alt="">
-    </div>
-
-
-
+      @endforeach
+   
   </div>
 
 
@@ -465,9 +293,7 @@
   <!-- 地図アイコン用リンク -->
   <div class="map">
     <div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.27582958991!2d138.55973331525104!3d35.398412980261185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x527ef1e8bbb1107c!2z44G144KC44Go44Gj44Gx44KJ!5e0!3m2!1sja!2sjp!4v1554697120382!5m2!1sja!2sjp"
-        width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        {{$camps->map_link}}
     </div>
   </div>
 
@@ -475,28 +301,27 @@
     <i class="material-icons">place</i>地図アプリでみる
   </a>
 
-  <div class="access_comment">【電車】JR肥後本線豊後竹田駅より車で25分<br>
-    【車】大分自動車道九重ICより約50分</div>
+  <div class="access_comment">{{$camps->access_comment}}</div>
 
   <div class="cg_detail_wrap">
     <div class="cg_detail">
       <div class="cg_detail_column">
         <div class="bold">キャンプ場名</div>
-        <div class="cg_detail_box">ボイボイキャンプ場</div>
+        <div class="cg_detail_box">{{$camps->camp_name}}</div>
       </div>
     </div>
 
     <div class="cg_detail">
       <div class="cg_detail_column">
         <div class="bold">電話番号</div>
-        <div class="cg_detail_box">0000-00-0000</div>
+        <div class="cg_detail_box">{{$camps->phone}}</div>
       </div>
     </div>
 
     <div class="cg_detail_noborder">
       <div class="cg_detail_column">
         <div class="bold">住所</div>
-        <div class="cg_detail_box">大分県竹田市久住高原</div>
+        <div class="cg_detail_box">'{{$camps->state}}'+'{{$camps->city}}'</div>
       </div>
     </div>
   </div>
@@ -529,10 +354,10 @@
 
   <div class="topic">オーナー情報</div>
 
-  <div class="owner_pic"><img src="https://kuju-kogen.jp/wp-content/uploads/2016/05/boiboi-1.jpg"></a></div>
+  <div class="owner_pic"><img src="/image/owner/{{$camps->owner_pic}}"></div>
 
   <div class="owner_comment">
-    ボイボイキャンプ場の渡辺です。私が幼い頃から好きだったこの場所で、たくさんの人々にくつろいでもらい湯たりとした時間を過ごしていただく事を夢見てオープンしました。キャンプ場はお好みの場所にテントを張っていただけるフリーサイトなのでお気に入りの場所をみつけてゆっくりのんびり過ごしていただければ幸いです。スタッフ一同、皆様のお越しを心よりお待ちしています
+      {{$camps->owner_comment}}
   </div>
 
 
@@ -543,10 +368,10 @@
 
       <div class="plan_amount_unit">
         <div class="plan_amount">
-          <div>2,000</div>
+          <div>{{$camps->plan_fee}}</div>
           <div class="fontsize_smaller">円/泊〜</div>
         </div>
-        <div class="plan_max_people">（最大5名OK）</div>
+        <div class="plan_max_people">{{$camps->max_people}}</div>
       </div>
       <div class="reserve_button">
         <div><button class="button_flat">いますぐ予約</button></div>

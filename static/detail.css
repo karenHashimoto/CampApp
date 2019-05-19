@@ -10,13 +10,7 @@ ul {
 a {
   text-decoration: none;
 }
-<<<<<<< HEAD
-
-.body {
-  font-family: 'Roboto', sans-serif;
-=======
   body{
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Roboto', sans-serif;
 
@@ -824,22 +818,12 @@ html {
   /* font-weight: bold; */
   margin: 16px 16px 0px;
 }
-<<<<<<< HEAD
-
-.cg_name {
-  font-size: 1.4em;
-  margin: 0px 8px 0px;
-}
-
-.cg_title2 {
-=======
 .cg_name{
   font-size: 1.6em;
   margin: 0px 8px 0px 16px;
 }
 
 .cg_title2{
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
   display: flex;
   justify-content: center;
   align-items: center;
@@ -926,13 +910,8 @@ html {
   text-align: left;
 }
 
-<<<<<<< HEAD
-.topic {
-  /* display: flex; */
-=======
 .topic{
   /* display: flex;  */
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
   /* justify-content: center; */
   /* text-align: center; */
   /* padding: 8px 0px 4px 0px; */
@@ -941,11 +920,7 @@ html {
   font-weight: bold;
   /* width: 80%; */
   /* border-bottom: solid 1px #FDB3AD; */
-<<<<<<< HEAD
-  padding: 16px 0px 8px 16px;
-=======
   padding: 32px 0px 8px 16px;
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
   border-bottom: solid 1.4px #86929D;
   margin-bottom: 16px;
 }
@@ -981,11 +956,6 @@ html {
   margin-top: 16px;
 }
 
-<<<<<<< HEAD
-.reco3_title {
-  text-align: center;
-  color: #62A0B9;
-=======
 .reco3_title{
     text-align: center;
     color:#62A0B9;
@@ -993,7 +963,6 @@ html {
     align-items: center;
     justify-content: center; /* 子要素をflexboxにより中央に配置する */
   
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
 }
 
 .parenthesis {
@@ -1042,34 +1011,6 @@ html {
   margin: 1vw;
 }
 
-<<<<<<< HEAD
-.image-container {
-  overflow: hidden;
-  width: 32vw;
-  height: 32vw;
-
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.grid-5images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 1vw;
-  margin: 1vw;
-}
-
-.image-5container {
-  overflow: hidden;
-  width: 18.8vw;
-  height: 18.8vw;
-
-=======
 /* 20グリッド */
   .grid-5images{
     display: grid;
@@ -1125,7 +1066,6 @@ html {
 .facility_off{
   color: rgba(134, 146, 157, 0.28);
   margin-left: 4px;
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
 }
 
 
@@ -1177,15 +1117,6 @@ html {
 
 /* キャンプ場情報 */
 
-<<<<<<< HEAD
-.cg_detail {
-  color: #86929D;
-  font-size: 0.7em;
-  border-bottom: solid 1px;
-  margin: 0 5vw;
-  padding: 12px 0;
-  width: 90vw;
-=======
 .cg_detail{
     color: #86929D;
     font-size: 0.7em;
@@ -1193,7 +1124,6 @@ html {
     margin: 0 5vw;
     padding: 12px 0;
     width: 90vw;
->>>>>>> 287dd934b6faec9c08686ba2463007ad567e6f43
 }
 
 .cg_detail_noborder {

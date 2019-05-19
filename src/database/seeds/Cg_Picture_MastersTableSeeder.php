@@ -28,7 +28,7 @@ class Cg_picture_MastersTableSeeder extends Seeder
             'path' => 'cg5.jpg',
             ],
             ['id' => '6',
-            'path' => 'cg5.jpg',
+            'path' => 'cg6.jpg',
             ],
             ['id' => '7',
             'path' => 'cg7.jpg',

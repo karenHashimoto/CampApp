@@ -47,7 +47,7 @@ class Cg_PicturesTableSeeder extends Seeder
             'cg_pic_id' => '8',
             ],
             ['id' => '9',
-            'camp_id' => '2',
+            'camp_id' => '1',
             'cg_pic_id' => '9',
             ],
 
