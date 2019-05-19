@@ -9,9 +9,10 @@ ul{
   a{
     text-decoration: none;
 }
-  .body{
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Noto Sans JP', sans-serif;
+  body{
+    font-family: 'Roboto' ,'Noto Sans JP', sans-serif;
+
+  /* font-family: 'Roboto', sans-serif; */
   /* width: 100%; */
   background-color: #FEFFFE;
   margin:0px;
@@ -434,7 +435,7 @@ body, html {
   }
   
   .button_flat:active {
-    width: 80%;
+    /* width: 80%; */
     background: #BF735C;
     border-bottom: #E2996B 1px solid;
     border-left: #E2996B 1px solid;
