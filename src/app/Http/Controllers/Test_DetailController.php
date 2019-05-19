@@ -8,6 +8,11 @@ use App\Camp;
 use App\Title;
 use App\Point;
 use App\Point_Master;
+use App\Facility;
+use App\Facility_Master;
+use App\Cg_Picture;
+use App\Cg_Picture_Master;
+
 use Illuminate\Http\Request;
 
 class Test_DetailController extends Controller
@@ -35,14 +40,15 @@ class Test_DetailController extends Controller
         // $points8 = Point::whereIn('id',[4, 1, 2])->get();
         // $points9 = Point::whereIn('id',[3, 2, 3])->get();
 
-
+       
+        //  foreach ($cg_pictures as $cg_picture) {
+        //     dd($path = $cg_picture->cg_picture_master);
+            
+         
+      
 
         // 必要なテーブル
         //piture facility
-
-
-
-
 
 
         return view('test_detail', ['camps' => $camps, 'titles' => $titles]);
@@ -51,4 +57,21 @@ class Test_DetailController extends Controller
 
 
     }
+
+    // public function index2()
+    // {
+    //     $camps = Camp::all();
+    //     foreach ($camps as $camp) {
+    //       $cg_pictures = $camp->cg_pictures;
+    //          dd($cg_pictures);
+    //     }
+
+        
+    // }
+
+
+
 }
+
+
+

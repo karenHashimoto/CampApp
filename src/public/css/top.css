@@ -405,6 +405,7 @@ testSVG>svg {
     /* align-items: center; */
 }
 
+} */
 
 /* 仮入力 */
 
@@ -429,13 +430,7 @@ html {
 
 }
 
-img?? {
-    width: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    vertical-align: bottom;
-}
+
 
 .main_wrap {
     height: auto !important;

@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Facility_Master;
+use App\Camp;
 
 class Facility extends Model
 {
@@ -13,6 +15,6 @@ class Facility extends Model
 
     public function facility_masters()
     {
-        return $this->hasOne('App\Facility_Master');
+        return $this->hasOne('App\Facility_Master', 'id' ,'facility_id');
     }
 }

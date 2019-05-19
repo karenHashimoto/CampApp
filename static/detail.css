@@ -10,9 +10,13 @@ ul {
 a {
   text-decoration: none;
 }
+<<<<<<< HEAD
 
 .body {
   font-family: 'Roboto', sans-serif;
+=======
+  body{
+>>>>>>> 23841ebda8a69ca1258d6e7c016b3a93786d99d5
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Roboto', sans-serif;
 
@@ -821,6 +825,7 @@ html {
   /* font-weight: bold; */
   margin: 16px 16px 0px;
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD .cg_name {
   font-size: 1.4em;
@@ -838,6 +843,18 @@ html {
     justify-content: center;
     align-items: center;
   }
+=======
+.cg_name{
+  font-size: 1.6em;
+  margin: 0px 8px 0px 16px;
+}
+
+.cg_title2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+>>>>>>> 23841ebda8a69ca1258d6e7c016b3a93786d99d5
 
   .cg_area {
     display: flex;
@@ -916,9 +933,26 @@ html {
     left: 80%;
   }
 
+<<<<<<< HEAD
   .button_before {
     text-align: left;
   }
+=======
+.topic{
+  /* display: flex;  */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* padding: 8px 0px 4px 0px; */
+  color: #86929D;
+  font-size: 1.1em;
+  font-weight: bold;
+  /* width: 80%; */
+  /* border-bottom: solid 1px #FDB3AD; */
+  padding: 32px 0px 8px 16px;
+  border-bottom: solid 1.4px #86929D;
+  margin-bottom: 16px;
+}
+>>>>>>> 23841ebda8a69ca1258d6e7c016b3a93786d99d5
 
   <<<<<<< HEAD .topic {
 
@@ -945,6 +979,7 @@ html {
     background-position: center center;
     padding-top: 100%;
     width: 100%; */
+<<<<<<< HEAD
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1204,6 +1239,221 @@ html {
 
           .cg_detail_wrap {
             /* display: flex;
+=======
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* width:33%; */
+  /* height:auto; */
+}
+
+.cg_img_grid_unit {
+  width: 33%;
+}
+
+.cg_pictures_grid {
+  display: flex;
+  width: auto;
+}
+
+.font-serif {
+  font-family: 'Noto Serif JP', serif;
+  color: #DB8483;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.reco3_title{
+    text-align: center;
+    color:#62A0B9;
+    display:flex;
+    align-items: center;
+    justify-content: center; /* 子要素をflexboxにより中央に配置する */
+  
+}
+
+.parenthesis {
+  position: relative;
+  margin: 8px;
+  padding: 8px 15px 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.parenthesis::before,
+.parenthesis::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.parenthesis::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #86929D;
+  border-left: 1px solid #86929D;
+}
+
+.parenthesis::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #86929D;
+  border-right: 1px solid #86929D;
+}
+
+.reset_css {
+  padding: 0;
+}
+
+
+/* 9 grid */
+
+.grid-3images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  margin: 1vw;
+}
+
+/* 20グリッド */
+  .grid-5images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    margin: 1vw;
+  }
+
+ .image-5container{
+   overflow:hidden;
+   width:18.8vw;
+   height:18.8vw;
+   background-color:#86929D;
+ }
+ .image-5container_white{
+  overflow:hidden;
+  width:18.8vw;
+  height:18.8vw;
+  background-color:rgba(134, 146, 157, 0.28);
+}
+
+
+
+.facility_icon{
+  height:80%;
+  padding-top:20%;
+  display:flex;
+  align-items: center;
+  justify-content: center; /* 子要素をflexboxにより中央に配置する */
+
+}
+
+ .facility_text{
+  color: #FFFFFF;
+  height: 20%;
+  font-size: 0.4em;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  margin-top: -5px;
+ }
+
+.facility_explain{
+  font-weight: bold;
+  font-size: 0.7em;
+  color: #86929D;
+  margin: 0 0 0 auto;
+  display: flex;
+  width: fit-content;
+  margin-right: 8px;
+}
+
+.facility_off{
+  color: rgba(134, 146, 157, 0.28);
+  margin-left: 4px;
+}
+
+
+
+.owner_pic {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 子要素をflexboxにより中央に配置する */
+
+}
+
+.owner_pic img {
+  object-fit: cover;
+  width: 85vw;
+  height: 85vw;
+  filter: grayscale(0%) sepia(21%) saturate(98%) hue-rotate(0deg) invert(10%) opacity(100%) brightness(132%) contrast(95%) blur(0px) drop-shadow(rgb(0, 0, 0) 0px 0px 0px);
+}
+
+.owner_comment {
+  color: #86929D;
+  font-size: 0.7em;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* map */
+.map {
+  padding: 0 6vw;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.btn-app {
+  margin-left: 7vw;
+  color: #86929D;
+  font-size: 0.7em;
+
+}
+
+.access_comment {
+  color: #86929D;
+  font-size: 0.7em;
+  padding: 16px;
+
+}
+
+/* キャンプ場情報 */
+
+.cg_detail{
+    color: #86929D;
+    font-size: 0.7em;
+    border-bottom: solid 1px #D4D4D4;
+    margin: 0 5vw;
+    padding: 12px 0;
+    width: 90vw;
+}
+
+.cg_detail_noborder {
+  color: #86929D;
+  font-size: 0.7em;
+  /* border-bottom: solid 1px; */
+  margin: 0 5vw;
+  width: 90vw;
+  padding: 12px 0
+}
+
+.cg_detail_column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cg_detail_wrap {
+  /* display: flex;
+>>>>>>> 23841ebda8a69ca1258d6e7c016b3a93786d99d5
   justify-content: center;
   align-items: center; */
           }

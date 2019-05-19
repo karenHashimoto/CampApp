@@ -39,12 +39,7 @@ class Test_02Controller extends Controller
       //  $path = $point;
 
       //  dd($path);
-
-
-
-
-
-      $camps = Camp::all();
+$camps = Camp::all();
       foreach ($camps as $camp) {
          $points = $camp->points;
 
@@ -76,10 +71,6 @@ class Test_02Controller extends Controller
       // @endforeach
       //   @empty
       //   @endelse
-
-
-
-
 
 
       // dd($camps);

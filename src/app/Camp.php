@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Point;
+use App\Facility;
+use App\Cg_Picture;
 
 
 class Camp extends Model
@@ -19,5 +21,10 @@ class Camp extends Model
     public function facilities()
     {
         return $this->hasMany('App\Facility');
+    }
+
+    public function cg_pictures()
+    {
+        return $this->hasMany('App\Cg_Picture');
     }
 }

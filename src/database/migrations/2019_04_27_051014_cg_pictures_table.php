@@ -14,11 +14,11 @@ class CgPicturesTable extends Migration
     public function up()
     {
         Schema::create('cg_pictures', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->increments('id');
             $table->string('camp_id',10);//camp_id
-            $table->string('cg_pic',128);//キャンプ場画像
-            $table->string('cg_pic_comment',10);//写真コメント
-            $table->timestamp('created_at')->nullable();
+            $table->string('cg_pic_id',10);//キャンプ場画像
+            // $table->string('cg_pic_comment',10);//写真コメント
+            
 
         });
     }
