@@ -23,6 +23,8 @@ Route::resource('/photos', 'PhotosController', ['only' => ['create', 'store']]);
 
 Route::get('/people/{id}', 'PersonController@index');
 
-Route::post('/people/{id}', 'PersonController@store');
+Route::post('/people', 'PersonController@store')->name('people');
+// Route::post('/people/{id}', 'PersonController@store')->name('people');
+// Route::post('/people/{id}', 'PersonController@store');
 
 Route::get('/date/{id}', 'DateController@index');

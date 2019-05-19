@@ -11,6 +11,9 @@ class DateController extends Controller
 {
     public function index($id)
     {
+
+
+        dd('ok');
         $camps = Camp::find($id);
         return view('date', ['camps' => $camps]);
     }
