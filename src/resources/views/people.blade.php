@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>camcierge</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/people.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/people.css') }}"> -->
 </head>
 
 <body>
@@ -25,27 +25,15 @@
     <div class="plan_name">{{$camps->plan_name}}</div>
     <div class="panel-body">
 
-        <form action="{{ url('people') }}" method="POST">
+        <form action="{{ url('people') }}" method="post" name="number">
             {{ csrf_field()}}
             <div>大人の人数</div>
-            <select name="adlut_number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <div>こどもの人数</div>
-            <select name="child_number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            <button type="submit">次へ進む</button>
+            <input type="text" name="adlut_child" id="adlut_child">
+            <div>子供の人数</div>
+            <input type="text" name="child_child" id="child_child">
+            <div>
+                <button type="submit"><a href="/date/{{$camps->id}}">日にちを予約</a></button></div>
         </form>
-        @foreach ($)
 
 
 
