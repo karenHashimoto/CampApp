@@ -216,36 +216,17 @@
 <div class="topic">設備</div>
 <!-- <div class="facility_icon">imag</div> -->
 <div class="grid-5images">
-
+@foreach($facilities as $facilities)
   <div class="image-5container">
-    <div class="facility_icon"><img src="http://via.placeholder.com/32x32" alt=""></div>
-    <div class="facility_text"><div>温水トイレ</div></div>
+    <div class="facility_icon"><img src="/image/facility/{{$facilities->path}}"></div>
+    <div class="facility_text"><div></div>{{$facilities->facility_comment}}</div>
   </div>
+@endforeach
+  
 
-  <div class="image-5container_white">
-      <div class="facility_icon"><img src="http://via.placeholder.com/32x32" alt=""></div>
-      <div class="facility_text"><div>温水トイレ</div></div>
-  </div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
+  
 
-  </div>
+
   <div class="facility_explain"><div class="facility_on">■</div>設備あり  <div class="facility_off">■</div>なし</div>
 
 

@@ -91,7 +91,7 @@ class Facility_MastersTableSeeder extends Seeder
             ],
             ['id' => '20',
             'path' => 'fireworks.png',
-            'point_comment' => '花火OK',
+            'facility_comment' => '花火OK',
             ],
             
             

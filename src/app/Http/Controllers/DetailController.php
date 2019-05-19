@@ -19,6 +19,15 @@ class DetailController extends Controller
         {
             $camps = Camp::find($id);
             $titles = Title::find($id);
+            $facilities =Facility::all();
+            // dd($facilities);
+
+            
+          
+
+
+
+            
             // $cg_imgs = Cg_Picture_Master::whereIn('id',[1,10,19,28,38,46,55,64,73]);
             // $cg_img = DB::table('cg_pictures')->where('camp_id')->first();
             // dd($cg_img);
@@ -43,7 +52,7 @@ class DetailController extends Controller
             //piture facility
                 
 
-        return view('detail', ['camps' => $camps, 'titles' => $titles]);
+        return view('detail', ['camps' => $camps, 'titles' => $titles, 'facilities' => $facilities]);
         // return view('test_detail',['titles' => $titles]);         
         }
 

@@ -15,8 +15,8 @@ class FacilitiesTable extends Migration
     {
         Schema::create('facilities', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('camp_id', 10);//キャンプid
-            $table->string('facility_id', 10);//設備id
+            $table->string('path', 30);//キャンプid
+            $table->string('facility_comment', 10);//設備コメント
         });
     }
 
