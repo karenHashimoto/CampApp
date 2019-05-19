@@ -7,9 +7,10 @@
 
 
 .recommend_item{
-  display:flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #FDB3AD;
-
 }
 
 .recommend_item_icon{
@@ -47,3 +48,4 @@ font-size: 0.8em;
   margin:0;
   transform:translate(-50%,-50%) skewX(-10deg);
 }
+
