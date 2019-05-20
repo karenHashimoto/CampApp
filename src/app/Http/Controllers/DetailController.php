@@ -19,7 +19,11 @@ class DetailController extends Controller
         {
             $camps = Camp::find($id);
             $titles = Title::find($id);
-            $facilities =Facility::all();
+            $facilities = Facility::all();
+
+            // $facility_masters = Facility_Master::all();
+           
+            // dd($facility_masters);
             
 
             
