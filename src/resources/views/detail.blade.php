@@ -183,6 +183,7 @@
     <div class="reserve_button">
       <div><button class="button_flat"><a href="/people/{{$camps->id}}">いますぐ予約</a></button></div>
     </div>
+  <div>
 
 <!-- <div class="facility"> -->
 <!-- <div class="facility_title"> -->
@@ -193,17 +194,15 @@
 
 
 
-  <div class="topic">設備</div>
-  <div class="grid-5images">
     @foreach($facilities as $facilities)
     <div class="image-5container">
       <div class="facility_icon"><img src="/image/facility/{{$facilities->path}}" width="32px" height="32px"></div>
       <div class="facility_text">
-        <div></div>{{$facilities->facility_comment}}
+        <div>{{$facilities->facility_comment}}</div>
       </div>
     </div>
     @endforeach
-  </div>
+</div>
 
 
 
@@ -214,7 +213,7 @@
 
 
 
-  <div class="topic">写真一覧</div>
+<div class="topic">写真一覧</div>
 
   <div class="grid-3images">
 
@@ -228,32 +227,7 @@
 
 
 
-  <!-- <div class="cg_pictures_grid"></div>
-<div class="camp_img_grid_unit">
-  <div class="cg_img_grid" style="background-image: url(https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533)"></div>
-</div>
-
-<div class="camp_pic">
-  <div class="cg_img_grid" style="background-image: url(https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533)"></div>
-</div>
-  
-<div class="camp_pic">
-  <div class="cg_img_grid" style="background-image: url(https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533)"></div>
-</div> -->
-
-
-
-  <!-- <img class="cg_pictures" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" alt="">
-  <img class="cg_pictures" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" alt="">
-  <img class="cg_pictures" src="https://lh3.googleusercontent.com/8QnuC3qB5mhsI88bv9ghodTkKDxBDL391An6fmhfzw03b_KgTRaCKdAadqv1Id6pMJ6bPcLjPrY9-0PoppWSrRYcOiJ9vNzCQK3vVSzsRkhq6dlaL09aetqEiGn5GHfRaYg7QqlBuw=w800-h533" alt=""> -->
-
-
-  <!-- <div class="access">
-<div class="map_api">
-</div> -->
-
   <div class="topic">アクセス・地図</div>
-  </div>
 
 
   <!-- 地図アイコン用リンク -->
