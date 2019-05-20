@@ -103,65 +103,27 @@
 
         <div class="reco3_title">３つのおすすめポイント<i class="material-icons"></i>
         </div>
-        @foreach($camps->points as $point)
-        <div class="recommend_column">
-          <div class="recommend_item">
-            <div class="reco_point_left">
-              <i class="material-icons large-size"><img src="/image/point/{{$point->point_masters->path}}"></i>
-            </div>
-
-            <div class="recommend_words">
-              <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
-              <p class="recommend_number"></p>
-            </div>
-          </div>
-          <div class="recommend_text_item">
-            <div class="recommend_text_area">{{$camps->reco_text1}}
-            </div>
-          </div>
-        </div>
-        @endforeach
-
+       
 
         <div class="reco_wrapper">
 
           <div class="reco_icon_wrap">
+          @foreach($camps->points as $point)
             <div class="recom_point_split">
               <div class="recommend_item vertical">
                 <div class="reco_point_left">
-                  <i class="material-icons large-size">departure_board</i>
+                  <i class="material-icons large-size"><img src="/image/point/{{$point->point_masters->path}}"></i>
                 </div>
 
                 <div class="recommend_words">
-                  <p class="recommend_word">満点の星空</p>
+                  <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
                   <p class="recommend_number">1</p>
                 </div>
               </div>
             </div>
-            <div class="recom_point_split">
-              <div class="recommend_item vertical">
-                <div class="reco_point_left">
-                  <i class="material-icons large-size">departure_board</i>
-                </div>
-
-                <div class="recommend_words">
-                  <p class="recommend_word">満点の星空</p>
-                  <p class="recommend_number">1</p>
-                </div>
-              </div>
-            </div>
-            <div class="recom_point_split">
-              <div class="recommend_item vertical">
-                <div class="reco_point_left">
-                  <i class="material-icons large-size">departure_board</i>
-                </div>
-
-                <div class="recommend_words">
-                  <p class="recommend_word">満点の星空</p>
-                  <p class="recommend_number">1</p>
-                </div>
-              </div>
-            </div>
+            @endforeach
+            
+            
           </div>
           <div class="reco_text_wrap">
             <div class="recom_text_item">
