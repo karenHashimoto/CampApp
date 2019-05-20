@@ -7,18 +7,18 @@ ul {
 
 
 /* ヘッダー等 */
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
-body {
+/* body {
     font-family: 'Noto Sans JP', sans-serif;
     font-family: 'Roboto', sans-serif;
 
     /* width: 100%; */
-    background-color: #FEFFFE;
-    margin: 0px;
-}
+/* background-color: #FEFFFE; */
+/* margin: 0px; */
+/* }  */
 
 /* .header{
     height:80px; */
@@ -409,10 +409,86 @@ testSVG>svg {
     /* align-items: center; */
 }
 
+/* 修正中 縦方向のDIVレコエリア */
+
+/* .recom_icon_unit{
+  width:40%;
+} */
+.recommend_item.vertical {
+    width: 38vw;
+    height: 65px;
+    /* padding-right: 3vw; */
+    border-bottom: 1px solid #DEDDDD;
+    /* object-fit: cover; */
+}
+
+
+.recom_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #DEDDDD;
+    padding: 12px;
+
+}
+
+.recom_column_noline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid #DEDDDD; */
+    padding: 12px;
+
+}
+
+.recom_text_item {
+    width: 50vw;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #DEDDDD;
+
+}
 
 
 
+.recom_text_area {
+    color: #86929D;
+    font-size: 0.7em;
+    /* width: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
 
+/* .recom_text_item{
+    width:60%; */
+
+
+.recomm_item {
+    /* width:40%; */
+
+}
+
+.recom_point_split {
+    /* width:40%; */
+}
+
+/* .recom_point_split{
+    width:60%; */
+
+
+.reco_text_wrap {
+    /* width:60%; */
+}
+
+.reco_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 /* ここからレコエリア修正したところ */
 
@@ -1252,48 +1328,12 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 16px 0 0;
-    /* width: 50vw; */
+    /* margin: 0 0 -40px 0; */
+    /* padding-bottom: 10px; */
+    /* height: 100px; */
 }
 
-button {
-    border-top: 0;
-    cursor: pointer;
-}
 
-.button_flat {
-    margin-right: 10px;
-    width: 120px;
-    background: #EFB997;
-    border-bottom: #E2996B 3px solid;
-    border-left: #E2996B 1px solid;
-    border-right: #E2996B 1px solid;
-    border-radius: 6px;
-    text-align: center;
-    color: white;
-    padding: 8px;
-    /* float: left; */
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.button_flat:hover {
-    opacity: 0.8;
-}
-
-.button_flat:active {
-    width: 120px;
-    background: #BF735C;
-    border-bottom: #E2996B 1px solid;
-    border-left: #E2996B 1px solid;
-    border-right: #E2996B 1px solid;
-    border-radius: 6px;
-    text-align: center;
-    color: white;
-    padding: 8px;
-    margin-top: 3px;
-    /* float: left; */
-}
 
 .footer {
     height: 60px;
@@ -1325,4 +1365,14 @@ button {
 
 .fixed_bottom .footer .plan_amount_unit {
     width: 50vw;
+}
+
+.button_flat {
+    /* margin-right: 10px; */
+    width: auto;
+}
+
+.button_margin {
+    height: 70px;
+    padding-top: 16px;
 }

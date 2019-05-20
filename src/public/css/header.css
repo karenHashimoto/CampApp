@@ -1,113 +1,121 @@
-
 /* リセット用 */
 
-ul{
-    padding:0;
+ul {
+    padding: 0;
 }
 
-  /* ヘッダー等 */
-  a{
+/* ヘッダー等 */
+a {
     text-decoration: none;
 }
-  .body{
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Noto Sans JP', sans-serif;
-  /* width: 100%; */
-  background-color: #FEFFFE;
-  margin:0px;
-  }
 
-.header{
-  height:80px;
-  /* color:#FE7B93; */
-  /* padding:10px 0px 5px 20px; */
-  /* font-size:18px; */
-  /* font-family: 'Gaegu', cursive; */
-  /* font-weight: bold; */
-  /* text-decoration:none; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FDF8F2;
-  padding-top: 20px;
-  
-  }
+body {
+    font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+
+    /* font-family: 'Roboto', sans-serif; */
+    /* width: 100%; */
+    background-color: #FEFFFE;
+    margin: 0px;
+}
+
+.header {
+    height: 80px;
+    /* color:#FE7B93; */
+    /* padding:10px 0px 5px 20px; */
+    /* font-size:18px; */
+    /* font-family: 'Gaegu', cursive; */
+    /* font-weight: bold; */
+    /* text-decoration:none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDF8F2;
+    padding-top: 20px;
+
+}
 
 
-  .button_color_glay{
+.button_color_glay {
     color: #707070;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .button_color_white{
+}
+
+.button_color_white {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 
-  .fixed{
-      position:sticky;
-      top:0;
-      z-index: 9999;
-  }
+.fixed {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 
-  .before_button{
-      width:20%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-  }
-
-  .logo_area{
-      width:60%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 0 0 8px;
-  }
-
-  .next_button{
-    width:20%;
-    color:#707070;
+.before_button {
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.center_button{
-    width:60%
+
+.logo_area {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 8px;
+}
+
+.next_button {
+    width: 20%;
+    color: #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center_button {
+    width: 60%
 }
 
 
 
-  .logo img {
-   /* color: #FCA899;
+.logo img {
+    /* color: #FCA899;
    font-size: 2em;   */
-    width:37vw;
+    width: 37vw;
 }
 
- 
 
-*, *:after, *:before {
-  -webkit-box-sizing:
-  border-box;
-  -moz-box-sizing:
-  border-box;
-  box-sizing:
-  border-box;
-          
-}
-body, html { 
-  font-size: 100%;
-  padding: 0;
-  margin: 0;
-  /* font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing:
+        border-box;
+    -moz-box-sizing:
+        border-box;
+    box-sizing:
+        border-box;
 
 }
+
+body,
+html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    /* font-family: "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+
+}
+
 /* img??{
   width: 100%;
   max-width: 100%;
@@ -115,36 +123,41 @@ body, html {
   height:auto;
   vertical-align:bottom;
 } */
-.main_wrap{
-  height:auto !important;
+.main_wrap {
+    height: auto !important;
 }
-.full_area{
-  position: relative;
-          
+
+.full_area {
+    position: relative;
+
 }
-.full_area img{
-      width: 100%;
+
+.full_area img {
+    width: 100%;
 }
+
 .text_area {
-  position: absolute;
-  top: 50%;
-  /* left: 50%; */
-  margin-top: -5px;
-  margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    margin-top: -5px;
+    margin-left: 5px;
 }
-.full_area .main_text{
- color: #fff;
- font-weight: bold;
- font-size: 36px;
- margin: 0;
- padding: 0;
+
+.full_area .main_text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
 }
-.sub_text{
- color: #fff;
- font-weight: 100;
- font-size: 20px;
- margin: 0;
- padding: 0;
+
+.sub_text {
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -174,44 +187,65 @@ body, html {
 
 }
 
-    /* アイコンサイズ */
-    .material-icons.md-18 { font-size: 18px; }
-    .material-icons.md-24 { font-size: 24px; }
-    .material-icons.md-36 { font-size: 36px; }
-    .material-icons.md-48 { font-size: 48px; }
-    
-    /* 背景が明るいとき用のアイコン色 */
-    .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-    .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-    
-    /* 背景が暗いとき用のアイコン色 */
-    .material-icons.md-light { color: rgba(255, 255, 255, 1); }
-    .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+/* アイコンサイズ */
+.material-icons.md-18 {
+    font-size: 18px;
+}
 
-    .material-icons.large-size {
-        font-size: 32px;
-    }
+.material-icons.md-24 {
+    font-size: 24px;
+}
 
-    
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+/* 背景が明るいとき用のアイコン色 */
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+/* 背景が暗いとき用のアイコン色 */
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons.large-size {
+    font-size: 32px;
+}
 
 
 
 
- 
+
+
+
 
 /* 一括予約帯 */
-.reserve_band{
+.reserve_band {
     background-color: #FDB3AD;
-    color:white;
-    padding:8px 0;
+    color: white;
+    padding: 8px 0;
     font-weight: bold;
     text-align: center;
 
 }
 
-  /* ３ページ目以降用の円形 */
-  
-  /* .circle60deg {
+/* ３ページ目以降用の円形 */
+
+/* .circle60deg {
     position: relative;
     width: 120px;
     height: 120px;
@@ -237,7 +271,7 @@ body, html {
 
 
     /* animation: rotate-circle-left 2s linear forwards; */
-        /* background: #999; */
+    /* background: #999; */
 }
 
 .circle60deg::after {
@@ -252,7 +286,7 @@ body, html {
     transform-origin: left 60px;
     z-index: 3;
      transform: rotate(60deg); */
-   
+
     /* animation: rotate-circle-right 2s linear forwards; */
 }
 
@@ -269,57 +303,57 @@ body, html {
 } */
 
 .circle {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: #333;
-  border-radius: 50%;
-  text-align: center;
-  overflow: hidden;
-  z-index: 1;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .circle::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: -30px;
-  width: 60px;
-  height: 60px;
-  background: #999;
-  transform-origin: right 30px;
-  z-index: 2;
-  /* animation: rotate-circle-left 2s linear forwards; */
-  transform: rotate(0deg);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    background: #999;
+    transform-origin: right 30px;
+    z-index: 2;
+    /* animation: rotate-circle-left 2s linear forwards; */
+    transform: rotate(0deg);
 }
 
 .circle::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 30px;
-  width: 60px;
-  height: 60px;
-  background: #999;
-  transform-origin: left 30px;
-  z-index: 3;
-  transform: rotate(0deg);
- 
-  /* animation: rotate-circle-right 2s linear forwards; */
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: #999;
+    transform-origin: left 30px;
+    z-index: 3;
+    transform: rotate(0deg);
+
+    /* animation: rotate-circle-right 2s linear forwards; */
 }
 
 .circle .circle-inner {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  width: 44px;
-  height: 44px;
-  padding-top: 9px;
-  background: #fff;
-  border-radius: 50%;
-  z-index: 4;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 44px;
+    height: 44px;
+    padding-top: 9px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 4;
 }
 
 /* @keyframes rotate-circle-right {
@@ -347,7 +381,7 @@ body, html {
     100% { transform: rotate(180deg); }
 } */
 
-.stepper_wrap{
+.stepper_wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,57 +390,59 @@ body, html {
     padding: 16px 0;
 }
 
-.stepper{
-    width:25%;
+.stepper {
+    width: 25%;
     /* display: flex;
     justify-content: center;
     align-items: center; */
 }
-.purpose_unit{
-    width:75%;
-    color:#86929D;
+
+.purpose_unit {
+    width: 75%;
+    color: #86929D;
 }
 
-.purpose{
+.purpose {
     font-size: 1.7em;
     font-weight: bold;
     text-align: center;
 }
-.purpose_next{
-    font-size:0.7em;
+
+.purpose_next {
+    font-size: 0.7em;
     text-align: right;
-    vertical-align:bottom;
+    vertical-align: bottom;
 }
 
 /* レンタル商材の画像 */
 
-.rental_image{
+.rental_image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.rental_image img{
-    width:80vw;
+.rental_image img {
+    width: 80vw;
 }
 
 /* ボタンエリア */
 
-.button_wrap{
+.button_wrap {
     /* 修正必要かも */
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     margin: 8px 0;
     width: 90vw;
-  }
-  
-  button {
+}
+
+button {
     border-top: 0;
     cursor: pointer;
-  }
-  
-  .button_flat {
+}
+
+.button_flat {
     /* margin-right: 10px; */
     width: 150px;
     background: #EFB997;
@@ -427,14 +463,18 @@ body, html {
     height: 44px;
     margin: 0 0 0 auto;
 }
-  
-  
-  .button_flat:hover {
+
+.button_flat a {
+    color: white;
+    font-family: "Noto Sans JP";
+}
+
+.button_flat:hover {
     opacity: 0.8;
-  }
-  
-  .button_flat:active {
-    width: 80%;
+}
+
+.button_flat:active {
+    /* width: 80%; */
     background: #BF735C;
     border-bottom: #E2996B 1px solid;
     border-left: #E2996B 1px solid;
@@ -445,19 +485,19 @@ body, html {
     padding: 8px;
     margin-top: 3px;
     /* float: left; */
-  }
+}
 
 
-  .button_wrap_wide{
+.button_wrap_wide {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 8px 0;
     /* width: 50vw; */
-  }
+}
 
 
-  .button_flat_wide {
+.button_flat_wide {
 
     /* margin-right: 10px; */
     width: 80vw;
@@ -475,13 +515,13 @@ body, html {
     justify-content: center;
     align-items: center;
 
-  }
-  
-  .button_flat_wide:hover {
+}
+
+.button_flat_wide:hover {
     opacity: 0.8;
-  }
-  
-  .button_flat_wide:active {
+}
+
+.button_flat_wide:active {
     width: 80vw;
     height: 44px;
     background: #BF735C;
@@ -494,16 +534,16 @@ body, html {
     /* padding: 8px; */
     margin-top: 3px;
     /* float: left; */
-  }
+}
 
-  .button_flat_wide_white{
+.button_flat_wide_white {
     /* margin-right: 10px; */
     width: 80vw;
     background: white;
     border: #D8D6D6 1px solid;
     /* border-left: #E2996B 1px solid; */
     /* border-right: #E2996B 1px solid; */
-    border-radius: 6px; 
+    border-radius: 6px;
     text-align: center;
     color: #D8D6D6;
     padding: 8px;
@@ -514,5 +554,4 @@ body, html {
     justify-content: center;
     align-items: center;
 
-  }
-
+}
