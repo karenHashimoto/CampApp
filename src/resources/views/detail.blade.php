@@ -103,66 +103,29 @@
 
         <div class="reco3_title">３つのおすすめポイント<i class="material-icons"></i>
         </div>
-        @foreach($camps->points as $point)
-        <div class="recommend_column">
-          <div class="recommend_item">
-            <div class="reco_point_left">
-              <i class="material-icons large-size"><img src="/image/point/{{$point->point_masters->path}}"></i>
-            </div>
-
-            <div class="recommend_words">
-              <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
-              <p class="recommend_number"></p>
-            </div>
-          </div>
-          <div class="recommend_text_item">
-            <div class="recommend_text_area">{{$camps->reco_text1}}
-            </div>
-          </div>
-        </div>
-        @endforeach
-
+       
 
         <div class="reco_wrapper">
 
           <div class="reco_icon_wrap">
+          
             <div class="recom_point_split">
+            @foreach($camps->points as $point)
               <div class="recommend_item vertical">
                 <div class="reco_point_left">
-                  <i class="material-icons large-size">departure_board</i>
+                  <i class="material-icons large-size"><img src="/image/point/{{$point->point_masters->path}}" width=32px height=32px></i>
                 </div>
 
                 <div class="recommend_words">
-                  <p class="recommend_word">満点の星空</p>
+                  <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
                   <p class="recommend_number">1</p>
                 </div>
               </div>
-            </div>
-            <div class="recom_point_split">
-              <div class="recommend_item vertical">
-                <div class="reco_point_left">
-                  <i class="material-icons large-size">departure_board</i>
-                </div>
-
-                <div class="recommend_words">
-                  <p class="recommend_word">満点の星空</p>
-                  <p class="recommend_number">1</p>
-                </div>
-              </div>
-            </div>
-            <div class="recom_point_split">
-              <div class="recommend_item vertical">
-                <div class="reco_point_left">
-                  <i class="material-icons large-size">departure_board</i>
-                </div>
-
-                <div class="recommend_words">
-                  <p class="recommend_word">満点の星空</p>
-                  <p class="recommend_number">1</p>
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
+
+
           <div class="reco_text_wrap">
             <div class="recom_text_item">
               <div class="recom_text_area">
@@ -203,10 +166,10 @@
     キャンシェルジュ限定プラン</div>
 
   <div class="plan_wrap">
-    <div class="plan_img"><img src="https://openweathermap.org/themes/openweathermap/assets/img/dashboardbanner.png"></div>
+    <div class="plan_img"><img src="/image/camps_img/{{$camps->camp_img}}"></div>
     <div class="plan_title_unit">
-      <div class="plan_subtitle">好きな場所にテントを張れる</div>
-      <div class="plan_name">フリーサイトプラン</div>
+      <div class="plan_subtitle">{{$camps->plan_comment}}</div>
+      <div class="plan_name">{{$camps->plan_name}}</div>
     </div>
     <div class="plan_amount_unit">
       <div class="plan_amount">
