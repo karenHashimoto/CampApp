@@ -16,16 +16,16 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="reco_unit.css"> -->
 
-  <link rel="stylesheet" href="{{ asset('css/header.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/detail.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/reco_unit.css') }}">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/detail.css">
+  <link rel="stylesheet" href="/css/reco_unit.css">
 
   <!-- material fonts -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Serif+JP" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&text=0123456789" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- グーグルマップAPI -->
-  <script src="http://maps.google.com/maps/api/js?key=AIzaSyBunFa8M5cUXVfE2ewS5ZCueUIh-AxtB5Y&language=ja"></script>
+  <script src="//maps.google.com/maps/api/js?key=AIzaSyBunFa8M5cUXVfE2ewS5ZCueUIh-AxtB5Y&language=ja"></script>
 
 </head>
 
@@ -118,11 +118,15 @@
 
                 <div class="recommend_words">
                   <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
-                  <p class="recommend_number">1</p>
+                  <p class="recommend_number">{{$loop->iteration}}</p>
                 </div>
               </div>
               @endforeach
             </div>
+
+
+
+            
           </div>
 
 
@@ -193,15 +197,21 @@
 <div class="grid-5images">
 
 
+        
 
 
-    @foreach($facilities as $facilities)
+
+    @foreach($facility_masters as $facility_masters)
+    
+    
+
     <div class="image-5container">
-      <div class="facility_icon"><img src="/image/facility/{{$facilities->path}}" width="32px" height="32px"></div>
+      <div class="facility_icon"><img src="/image/facility/{{$facility_masters->path}}" width="32px" height="32px"></div>
       <div class="facility_text">
-        <div>{{$facilities->facility_comment}}</div>
+        <div>{{$facility_masters->facility_comment}}</div>
       </div>
     </div>
+    
     @endforeach
 </div>
 

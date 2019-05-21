@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>camcierge</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/top.css') }}">
+    <link rel="stylesheet" href="/css/top.css">
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Pacifico|Gaegu|Sacramento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
