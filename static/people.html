@@ -121,7 +121,7 @@
                         <input class="input_number_c" type="text" name="child_number" value="1" tabindex="1">
                 </div>
                 <div>
-                        <input type="button" name="spinner_up_c" class="spinner_up" value="" onclick="javascript:spinner_child('up_c');">
+                        <input type="button" name="spinner_up_c" class="spinner_up" value="" onclick="javascript:spinner_c('up_c');">
                 </div>
         </div>
 
@@ -186,8 +186,8 @@
     
             var input_number_c = $(".input_number_c").val();
             var input_number_c = parseInt(input_number_c);
-            if (counter == 'up_c') { input_number_c += step_c; };
-            if (counter == 'down_c') { input_number_c -= step_c; };
+            if (counter_c == 'up_c') { input_number_c += step_c; };
+            if (counter_c == 'down_c') { input_number_c -= step_c; };
     
             if ( input_number_c < min_c ) { input_number_c = min_c; };
             if ( max_c < input_number_c ) { input_number_c = max_c; };
