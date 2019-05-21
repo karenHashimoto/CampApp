@@ -21,9 +21,9 @@ class DetailController extends Controller
             $titles = Title::find($id);
             $facilities = Facility::all();
 
-            // $facility_masters = Facility_Master::all();
+            $facility_masters = Facility_Master::all();
            
-            // dd($facility_masters);
+            // dd($facilities);
             
 
             
