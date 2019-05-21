@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>camcierge</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet'
+                    type='text/css'> -->
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+  <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <!-- css -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="people.css">
+  <link rel="stylesheet" href="spinner.css">
+
+
+  <!-- material fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet"> -->
+  <!-- <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"> -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+</head>
+
+<body>
+  <div class="fixed">
+    <div class="header">
+        <div class="before_button">
+            <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                navigate_before
+            </i> </a>
+        </div>
+        <div class="logo_area">
+            <a class="logo" href="index.html"><img src="logo.svg"></a>
+        </div>
+        <div class="next_button">
+                <!-- <a href="◯◯" class="button_before"><i class="material-icons large-size">
+                    navigate_before
+                </i> </a> -->
+        </div>
+
+    </div>
+  </div>
+  <div class="reserve_band">一括予約</div>
+    <div class="stepper_wrap">
+        <div class="stepper">
+            <div class="circle"><div class="circle-inner">20%</div></div>
+        </div>
+        <div class="purpose_unit">
+            <div class="purpose">人数を選択</div>
+            <div class="purpose_next">次は日にちを選択</div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+
+            <div class="camp_id">{{$camps->camp_name}}</div>
+            <div class="camp_area">（{{$camps->state}}/
+                {{$camps->city}})</div>
+            <div class="cg_img"><img src="/image/camps_img/{{$camps->camp_img}}" width="200" height="150"></div>
+            <div class="plan_comment">{{$camps->plan_comment}}</div>
+            <div class="plan_name">{{$camps->plan_name}}</div>
+        
+        
+            <form action="{{url('/date/'.$camps->id )}}" mathod="get">
+                {{ csrf_field()}}
+        
+                <div class="">大人</div>
+                <select name="adlut_number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <div>こども</div>
+                <select name="child_number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+
+                <!-- <input type="hidden" name="camp_id" value={{$camps->id}}>
+                <input type="submit" class="button_flat">
+         -->
+        
+        
+
+        <!--★数量のスピナー★-->
+
+    <div class="people-number">
+        <div class="people-number_title">大人</div>
+
+        <div class="spinner_wrap">
+                <div>
+                        <input type="button" name="spinner_up" class="spinner_down" value="" onclick="javascript:spinner('down');">
+                </div>
+                <div>
+                        <input class="input_number" type="text" name="adlut_number" value="1" tabindex="1">
+                </div>
+                <div>
+                        <input type="button" name="spinner_up" class="spinner_up" value="" onclick="javascript:spinner('up');">
+                </div>
+        </div>
+
+        <div class="people-number_title">こども</div>
+
+        <div class="spinner_wrap">
+                <div>
+                        <input type="button" name="spinner_up_c" class="spinner_down" value="" onclick="javascript:spinner_c('down_c');">
+                </div>
+                <div>
+                        <input class="input_number_c" type="text" name="child_number" value="1" tabindex="1">
+                </div>
+                <div>
+                        <input type="button" name="spinner_up_c" class="spinner_up" value="" onclick="javascript:spinner_child('up_c');">
+                </div>
+        </div>
+
+
+
+    </div>
+    
+
+
+        <div class="button_wrap">
+                <input type="hidden" name="camp_id" value={{$camps->id}}>
+         <div>
+                <button type="submit" class="button_flat">
+                     <div class="before_button">
+                     </div>
+                     
+                     <div class="center_button">次へ</div>
+     
+                     <div class="next_button">
+                             <a href="◯◯" class="button_color_white"><i class="material-icons large-size">
+                                 navigate_next
+                             </i> </a>
+                         </div>
+                </button>
+             </div>
+     
+    </div>
+
+
+</form>
+
+
+        <!--★ボタン★-->
+        <!-- <div class="spinner_button">
+            <input type="button" name="spinner_up" class="spinner_up" value="" onclick="javascript:spinner('up');">
+            <input type="button" name="spinner_up" class="spinner_down" value="" onclick="javascript:spinner('down');">
+        </div> -->
+    
+    
+        <script type="text/javascript">
+    
+        function spinner(counter){
+            var step = 1;
+            var min = 1;
+            var max = 100;
+    
+            var input_number = $(".input_number").val();
+            var input_number = parseInt(input_number);
+            if (counter == 'up') { input_number += step; };
+            if (counter == 'down') { input_number -= step; };
+    
+            if ( input_number < min ) { input_number = min; };
+            if ( max < input_number ) { input_number = max; };
+    
+            $(".input_number").val(input_number);
+        }
+
+        function spinner_c(counter_c){
+            var step_c = 1;
+            var min_c = 1;
+            var max_c = 100;
+    
+            var input_number_c = $(".input_number_c").val();
+            var input_number_c = parseInt(input_number_c);
+            if (counter == 'up_c') { input_number_c += step_c; };
+            if (counter == 'down_c') { input_number_c -= step_c; };
+    
+            if ( input_number_c < min_c ) { input_number_c = min_c; };
+            if ( max_c < input_number_c ) { input_number_c = max_c; };
+    
+            $(".input_number_c").val(input_number_c);
+        }
+
+
+
+
+        </script>
+
+
+
+</body>
