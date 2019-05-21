@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 use App\Point;
 use App\Facility;
 use App\Cg_Picture;
-
+use App\Person;
+use App\Date;
 
 class Camp extends Model
 {

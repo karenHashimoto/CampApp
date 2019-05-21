@@ -14,7 +14,7 @@
         <div class="header">camcierge</div>
     </div>
     <div class="tab">
-        <div class="top_var">一括予約
+        <div class="top_var">一括予約<br>
             キャンシェルジュのキャンプ場予約
         </div>
     </div>
@@ -29,15 +29,22 @@
     <div>大人：{{$adlut_number}}人</div>
     <div>小人：{{$child_number}}人</div>
 
-
-
-    <div style="background-color:#CCC; padding : 20px;">
+    <form action="{{url('/rental_item/'.$camps->id.$adlut_number.$child_number )}}" mathod="get">
+        {{ csrf_field()}}
         <label>チェックイン</label>
-        <input type="text" id="inDate"><br>
+        <input type="text" name="inDate" id="inDate"><br>
 
-        <label>チェックアウト★</label>
-        <input type="text" id="outDate">
-    </div>
+        <label>チェックアウト</label>
+        <input type="text" name="outDate" id="outDate">
+        <input type="hidden" name="camp_id" value={{$camps->id}}>
+        <input type="hidden" name="adlut_number" value={{$adlut_number}}>
+        <input type="hidden" name="child_number" value={{$child_number}}>
+
+
+        <input type="submit" class="button_flat" value="選択した日付で予約する">
+    </form>
+
+
 
     <script>
         < script src = "https://code.jquery.com/jquery-3.3.1.min.js" >
