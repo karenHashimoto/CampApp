@@ -25,7 +25,7 @@ class DetailController extends Controller
 
             $titles = Title::find($id);
             
-            $facility_masters = Facility_Master::all();
+            // $facilities = Facility::all();
             
 
             // $facility_masters = Facility_Master::all()->where('camp_id',$id);
@@ -79,7 +79,7 @@ class DetailController extends Controller
             //piture facility
                 
 
-        return view('detail', ['camps' => $camps, 'titles' => $titles,  'facility_masters' =>$facility_masters ]);
+        return view('detail', ['camps' => $camps, 'titles' => $titles]);
         // return view('test_detail',['titles' => $titles]);         
     }
 }
