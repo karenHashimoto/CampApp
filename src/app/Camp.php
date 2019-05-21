@@ -28,4 +28,5 @@ class Camp extends Model
     {
         return $this->hasMany('App\Cg_Picture');
     }
+    
 }
