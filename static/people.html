@@ -99,31 +99,32 @@
     <div class="people-number">
         <div class="people-number_title">大人</div>
 
-        <div class="spinner_wrap adlut">
+        <div class="spinner_wrap">
                 <div>
-                        <input type="button" name="spinner_down" class="spinner_down">
+                        <input type="button" name="spinner_down" class="spinner_down down js-spinner">
                 </div>
                 <div>
                         <input class="input_number" type="number" name="adlut_number" value="1" tabindex="1">
                 </div>
                 <div>
-                        <input type="button" name="spinner_up" class="spinner_up" onclick="javascript:spinner('up');">
+                        <input type="button" name="spinner_up" class="spinner_up up js-spinner">
                 </div>
         </div>
 
         <div class="people-number_title">こども</div>
 
-        <div class="spinner_wrap child">
+        <div class="spinner_wrap">
                 <div>
-                        <input type="button" name="spinner_up_c" class="spinner_down" onclick="javascript:spinner_c('down_c');">
+                        <input type="button" name="spinner_up_c" class="spinner_down down js-spinner">
                 </div>
                 <div>
                         <input class="input_number" type="number" name="child_number" value="1" tabindex="1">
                 </div>
                 <div>
-                        <input type="button" name="spinner_up_c" class="spinner_up" onclick="javascript:spinner_c('up_c');">
+                        <input type="button" name="spinner_up_c" class="spinner_up up js-spinner">
                 </div>
         </div>
+        
 
 
 
@@ -164,23 +165,9 @@
         <script type="text/javascript">
 
         // 出来るだけ共通化
-
-        var $adult = $(".spinner_wrap.adlut");
-        var $child = $(".spinner_wrap.child");
-
-
-        var $count_adlut_controller_down = $adult.find(".spinner_down")
-        var $count_adlut = $adult.find(".input_number");
-        var $count_adlut_controller_up = $adult.find(".spinner_up")
-        
-        var $count_child_controller_down = $child.find(".spinner_down")
-        var $count_child = $child.find(".input_number");
-        var $count_child_controller_up = $child.find(".spinner_up")
-
-
-        var counter = function ($current, direction){
-            console.log("fjdkajfdka")
-            return function(){   
+        var counter = function (direction){
+            return function(e){  
+                var $current = $(this).parent().parent().find(".input_number")
                 var current= parseInt($current.val());
                 if(direction === "up"){
                     $current.val(++current)
@@ -191,31 +178,16 @@
             }
         }
 
-        //  大人　ダウンをクリックした時
-        $count_adlut_controller_down.on("click", counter($count_adlut, "down"))
-        //  大人　ダウンをクリックした時
-        $count_adlut_controller_up.on("click", counter($count_adlut, "up"))
-        //  こども　ダウンをクリックした時
-        $count_child_controller_down.on("click", counter($count_child, "down"))
-        //  こども　ダウンをクリックした時
-        $count_child_controller_up.on("click", counter($count_child, "up"))
+        $(".js-spinner").each(function(){
+            var isDown = $(this).hasClass("down")
+            var isUp = $(this).hasClass("up")
+            if(isDown){
+                $(this).on("click", counter("down"))
+            } else if(isUp){
+                $(this).on("click", counter("up"))
+            }
+        })
 
-
-
-
-
-
-
-
-        function counter(target, direction){
-            //  ターゲットに対して
-
-             //  数字をあげたり、下げたりする
-
-
-        }
-
-    
 
 
 
