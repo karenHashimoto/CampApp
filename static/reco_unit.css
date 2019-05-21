@@ -1,0 +1,51 @@
+  /* START  RESET  */
+  p{
+    margin:0
+}
+
+/* END  RESET  */
+
+
+.recommend_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FDB3AD;
+}
+
+.recommend_item_icon{
+  width:20%;
+}
+
+.recommend_item_icon_image{
+  width:100%;
+}
+
+
+.recommend_words{
+  display:inline-flex;
+  align-items:center;
+  position: relative;
+font-size: 0.8em;
+
+}
+
+.recommend_word{
+  color:#bbb;
+  z-index:10;
+  color: #FDB3AD;
+
+}
+
+.recommend_number{
+  font-size:40px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  line-height:1.5;
+  opacity:0.1;
+  color:red;
+  margin:0;
+  transform:translate(-50%,-50%) skewX(-10deg);
+}
+
