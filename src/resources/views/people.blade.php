@@ -24,41 +24,41 @@
     <div class="plan_comment">{{$camps->plan_comment}}</div>
     <div class="plan_name">{{$camps->plan_name}}</div>
 
-    {{$camps->id}}
-    <form action="/date/{{$camps->id}}" method="get">
-        <form action="{{url('/date/'.$camps->id )}}">
-            {{-- <form action="{{ route('people') }}" method="post" name="number"> --}}
-            {{ csrf_field()}}
-            {{-- <div>大人の人数</div>
+
+    {{-- <form action="/date/{{$camps->id}}" method="get"> --}}
+    <form action="{{url('/date/'.$camps->id )}}" mathod="get">
+        {{-- <form action="{{ route('people') }}" method="post" name="number"> --}}
+        {{ csrf_field()}}
+        {{-- <div>大人の人数</div>
         <input type="text" name="adlut_number" id="adlut_number">
         <div>子供の人数</div>
         <input type="text" name="child_number" id="child_number">
         <div>
             <input type="submit" class="button_flat"> --}}
 
-            <div>大人の人数</div>
-            <select name="adlut_number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <div>小人の人数</div>
-            <select name="child_number">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <input type="hidden" name="camp_id" value={{$camps->id}}>
-            <input type="submit" class="button_flat">
+        <div>大人の人数</div>
+        <select name="adlut_number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <div>小人の人数</div>
+        <select name="child_number">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <input type="hidden" name="camp_id" value={{$camps->id}}>
+        <input type="submit" class="button_flat">
 
 
-            {{-- <button type="submit"><a href="/date/{{$camps->id}}">日にちを予約</a></button></div> --}}
-            {{-- <button type="submit"><a href="/date/{{$camps->id}}">日にちの確認へ進む</button> --}}
+        {{-- <button type="submit"><a href="/date/{{$camps->id}}">日にちを予約</a></button></div> --}}
+        {{-- <button type="submit"><a href="/date/{{$camps->id}}">日にちの確認へ進む</button> --}}
 
-        </form>
+    </form>
 
 
 
