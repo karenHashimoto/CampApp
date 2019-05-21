@@ -165,55 +165,40 @@
 
         // 出来るだけ共通化
 
+        var $adult = $(".spinner_wrap.adlut");
+        var $child = $(".spinner_wrap.child");
 
-        var $count_adlut_controller_down = $(".spinner_wrap.adlut").find(".spinner_down")
-        var $count_adlut = $(".spinner_wrap.adlut").find(".input_number");
-        var $count_adlut_controller_up = $(".spinner_wrap.adlut").find(".spinner_up")
+
+        var $count_adlut_controller_down = $adult.find(".spinner_down")
+        var $count_adlut = $adult.find(".input_number");
+        var $count_adlut_controller_up = $adult.find(".spinner_up")
         
-        var $count_child_controller_down = $(".spinner_wrap.child").find(".spinner_down")
-        var $count_child = $(".spinner_wrap.child").find(".input_number");
-        var $count_child_controller_up = $(".spinner_wrap.child").find(".spinner_up")
+        var $count_child_controller_down = $child.find(".spinner_down")
+        var $count_child = $child.find(".input_number");
+        var $count_child_controller_up = $child.find(".spinner_up")
 
+
+        var counter = function ($current, direction){
+            console.log("fjdkajfdka")
+            return function(){   
+                var current= parseInt($current.val());
+                if(direction === "up"){
+                    $current.val(++current)
+                } else if(direction === "down" && current > 1){
+                    //  もし１より多かったら-1してセット
+                    $current.val(--current)
+                }
+            }
+        }
 
         //  大人　ダウンをクリックした時
-        $count_adlut_controller_down.on("click", function(e){
-            // 今の値を取得
-            var current= parseInt($count_adlut.val());
-
-            if(current > 1){
-                //  もし１より多かったら-1してセット
-                $count_adlut.val(--current)
-            }
-        })
-
+        $count_adlut_controller_down.on("click", counter($count_adlut, "down"))
         //  大人　ダウンをクリックした時
-        $count_adlut_controller_up.on("click", function (e) {
-            // 今の値を取得
-            var current = parseInt($count_adlut.val());
-
-
-            //  もし１より多かったら-1してセット
-            $count_adlut.val(++current)
-
-        })
+        $count_adlut_controller_up.on("click", counter($count_adlut, "up"))
         //  こども　ダウンをクリックした時
-        $count_child_controller_down.on("click", function (e) {
-            // 今の値を取得
-            var current = parseInt($count_child.val());
-            console.log(current);
-            if (current > 1) {
-                //  もし１より多かったら-1してセット
-                $count_child.val(--current)
-            }
-        })
+        $count_child_controller_down.on("click", counter($count_child, "down"))
         //  こども　ダウンをクリックした時
-        $count_child_controller_up.on("click", function (e) {
-            // 今の値を取得
-            var current = parseInt($count_child.val());
-
-            //  もし１より多かったら-1してセット
-            $count_child.val(++current)
-        })
+        $count_child_controller_up.on("click", counter($count_child, "up"))
 
 
 
@@ -233,7 +218,7 @@
     
 
 
-        
+
         function spinner(counter){
             // var step = 1;
             // var min = 1;
