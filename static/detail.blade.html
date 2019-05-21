@@ -325,25 +325,10 @@
       <div class="facility_icon"><img src="http://via.placeholder.com/32x32" alt=""></div>
       <div class="facility_text"><div>温水トイレ</div></div>
   </div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-  <div class="image-5container"></div>
-
+  @foreach
+  <div class="image-5container"><img src="/image/camps_img/{{$facilities->path}}"></div>
+  
+  @endforeach
   </div>
   <div class="facility_explain"><div class="facility_on">■</div>設備あり  <div class="facility_off">■</div>なし</div>
 
@@ -396,6 +381,7 @@
   <!-- 地図アイコン用リンク -->
   <div class="map">
     <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.27582958991!2d138.55973331525104!3d35.398412980261185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x527ef1e8bbb1107c!2z44G144KC44Go44Gj44Gx44KJ!5e0!3m2!1sja!2sjp!4v1554697120382!5m2!1sja!2sjp" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
         {{$camps->map_link}}
     </div>
   </div>

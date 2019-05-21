@@ -21,7 +21,7 @@ class Point_MastersTableSeeder extends Seeder
             'point_comment' => '満点の星空',
             ],
             ['id' => '3',
-            'path' => 'with_dog.png',
+            'path' => 'dog.png',
             'point_comment' => 'ワンコOK',
             ],
             ['id' => '4',

@@ -15,8 +15,9 @@ class FacilityMastersTable extends Migration
     {
         Schema::create('facility_masters', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('path', 25);//画像Path
-            $table->string('facility_comment', 5);//ファシリティコメント
+            $table->string('camp_id', 25);//
+            $table->tinyInteger('css_numbers')->unsigned();//css適用
+            
         });
     }
 
