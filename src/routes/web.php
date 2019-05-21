@@ -34,3 +34,4 @@ Route::get('/people/{id}', 'PersonController@index');
 Route::get('/date/{id}', 'DateController@index');
 
 // Route::get('/date/{id}', 'DateController@store');
+Route::get('/rental_item/{id}', 'Rental_itemController@index');
