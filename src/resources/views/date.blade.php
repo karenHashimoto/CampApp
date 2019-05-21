@@ -30,7 +30,7 @@
         <label>チェックイン</label>
         <input type="text" id="inDate"><br>
 
-        <label>チェックアウト★</label>
+        <label>チェックアウト</label>
         <input type="text" id="outDate">
     </div>
 

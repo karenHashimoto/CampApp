@@ -1,0 +1,126 @@
+/* 180度以下はアフターの角度のみ動かす */
+/* 180度以上はサークル・アフターを＃３３３　０度固定、ビフォーを＃９９９で（０−１８０度）動かす */
+
+.circle{
+    /* background:#333; */
+}
+
+.circle::before {
+    /* transform: rotate(36deg); */
+    /* background: #999; */
+  }
+  
+  .circle::after {
+    content: "";
+    /* display: block;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: #999;
+    transform-origin: left 30px;
+    z-index: 3; */
+    transform: rotate(144deg);
+    /* background: #333; */
+    /* animation: rotate-circle-right 2s linear forwards; */
+  }
+
+  .date_inputbox{
+      width:50%;
+  }
+
+  .date_inputbox_borderright{
+    border-right: #F7F7F7 solid 3px;
+    display: flex;
+}
+
+
+  input{
+
+    /* text-align: center; */
+    margin: 0em;
+    font: 400 1.5em Roboto;
+    width: 35vw;
+    height: 44px;
+    /* border-width: 1px; */
+    /* border: solid 1px #F7F7F7; */
+    border: none;
+    color: #86929D;
+  }
+
+  /* .check_inout_unit{
+    padding: 0 10vw;
+  } */
+
+
+
+  .check_inout_unit{
+    color: #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    height: 36px;
+    padding: 0 10vw;
+
+  }
+
+  .staydays{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+    align-items: center;
+    background-color: #F7F7F7;
+  }
+
+.align_center{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+}
+
+  .align_left{
+      width:40%;
+    /* display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center; */
+  }
+
+  .align_right{
+    /* width:40%;
+    float:right;
+    margin:0 0 0 auto; */
+  /* display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center; */
+  margin: 0 0 0 auto;
+}
+
+
+
+  .date_pick_unit{
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    text-align: center;
+    padding:0 10vw 40px;
+  }
+
+  .-is-width-maxcontent{
+      width:max-content;
+
+  }
+
+  .size_fourty-percent{
+      width:40%;
+  }
+  
+  .-is-text-align_right{
+      text-align: right;
+  }
