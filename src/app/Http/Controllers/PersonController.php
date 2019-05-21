@@ -2,13 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\DB;
-
 use App\Camp;
 use App\Person;
-use App\People;
-
-use Input;
 use Illuminate\Http\Request;
 
 class PersonController extends Controller
@@ -21,28 +16,37 @@ class PersonController extends Controller
     }
 
     //人数登録処理関数
-    public function store()
     public function store(Request $request)
     {
-$input = Input::all();
-
-dd($input);
-        $adlut_child = Input::get('adlut_child');
-        $child_child = Input::get('child_child');
-        $camp_id = Input::get('camp_id');
 
 
 
+        // $adlut_number = $request->adlut_number;
+        // $child_number = $request->child_number;
 
-        $number = $request->input('number');
-        $people = new People;
-        $people->adlut_number = $request->adlut_number;
-        $people->child_number = $request->child_number;
 
-dd($people);
+        // $adlut_number = Request::input('adlut_number');
+        // $child_number = Request::input('child_number');
 
-        $people->save();
-        return redirect('/date/{id}');
+        $adlut_number = $request->adlut_number;
+        $child_number = $request->child_number;
+
+
+        // dd($adlut_number);
+        // dd($child_number);
+
+
+
+
+        // $number = $request->input('number');
+        // $people = new People;
+        // $people->adlut_number = $request->adlut_number;
+        // $people->child_number = $request->child_number;
+
+        // dd($people);
+
+        // $people->save();
+        return view('date', ['camps->$camps', 'adlut_number' => $adlut_number, 'child_number' => $child_number]);
     }
 
 

@@ -5,7 +5,6 @@ use App\Title;
 use App\Point;
 use App\Camp_Point;
 use App\Person;
-use App\Number;
 use Illuminate\Http\Request;
 
 
@@ -23,8 +22,15 @@ Route::resource('/photos', 'PhotosController', ['only' => ['create', 'store']]);
 
 Route::get('/people/{id}', 'PersonController@index');
 
-Route::post('/people', 'PersonController@store')->name('people');
+// Route::get('/people', 'PersonController@store')->name('people');
+// Route::get('/people/{id}', 'PersonController@store')->name('people');
+
+
 // Route::post('/people/{id}', 'PersonController@store')->name('people');
 // Route::post('/people/{id}', 'PersonController@store');
 
+// Route::get('/date/{id}', 'PersonController@store');
+
 Route::get('/date/{id}', 'DateController@index');
+
+// Route::get('/date/{id}', 'DateController@store');
