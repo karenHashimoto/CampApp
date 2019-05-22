@@ -25,8 +25,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&text=0123456789" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- グーグルマップAPI -->
-  <script src="//maps.google.com/maps/api/js?key=AIzaSyBunFa8M5cUXVfE2ewS5ZCueUIh-AxtB5Y&language=ja"></script>
-
+  
 </head>
 
 <body>

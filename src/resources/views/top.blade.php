@@ -20,15 +20,15 @@
         <div class="tab">
             <div class="tab_item">
                 <div><i class="material-icons small-size">departure_board</i></div>
-                <div>２時間</div>
+                <div><a href="#title1">２時間</a></div>
             </div>
             <div class="tab_item">
                 <div><i class="material-icons small-size">sentiment_satisfied_alt</i></div>
-                <div>豪華</div>
+                <div><a href="#title2">豪華</a></div>
             </div>
             <div class="tab_item">
                 <div><i class="material-icons small-size">hot_tub</i></div>
-                <div>海が見える</div>
+                <div><a href="#title3">海が見える</a></div>
             </div>
         </div>
         <div class="top_var">Recommend Campground</div>
@@ -36,12 +36,12 @@
 
     <div class="card_head">
         <div class="nav_title_wrap">
-            <div class="nav_title_img">
+            <div id="title1" class="nav_title_img">
                 <img width="max" src="/image/title/titles1.jpg"></a>
             </div>
             <div class="nav_layertext">deperture</div>
 
-            <div class="nav_title">
+            <div  class="nav_title">
                 <div><i class="material-icons">departure_board</i></div>
                 <div>{{$titles1->top_title}}</div>
             </div>
@@ -105,7 +105,7 @@
     <div class="box_empty"></div>
     <div class="card_head">
         <div class="nav_title_wrap">
-            <div class="nav_title_img">
+            <div id="title2" class="nav_title_img">
                 <img width="max" src="/image/title/titles2.jpg"></a>
             </div>
             <div class="nav_layertext">Comfort</div>
@@ -172,7 +172,7 @@
     @endforeach
     <div class="card_head">
         <div class="nav_title_wrap">
-            <div class="nav_title_img">
+            <div id="title3" class="nav_title_img">
                 <img width="max" src="/image/title/titles3.jpg"></a>
             </div>
             <div class="nav_layertext">Ocian</div>
