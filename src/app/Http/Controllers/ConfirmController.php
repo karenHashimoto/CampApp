@@ -6,18 +6,22 @@ use Illuminate\Http\Request;
 use App\Camp;
 use App\Date;
 use App\Perosn;
+use App\Rental_car;
+use App\Rental_item;
 
-class Rental_carController extends Controller
+class ConfirmController extends Controller
 {
     public function index(Request $request)
     {
-        // dd($request->has('car_yes'), $request->has('car_no'));
+
+        // dd($request);
         $camps = Camp::find($request->camp_id);
         $adlut_number = $request->adlut_number;
         $child_number = $request->child_number;
         $inDate = $request->inDate;
         $outDate = $request->outDate;
         $isItemRental = $request->isItemRental;
+
 
         if ($request->has('car_yes')) {
             $isCarRental = true;
@@ -27,7 +31,7 @@ class Rental_carController extends Controller
 
 
 
-        return view('rental_car', [
+        return view('confirm', [
             'camps' => $camps,
             'adlut_number' => $adlut_number,
             'child_number' => $child_number,

@@ -29,7 +29,7 @@
     <div>大人：{{$adlut_number}}人</div>
     <div>小人：{{$child_number}}人</div>
 
-    <form action="{{url('/rental_item/'.$camps->id.$adlut_number.$child_number )}}" mathod="get">
+    <form action="{{url('/rental_item' )}}" method="post">
         {{ csrf_field()}}
         <label>チェックイン</label>
         <input type="text" name="inDate" id="inDate"><br>

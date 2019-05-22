@@ -26,7 +26,7 @@
 
 
     {{-- <form action="/date/{{$camps->id}}" method="get"> --}}
-    <form action="{{url('/date/'.$camps->id )}}" mathod="get">
+    <form action="{{url('/date' )}}" method="post">
         {{-- <form action="{{ route('people') }}" method="post" name="number"> --}}
         {{ csrf_field()}}
         {{-- <div>大人の人数</div>

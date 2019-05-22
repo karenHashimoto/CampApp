@@ -11,22 +11,18 @@
 <body>
     <div>道具の予約いりますか？</div>
 
-    <form action="{{url('/rental_car/'.$camps->id.$adlut_number.$child_number.$inDate.$outDate )}}" mathod="get">
+    <form action="{{url('/rental_car/' )}}" method="post">
         {{ csrf_field()}}
-        <input type="submit" class="button_flat" value="はい">
+        <input type="submit" class="button_flat" value="はい" name="item_yes">
+        <input type="submit" class="button_flat" value="いいえ" name="item_no">
+        <input type="hidden" name="camp_id" value="{{$camps->id}}">
+        <input type="hidden" name="adlut_number" value="{{$adlut_number}}">
+        <input type="hidden" name="child_number" value="{{$child_number}}">
+        <input type="hidden" name="inDate" value="{{$inDate}}">
+        <input type="hidden" name="outDate" value="{{$outDate}}">
+
+
     </form>
-
-    <form action="{{url('/rental_car/'.$camps->id.$adlut_number.$child_number.$child_number.$inDate.$outDate )}}" mathod="get">
-        {{ csrf_field()}}
-        <input type="submit" class="button_flat" value="いいえ">
-    </form>
-
-
-
-
-    <input type="hidden" name="camp_id" value={{$camps->id}}>
-    <input type="hidden" name="adlut_number" value={{$adlut_number}}>
-    <input type="hidden" name="child_number" value={{$child_number}}>
     <div>大人：{{$adlut_number}}人</div>
     <div>小人：{{$child_number}}人</div>
     <div>チェックイン：{{$inDate}}</div>
