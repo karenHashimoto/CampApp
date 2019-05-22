@@ -23,8 +23,18 @@
     <div>こどもの人数：{{$child_number}}</div>
     <div>チェックイン：{{$inDate}}</div>
     <div>チェックアウト：{{$outDate}}</div>
-    <div>道具レンタル：{{$isItemRental}}</div>
-    <div>車レンタル：{{$isCarRental}}</div>
+    @if ($isItemRental === '1')
+    <div>道具レンタル：あり</div>
+    @else
+    <div>道具レンタル：なし</div>
+    @endif
+
+    @if ($isCarRental === '1')
+    <div>車レンタル：あり</div>
+    @else
+    <div>車レンタル：なし</div>
+    @endif
+
 
 
 </body>

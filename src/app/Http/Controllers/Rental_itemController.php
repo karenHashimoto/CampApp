@@ -21,11 +21,11 @@ class Rental_itemController extends Controller
         $inDate = $request->inDate;
         $outDate = $request->outDate;
 
-        if ($request->has('item_yes')) {
-            $isItemRental = true;
-        } else {
-            $isItemRental = false;
-        }
+        // if ($request->has('item_yes')) {
+        //     $isItemRental = true;
+        // } else {
+        //     $isItemRental = false;
+        // }
 
 
         return view('rental_item', [
@@ -34,7 +34,6 @@ class Rental_itemController extends Controller
             'child_number' => $child_number,
             'inDate' => $inDate,
             'outDate' => $outDate,
-            'isItemRental' => $isItemRental,
         ]);
 
 

@@ -17,12 +17,11 @@ class Rental_carController extends Controller
         $child_number = $request->child_number;
         $inDate = $request->inDate;
         $outDate = $request->outDate;
-        $isItemRental = $request->isItemRental;
 
-        if ($request->has('car_yes')) {
-            $isCarRental = true;
+        if ($request->has('item_yes')) {
+            $isItemRental = '1';
         } else {
-            $isCarRental = false;
+            $isItemRental = '0';
         }
 
 
@@ -33,8 +32,7 @@ class Rental_carController extends Controller
             'child_number' => $child_number,
             'inDate' => $inDate,
             'outDate' => $outDate,
-            'isItemRental' => $isItemRental,
-            'isCarRental' => $isCarRental
+            'isItemRental' => $isItemRental
         ]);
     }
 }

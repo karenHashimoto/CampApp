@@ -24,9 +24,9 @@ class ConfirmController extends Controller
 
 
         if ($request->has('car_yes')) {
-            $isCarRental = true;
+            $isCarRental = '1';
         } else {
-            $isCarRental = false;
+            $isCarRental = '0';
         }
 
 
