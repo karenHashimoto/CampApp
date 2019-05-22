@@ -23,7 +23,7 @@ class Rental_carController extends Controller
         } else {
             $isItemRental = '0';
         }
-       
+
 
 
         return view('rental_car', [
