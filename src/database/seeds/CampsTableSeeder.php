@@ -185,7 +185,7 @@ class CampsTableSeeder extends Seeder
                 'cg_title' => '海に面した開放的なサイト。大村湾に沈む夕日が絶景です。',
                 'cg_subtitle' => '区画も整備され広々スペース。',
                 'reco_text1' => '大村湾に沈む夕日をみながら。ゆったりしたひと時を。',
-                'reco_text2' => '',
+                'reco_text2' => '綺麗な夕日に癒されてください。',
                 'reco_text3' => '天然温泉で癒されてください！',
                 'state' => '長崎県',
                 'city' => '西海市',

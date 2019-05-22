@@ -31,7 +31,11 @@ Route::get('/people/{id}', 'PersonController@index');
 
 // Route::get('/date/{id}', 'PersonController@store');
 
-Route::get('/date/{id}', 'DateController@index');
+Route::post('/date', 'DateController@index');
 
 // Route::get('/date/{id}', 'DateController@store');
-Route::get('/rental_item/{id}', 'Rental_itemController@index');
+Route::post('/rental_item', 'Rental_itemController@index');
+
+Route::post('/rental_car', 'Rental_carController@index');
+
+Route::post('/confirm', 'ConfirmController@index');

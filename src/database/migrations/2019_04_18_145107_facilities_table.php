@@ -15,6 +15,7 @@ class FacilitiesTable extends Migration
     {
         Schema::create('facilities', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('facility_id');
             $table->string('camp_id', 25);//
             $table->tinyInteger('css_numbers')->unsigned();//css適用
         });

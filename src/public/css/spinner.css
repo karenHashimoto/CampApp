@@ -1,0 +1,47 @@
+input.input_number {
+    width: 46px;
+    height: 46px;
+    float: left;
+    /* margin-top: 5px; */
+    text-align: center;
+    /* padding: 0 5px; */
+    font-family: Roboto;
+    font-size: 2.5em;
+    color: #86929D;
+}
+
+.spinner_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.spinner_button {
+    float: left;
+    width: 16px;
+    padding-left: 5px;
+    padding-top: 8px;
+}
+
+input.spinner_up {
+    margin-top: 0px;
+    border: 0px;
+    width: 40px;
+    height: 46px;
+    background: url("/image/icon_plus.png") no-repeat;
+}
+
+input {
+    padding: 0;
+
+}
+
+input.spinner_down {
+    margin-top: 0px;
+    border: 0px;
+    width: 40px;
+    height: 46px;
+    background: url("/image/icon_minus.png") no-repeat;
+}

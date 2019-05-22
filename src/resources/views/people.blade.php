@@ -4,61 +4,163 @@
     <meta charset="utf-8">
     <title>camcierge</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/people.css">
+    <link rel="stylesheet" href="/css/spinner.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 
 <body>
-    <div class="header_fixed">
-        <div class="header">camcierge</div>
+    <div class="fixed">
+        <div class="header">
+            <div class="before_button">
+                <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                        navigate_before
+                    </i> </a>
+            </div>
+            <div class="logo_area">
+                <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
+            </div>
+            <div class="next_button">
+            </div>
+
+        </div>
     </div>
-    <div class="tab">
-        <div class="top_var">一括予約
-            キャンシェルジュのキャンプ場予約
+    <div class="reserve_band">一括予約</div>
+    <div class="stepper_wrap">
+        <div class="stepper">
+            <div class="circle">
+                <div class="circle-inner">20%</div>
+            </div>
+        </div>
+        <div class="purpose_unit">
+            <div class="purpose">人数を選択</div>
+            <div class="purpose_next">次は日にちを選択</div>
+        </div>
+    </div>
+    <div class="wrapper -is-flexbox">
+
+        <div class="is_harf">
+            <div class="plan_comment">{{$camps->plan_comment}}</div>
+            <div class="plan_name">{{$camps->plan_name}}</div>
+
+
+            <div class="cg_img"><img src="/image/camps_img/{{$camps->camp_img}}" width=130px height=130px></div>
+        </div>
+
+        <div class="is_harf">
+            {{-- <form action="{{url('/date' )}}" method="post">
+            {{ csrf_field()}}
+            <div>大人の人数</div>
+            <select name="adlut_number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <div>小人の人数</div>
+            <select name="child_number">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <input type="hidden" name="camp_id" value={{$camps->id}}>
+            <input type="submit" class="button_flat">
+            </form> --}}
+
+
+
+
+
+            <form action="{{url('/date' )}}" method="post">
+                {{ csrf_field()}}
+                <div class="people-number">
+                    <div class="people-number_title">大人</div>
+
+
+                    <div class="spinner_wrap">
+                        <div>
+                            <input type="button" name="spinner_down" class="spinner_down down js-spinner">
+                        </div>
+                        <div>
+                            <input class="input_number" type="number" name="adlut_number" value="1" tabindex="1">
+                        </div>
+                        <div>
+                            <input type="button" name="spinner_up" class="spinner_up up js-spinner">
+                        </div>
+                    </div>
+
+                    <div class="people-number_title">こども</div>
+
+                    <div class="spinner_wrap">
+                        <div>
+                            <input type="button" name="spinner_up_c" class="spinner_down down js-spinner">
+                        </div>
+                        <div>
+                            <input class="input_number" type="number" name="child_number" value="1" tabindex="1">
+                        </div>
+                        <div>
+                            <input type="button" name="spinner_up_c" class="spinner_up up js-spinner">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="button_wrap">
+
+                    <div>
+                        <button type="submit" class="button_flat">
+                            <div class="before_button">
+                            </div>
+
+                            <div class="center_button">次へ</div>
+
+                            <div class="next_button">
+                                <a href="◯◯" class="button_color_white"><i class="material-icons large-size">
+                                        navigate_next
+                                    </i> </a>
+                            </div>
+                            <input type="hidden" name="camp_id" value={{$camps->id}}>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
         </div>
     </div>
 
-    <div class="camp_id">{{$camps->camp_name}}</div>
-    <div class="camp_area">（{{$camps->state}}/
-        {{$camps->city}})</div>
-    <div class="cg_img"><img src="/image/camps_img/{{$camps->camp_img}}" width="200" height="150"></div>
-    <div class="plan_comment">{{$camps->plan_comment}}</div>
-    <div class="plan_name">{{$camps->plan_name}}</div>
 
 
-    {{-- <form action="/date/{{$camps->id}}" method="get"> --}}
-    <form action="{{url('/date/'.$camps->id )}}" mathod="get">
-        {{-- <form action="{{ route('people') }}" method="post" name="number"> --}}
-        {{ csrf_field()}}
-        {{-- <div>大人の人数</div>
-        <input type="text" name="adlut_number" id="adlut_number">
-        <div>子供の人数</div>
-        <input type="text" name="child_number" id="child_number">
-        <div>
-            <input type="submit" class="button_flat"> --}}
+    <script type="text/javascript">
+        var counter = function() {
+            return function(e) {
+                var isDown = $(this).hasClass("down")
+                var isUp = $(this).hasClass("up")
 
-        <div>大人の人数</div>
-        <select name="adlut_number">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-        <div>小人の人数</div>
-        <select name="child_number">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
-        <input type="hidden" name="camp_id" value={{$camps->id}}>
-        <input type="submit" class="button_flat">
+                var direction = isDown ? "down" : isUp ? "up" : undefined;
 
+                var $current = $(this).parent().parent().find(".input_number")
+                var current = parseInt($current.val());
+                if (direction === "up") {
+                    $current.val(++current)
+                } else if (direction === "down" && current > 1) {
+                    $current.val(--current)
+                }
+            }
+        }
 
-        {{-- <button type="submit"><a href="/date/{{$camps->id}}">日にちを予約</a></button></div> --}}
-        {{-- <button type="submit"><a href="/date/{{$camps->id}}">日にちの確認へ進む</button> --}}
+        $(".js-spinner").on("click", counter())
+    </script>
 
-    </form>
 
 
 

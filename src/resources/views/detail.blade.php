@@ -25,8 +25,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&text=0123456789" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- グーグルマップAPI -->
-  <script src="//maps.google.com/maps/api/js?key=AIzaSyBunFa8M5cUXVfE2ewS5ZCueUIh-AxtB5Y&language=ja"></script>
-
+  
 </head>
 
 <body>
@@ -47,7 +46,7 @@
             navigate_before
           </i> </a>
       </div>
-      <div class="logo_area">
+      <div 　id="top" class="logo_area">
         <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
       </div>
       <div class="next_button">
@@ -82,11 +81,11 @@
   </div>
 
   <nav class="global-nav">
-    <p><a href="#">トップ</a></p>
-    <p><a href="#">予約</a></p>
-    <p><a href="#">写真・設備</a></p>
-    <p><a href="#">アクセス</a></p>
-    <p><a href="#">オーナー</a></p>
+    <p><a href="#top">トップ</a></p>
+    <p><a href="#plan">予約</a></p>
+    <p><a href="#facility">写真・設備</a></p>
+    <p><a href="#access">アクセス</a></p>
+    <p><a href="#owner">オーナー</a></p>
     <span class="global-nav--bar"></span>
   </nav>
 
@@ -166,7 +165,7 @@
 
   </div>
 
-  <div class="plan_center">
+  <div id="plan" class="plan_center">
     キャンシェルジュ限定プラン</div>
 
   <div class="plan_wrap">
@@ -192,26 +191,40 @@
 
 <!-- <div class="facility"> -->
 <!-- <div class="facility_title"> -->
-<div class="topic">設備</div>
+<div id="facility" class="topic">設備</div>
 <!-- <div class="facility_icon">imag</div> -->
 <div class="grid-5images">
 
+    @foreach($camps->facilities as $facility)
 
-        
-
-
-
-    @foreach($facility_masters as $facility_masters)
     
     
-
-    <div class="image-5container">
-      <div class="facility_icon"><img src="/image/facility/{{$facility_masters->path}}" width="32px" height="32px"></div>
+  
+    @if($facility->css_numbers === 0)    
+    <div class="image-5container"> 
+      <div class="facility_icon"><img src="/image/facility/{{$facility->facility_masters->path}}" width="32px" height="32px"></div>
       <div class="facility_text">
-        <div>{{$facility_masters->facility_comment}}</div>
+        <div>{{$facility->facility_masters->facility_comment}}</div>
       </div>
     </div>
-    
+    @else
+    <div class="image-5container image-5container_white"> 
+      <div class="facility_icon "><img src="/image/facility/{{$facility->facility_masters->path}}" width="32px" height="32px"></div>
+      <div class="facility_text">
+        <div>{{$facility->facility_masters->facility_comment}}</div>
+      </div>
+    </div>
+    @endif
+  
+
+
+
+
+
+
+
+
+
     @endforeach
 </div>
 
@@ -238,7 +251,7 @@
 
 
 
-  <div class="topic">アクセス・地図</div>
+  <div id="access" class="topic">アクセス・地図</div>
 
 
   <!-- 地図アイコン用リンク -->
@@ -280,7 +293,7 @@
 
 
 
-  <div class="topic">オーナー情報</div>
+  <div id="owner" class="topic">オーナー情報</div>
 
   <div class="owner_pic"><img src="/image/owner/{{$camps->owner_pic}}"></div>
 

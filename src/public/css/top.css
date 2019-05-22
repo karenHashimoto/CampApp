@@ -6,6 +6,7 @@ ul {
 /* ヘッダー等 */
 a {
     text-decoration: none;
+    color:inherit;
 }
 
 .body {
@@ -77,6 +78,19 @@ a {
     /* border: 1px solid black; */
 }
 
+ .-is_color_deeppink {
+    /* display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #DC8A8C; */
+    color: #DC8A8C;
+    /* font-size: 0.9em;
+    background-color: #FDF8F2; */
+    /* border: 1px solid black; */
+}
+
+
+
 .tab_item {
     display: flex;
     justify-content: center;
@@ -91,6 +105,10 @@ a {
     text-align: center;
     border-radius: 3px 3px 0 0;
 }
+
+a .-is_color_deeppink{
+        color: #DC8A8C;
+    }
 
 
 .tabmenu {
@@ -316,6 +334,13 @@ testSVG>svg {
 /* .reco_point{
     margin: 0px 20px;
   } */
+.reco-main_margin{
+
+    padding:0 30px;
+}
+
+
+
 .cg_title_margin {
     display: flex;
     justify-content: center;
@@ -330,7 +355,7 @@ testSVG>svg {
     color: #FDB3AD;
     font-size: 0.8em;
     font-weight: bold;
-    width: 80%;
+    width: 100%;
     border-bottom: solid 1px #FDB3AD;
 }
 
@@ -350,6 +375,7 @@ testSVG>svg {
     text-align: center;
     color: #FDB3AD;
     /* margin: 0px 0px 8px 0px; */
+    margin-top: -19px;
 }
 
 .reco_number {
@@ -544,15 +570,21 @@ html {
   
   } */
 
-
+.card_img{
+    /* height:200px; */
+}
 
 
 
 .card_img img {
     width: 100%;
+    height:200px;
     border-radius: 20px 20px 0px 0px;
     /* height: px;   */
-    object-fit: 「cover」;
+    /* object-fit: 「cover」; */
+    background-size: cover;
+    background-position: center center;
+    /* padding-top: 100%; */
 }
 
 .card_img_wrap {
@@ -618,6 +650,10 @@ html {
     text-align: center;
 }
 
+.camp_area {
+    font-size: 0.8em;
+}
+
 /* .camp_area {
     /* font-size: 60%; 
     margin-bottom: 8px;
@@ -670,13 +706,18 @@ html {
 
 
 
-.nav_title_img img {
+/* .nav_title_img img {
     width: 100%;
-    /* border-bottom: 3px solid #777777; */
-}
+    border-bottom: 3px solid #777777;
+} */
 
 .nav_title_wrap {
     position: relative;
+}
+
+.nav_title_img img{
+
+    width: 100%;
 }
 
 .nav_textbox {
@@ -746,7 +787,7 @@ html {
 }
 
 .box_empty {
-    background-color: #EDE9DF;
+    background-color: #FCFAF5;
     height: 20px;
 }
 
@@ -873,6 +914,17 @@ html {
 }
 
 /* reco */
+.recommend_item.parallel {
+    width: 38vw;
+    height: 65px;
+    /* padding-right: 3vw; */
+    border-bottom: 1px solid #DEDDDD;
+    /* object-fit: cover; */
+}
+
+
+
+
 .reccomend_item {
     display: flex;
     justify-content: center;

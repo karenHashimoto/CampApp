@@ -1,78 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>キャンプ場日にち予約 </title>
+    <title>camcierge </title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/date.css">
+    <link rel="stylesheet" href="/css/reset.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+
 </head>
 
 <body>
+    <div class="fixed">
+        <div class="header">
+            <div class="before_button">
+                <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                        navigate_before
+                    </i> </a>
+            </div>
+            <div class="logo_area">
+                <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
+            </div>
+            <div class="next_button">
 
-    <div class="header_fixed">
-        <div class="header">camcierge</div>
-    </div>
-    <div class="tab">
-        <div class="top_var">一括予約<br>
-            キャンシェルジュのキャンプ場予約
+            </div>
         </div>
     </div>
 
-    <div class="camp_id">{{$camps->camp_name}}</div>
-    <div class="camp_area">（{{$camps->state}}/
-        {{$camps->city}})</div>
-    <div class="cg_img"><img src="/image/camps_img/{{$camps->camp_img}}" width="200" height="150"></div>
-    <div class="plan_comment">{{$camps->plan_comment}}</div>
-    <div class="plan_name">{{$camps->plan_name}}</div>
-    <div>ご予約人数</div>
-    <div>大人：{{$adlut_number}}人</div>
-    <div>小人：{{$child_number}}人</div>
 
-    <form action="{{url('/rental_item/'.$camps->id.$adlut_number.$child_number )}}" mathod="get">
-        {{ csrf_field()}}
-        <label>チェックイン</label>
-        <input type="text" name="inDate" id="inDate"><br>
-
-        <label>チェックアウト</label>
-        <input type="text" name="outDate" id="outDate">
-        <input type="hidden" name="camp_id" value={{$camps->id}}>
-        <input type="hidden" name="adlut_number" value={{$adlut_number}}>
-        <input type="hidden" name="child_number" value={{$child_number}}>
+    <div class="reserve_band">一括予約</div>
+    <div class="stepper_wrap">
+        <div class="stepper">
+            <div class="circle">
+                <div class="circle-inner">40%</div>
+            </div>
+        </div>
+        <div class="purpose_unit">
+            <div class="purpose">日にちを選択</div>
+            <div class="purpose_next">次はアイテムレンタル選択</div>
+        </div>
+    </div>
 
 
-        <input type="submit" class="button_flat" value="選択した日付で予約する">
+    <div class="wrapper">
+
+
+        <form action="{{url('/rental_item' )}}" method="post">
+
+            <div class="date_picker_unit">
+                {{ csrf_field()}}
+
+                <div class="check_inout_wrap">
+                    <div class="check_inout_unit">
+                        <div class="align_left">
+                            <div>チェックイン</div>
+                        </div>
+
+                        <div class="align_center">
+                            <div class="staydays" id="staydays">
+                                合計宿泊数
+                            </div>
+                        </div>
+
+                        <div class="align_right size_fourty-percent">
+                            <div class="-is-width-maxcontent align_right">チェックアウト</div></span>
+                        </div>
+
+                        <input type="hidden" name="camp_id" value={{$camps->id}}>
+                        <input type="hidden" name="adlut_number" value={{$adlut_number}}>
+                        <input type="hidden" name="child_number" value={{$child_number}}>
+                    </div>
+
+
+                    <div class="date_pick_unit">
+                        <div class="date_inputbox date_inputbox_borderright">
+                            <input type="text" class="js-inDate" id="inDate" name="inDate" value="CheckIn">
+
+                        </div>
+                        <div class="date_inputbox align_right -is-text-align_right">
+                            <input class="-is-text-align_right js-outDate" type="text" id="outDate" name="outDate" value="CheckOut">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <input type="submit" class="button_flat" value="選択した日付で予約する"> -->
+            <div class="button_wrap">
+
+                <button input type="submit" class="button_flat" value="選択した日付で予約する">
+                    <div class="before_button">
+                    </div>
+
+                    <div class="center_button">次へ</div>
+
+                    <div class="next_button">
+                        <a href="◯◯" class="button_color_white"><i class="material-icons large-size">
+                                navigate_next
+                            </i> </a>
+                    </div>
+                </button>
+            </div>
+    </div>
     </form>
+    </div>
 
-
-
-    <script>
-        < script src = "https://code.jquery.com/jquery-3.3.1.min.js" >
-    </script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 
     <script type="text/javascript">
+        // var inDate = new Date();
+
+        // var yyyy = inDate.getFullYear();
+        // var mm = ("0"+(inDate.getMonth()+1)).slice(-2);
+        // var dd = ("0"+inDate.getDate()).slice(-2);
+
+        // document.getElementById("today").value=yyyy+'-'+mm+'-'+dd;
+
+        function assingStayDates(date) {
+
+            var dates = stayDates(date);
+            assignDate(dates);
+
+        }
+
+        function stayDates(date) {
+            //  宿泊数を計算
+            var inDateString = $(".js-inDate").val()
+            var outDateString = $(".js-outDate").val()
+
+            var inDate = moment(new Date(inDateString))
+            console.log(inDate);
+            var outDate = moment(new Date(outDateString))
+
+
+            var stayDate = outDate.diff(inDate, "days");
+
+            return stayDate;
+
+            // 宿泊数という結果を返したい
+        }
+
+        function assignDate(sleepDate) {
+            //  与えらたた引き数を、○泊○日の要素に適用
+            var sleepDatedate = parseInt(sleepDate) + 1;
+            var sleepDate = sleepDate + "泊" + sleepDatedate + "日";
+            console.log(sleepDate);
+
+            document.getElementById("staydays").innerHTML = sleepDate;
+        }
+
+        //  doc0.innerHTML= "staydaysの箇所にテキストを表示します。";  
+
+        //  ○泊○日を表示する要素の内容をsleepDateObjectで置き換えたい。
+
+
+
         $(function() {
             $("#inDate").datepicker({
                 changeMonth: true,
                 numberOfMonths: 1,
                 onClose: function(pDate) {
+                    // console.log(pDate)
                     $("#outDate").datepicker("option", "minDate", pDate);
+                    // ここで宿泊数計算の関数を実行する
+                    assingStayDates(pDate)
                 }
-            });
+            })
             $("#outDate").datepicker({
                 changeMonth: true,
                 numberOfMonths: 1,
                 onClose: function(pDate) {
                     $("#inDate").datepicker("option", "maxDate", pDate);
+                    // ここで宿泊数計算の関数を実行する
+                    assingStayDates(pDate)
                 }
             });
         });

@@ -1,1 +1,83 @@
+/* 180度以下はアフターの角度のみ動かす */
+/* 180度以上はサークル・アフターを＃３３３　０度固定、ビフォーを＃９９９で（０−１８０度）動かす */
 
+.circle {
+    /* background:#333; */
+}
+
+.circle::before {
+    /* transform: rotate(36deg); */
+    /* background: #999; */
+}
+
+.circle::after {
+    content: "";
+    /* display: block;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: #999;
+    transform-origin: left 30px;
+    z-index: 3; */
+    transform: rotate(72deg);
+    /* background: #333; */
+    /* animation: rotate-circle-right 2s linear forwards; */
+}
+
+
+/* .people-number {
+    width: 50%;
+} */
+
+.people-number_title {
+    color: #FDB3AD;
+}
+
+.wrapper {
+    margin: 0 10vw;
+}
+
+.wrapper.-is-flexbox {
+    display: flex;
+}
+
+input.input_number_c {
+    width: 46px;
+    height: 46px;
+    float: left;
+    /* margin-top: 5px; */
+    text-align: center;
+    /* padding: 0 5px; */
+    font-family: Roboto;
+    font-size: 2.5em;
+    color: #86929D;
+}
+
+.button_wrap {
+    /* 修正必要かも */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 8px 0;
+    width: 100%;
+}
+
+.is_harf {
+    width: 50%;
+}
+
+.plan_comment {
+    font-size: 0.6em;
+    text-align: center;
+    margin-right: 20px;
+    color: #86929D;
+}
+
+.plan_name {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 4px 20px 8px 0px;
+    color: #86929D;
+}
