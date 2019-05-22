@@ -470,7 +470,7 @@ button {
 .button_flat:active {
     /* width: 80%; */
     background: #BF735C;
-    width: auto;
+    width: 150px;
 
     border-bottom: #E2996B 1px solid;
     border-left: #E2996B 1px solid;

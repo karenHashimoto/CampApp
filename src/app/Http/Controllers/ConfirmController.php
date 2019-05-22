@@ -21,7 +21,7 @@ class ConfirmController extends Controller
         $inDate = $request->inDate;
         $outDate = $request->outDate;
         $isItemRental = $request->isItemRental;
-
+        
 
         if ($request->has('car_yes')) {
             $isCarRental = '1';
