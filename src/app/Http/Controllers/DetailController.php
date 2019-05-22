@@ -17,36 +17,13 @@ class DetailController extends Controller
 {
     public function index($id)
         {
-    
             $camps = Camp::find($id);
-
-           
-
-
             $titles = Title::find($id);
-            
-            // $facilities = Facility::all();
-            
+            $facilities = Facility::all();
 
-            // $facility_masters = Facility_Master::all()->where('camp_id',$id);
+            // $facility_masters = Facility_Master::all();
+           
             // dd($facility_masters);
-            // $facility_masters -> css_numbers;
-
-           
-
-            // $lanking = [1, 2, 3];
-            
-            
-           
-            // dd($facilities);
-    //         $camps = Camp::all();
-    //   foreach ($camps as $camp) {
-    //      $points = $camp->points;
-
-    //      foreach ($points as $point) {
-    //         $path = $point->point_master->path;
-    //      }
-    //   }
             
 
             
@@ -79,7 +56,7 @@ class DetailController extends Controller
             //piture facility
                 
 
-        return view('detail', ['camps' => $camps, 'titles' => $titles]);
+        return view('detail', ['camps' => $camps, 'titles' => $titles, 'facilities' => $facilities]);
         // return view('test_detail',['titles' => $titles]);         
     }
 }

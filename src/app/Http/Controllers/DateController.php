@@ -22,7 +22,6 @@ class DateController extends Controller
         $adlut_number = $request->adlut_number;
         $child_number = $request->child_number;
 
-
         return view('date', ['camps' => $camps, 'adlut_number' => $adlut_number, 'child_number' => $child_number]);
     }
 }
