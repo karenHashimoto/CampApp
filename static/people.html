@@ -165,28 +165,24 @@
         <script type="text/javascript">
 
         // 出来るだけ共通化
-        var counter = function (direction){
-            return function(e){  
+        var counter = function (){
+            return function(e){
+                var isDown = $(this).hasClass("down")
+                var isUp = $(this).hasClass("up")
+                
+                var direction = isDown ? "down" : isUp ? "up" : undefined;
+
                 var $current = $(this).parent().parent().find(".input_number")
                 var current= parseInt($current.val());
                 if(direction === "up"){
                     $current.val(++current)
                 } else if(direction === "down" && current > 1){
-                    //  もし１より多かったら-1してセット
                     $current.val(--current)
                 }
             }
         }
 
-        $(".js-spinner").each(function(){
-            var isDown = $(this).hasClass("down")
-            var isUp = $(this).hasClass("up")
-            if(isDown){
-                $(this).on("click", counter("down"))
-            } else if(isUp){
-                $(this).on("click", counter("up"))
-            }
-        })
+        $(".js-spinner").on("click", counter())
 
         </script>
 

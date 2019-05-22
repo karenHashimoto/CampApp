@@ -19,6 +19,7 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
   <!-- <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet"> -->
   <!-- <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"> -->
 <!-- グーグルマップAPI -->
@@ -78,9 +79,10 @@
             <div class="check_inout_unit">
                 <div class="align_left"><div>チェックイン</div></div>
                 <div class="align_center">
-                    <div class ="staydays">
-                        <div class="staydays_stay">1</div><div>泊</div>
-                        <div class="staydays_day">２</div><div>日</div>
+                    <div class ="staydays" id="staydays">
+                        合計宿泊数
+                        <!-- <div class="staydays_stay">1</div><div>泊</div>
+                        <div class="staydays_day">２</div><div>日</div> -->
                     </div>
                 </div>
                 <div class="align_right size_fourty-percent"><div class="-is-width-maxcontent align_right">チェックアウト</div></span></div>
@@ -88,26 +90,22 @@
 
             <div class="date_pick_unit">
                 <div class="date_inputbox date_inputbox_borderright">
-                        <input type="text" id="inDate" value="2019-06-01">
+                        <input type="text" class="js-inDate" id="inDate" value="CheckIn">
 
                 </div>
                 <div class="date_inputbox align_right -is-text-align_right">
-                        <input class="-is-text-align_right" type="text" id="outDate" value="2019-06-02">
+                        <input class="-is-text-align_right js-outDate" type="text" id="outDate" value="CheckOut">
 
                 </div>
             </div>
         </div>
 
-            <script>
-                < script src = "https://code.jquery.com/jquery-3.3.1.min.js" >
-            </script>
+
+            <script src = "https://code.jquery.com/jquery-3.3.1.min.js" ></script>
             <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-            <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
-        
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-            <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-            <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            
         
             <script type="text/javascript">
 
@@ -119,20 +117,62 @@
 
                 // document.getElementById("today").value=yyyy+'-'+mm+'-'+dd;
 
+                function assingStayDates(date){
+                
+                    var dates = stayDates(date);
+                    assignDate(dates);
+
+                }
+                
+                function stayDates(date){
+                    //  宿泊数を計算
+                    var inDateString=$(".js-inDate").val()
+                    var outDateString=$(".js-outDate").val()
+
+                    var inDate = moment(new Date(inDateString))
+                    var outDate = moment(new Date(outDateString))
+                    
+
+                    var stayDate = outDate.diff(inDate, "days");
+                    
+                    return stayDate;
+                    
+                    // 宿泊数という結果を返したい
+                }
+
+                function assignDate(sleepDate){
+                     //  与えらたた引き数を、○泊○日の要素に適用
+                     var sleepDatedate = parseInt(sleepDate)+1;
+                     var sleepDate=sleepDate + "泊" + sleepDatedate +"日";
+                     console.log(sleepDate);
+
+                     document.getElementById("staydays").innerHTML = sleepDate ;
+                }
+
+                    //  doc0.innerHTML= "staydaysの箇所にテキストを表示します。";  
+
+                    //  ○泊○日を表示する要素の内容をsleepDateObjectで置き換えたい。
+
+
 
                 $(function() {
                     $("#inDate").datepicker({
                         changeMonth: true,
                         numberOfMonths: 1,
                         onClose: function(pDate) {
+                            // console.log(pDate)
                             $("#outDate").datepicker("option", "minDate", pDate);
+                            // ここで宿泊数計算の関数を実行する
+                            assingStayDates(pDate)
                         }
-                    });
+                    })
                     $("#outDate").datepicker({
                         changeMonth: true,
                         numberOfMonths: 1,
                         onClose: function(pDate) {
                             $("#inDate").datepicker("option", "maxDate", pDate);
+                            // ここで宿泊数計算の関数を実行する
+                            assingStayDates(pDate)
                         }
                     });
                 });
