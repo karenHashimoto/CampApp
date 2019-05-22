@@ -37,4 +37,5 @@ Route::post('/date', 'DateController@index');
 Route::post('/rental_item', 'Rental_itemController@index');
 
 Route::post('/rental_car', 'Rental_carController@index');
+
 Route::post('/confirm', 'ConfirmController@index');
