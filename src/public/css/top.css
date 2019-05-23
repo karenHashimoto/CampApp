@@ -103,7 +103,13 @@ a {
     margin: -1px 5px;
     padding: 3px;
     text-align: center;
-    border-radius: 3px 3px 0 0;
+    font-size: 0.9em;
+    border-radius: 6px 6px 0 0;
+}
+
+.tab_item.is_on {
+    background-color: #DC8A8C;
+    color: white;
 }
 
 a .-is_color_deeppink{
@@ -918,7 +924,7 @@ html {
     width: 38vw;
     height: 65px;
     /* padding-right: 3vw; */
-    border-bottom: 1px solid #DEDDDD;
+    /* border-bottom: 1px solid #DEDDDD; */
     /* object-fit: cover; */
 }
 

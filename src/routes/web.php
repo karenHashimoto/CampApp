@@ -7,6 +7,14 @@ use App\Camp_Point;
 use App\Person;
 use Illuminate\Http\Request;
 
+Route::get('index',function(){
+    return '<html><body>
+
+    <a href="/"><img src="/image/index_camcierge.jpg" width="100%" height="max">></a>
+    
+    </body></html>';
+});
+
 
 Route::get('/', 'CampsController@index');
 
