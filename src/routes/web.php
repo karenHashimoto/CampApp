@@ -7,16 +7,18 @@ use App\Camp_Point;
 use App\Person;
 use Illuminate\Http\Request;
 
-Route::get('index',function(){
+Route::get('/',function(){
     return '<html><body>
 
-    <a href="/"><img src="/image/index_camcierge.jpg" width="100%" height="max">></a>
+    <a href="top"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
     
     </body></html>';
 });
 
 
-Route::get('/', 'CampsController@index');
+
+
+Route::get('/top', 'CampsController@index');
 
 Route::get('/detail/{id}', 'DetailController@index');
 

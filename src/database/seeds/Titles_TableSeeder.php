@@ -16,7 +16,7 @@ class Titles_TableSeeder extends Seeder
             [
                 'id' => '1',
                 'top_title' => '福岡県からドライブ２時間のキャンプ場',
-                'top_subtitle' => '近場でキャンプに持ってこい！',
+                'top_subtitle' => '意外と近くに素敵なキャンプ場が！おすすめをピックアップ♪',
                 'top_img' => 'hoge.jpeg'
             ],
             [
