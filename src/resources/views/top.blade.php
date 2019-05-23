@@ -20,9 +20,9 @@
     <div class="header_fixed">
         <div class="header">
             <div class="before_button">
-                <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                <!-- <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
                     navigate_before
-                </i> </a>
+                </i> </a> -->
             </div>
             <div class="logo_area">
                 <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
@@ -36,7 +36,7 @@
         </div>
 
         <div class="tab">
-            <div class="tab_item">
+            <div class="tab_item is_on">
                 <div><i class="material-icons small-size">departure_board</i></div>
                 <div><a class="_is_color_deeppink" href="#title1">２時間</a></div>
             </div>
@@ -103,12 +103,6 @@
                 <div class="reco_point_wrap">
 
 
-
-
-
-
-                
-
                     @foreach($camps1->points as $point)
 
                     <div class="recommend_item parallel">
@@ -122,22 +116,6 @@
                         </div>
                     </div> 
 
-
-
-
-                    <!-- <div class="reco_point_unit">
-                        <div class="reco_point_left">
-
-                        </div>
-                        <div class="main_wrap">
-                            <div class="full_area">
-                                <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
-                                <div class="text_area">
-                                    <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                     @endforeach
 
 
@@ -170,7 +148,10 @@
         <div class="nav_textbox">{{$titles2->top_subtitle}}</div>
     </div>
 
-    @foreach($camps2 as $camps2)
+
+
+
+ @foreach($camps2 as $camps2)
     <div class="card">
 
         <div class="card_img_wrap">
@@ -197,31 +178,43 @@
                 </div>
                 <div class="cg_title_under">Point</div>
                 <div class="reco_point_wrap">
-                    @foreach($camps2->points as $point)
-                    <div class="reco_point_unit">
-                        <div class="reco_point_left">
 
+
+                    @foreach($camps2->points as $point)
+
+                    <div class="recommend_item parallel">
+                        <div class="reco_point_left">
+                        <i class="material-icons large-size"><img src="/image/point/{{$point->point_masters->path}}" width=32px height=32px></i>
                         </div>
-                        <div class="main_wrap">
-                            <div class="full_area">
-                                <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
-                                <div class="text_area">
-                                    <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
-                                </div>
-                            </div>
+
+                        <div class="recommend_words">
+                        <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
+                        <p class="recommend_number">{{$loop->iteration}}</p>
                         </div>
-                    </div>
+                    </div> 
+
                     @endforeach
+
+
+
                 </div>
             </div>
             <div class="detail_btn_width">
+
                 <div class="detail_btn"><a href="detail/{{$camps2->id}}">もっと詳しくみる</a>
                 </div>
             </div>
-            
         </div>
     </div>
     @endforeach
+
+
+
+
+
+
+
+
 
 
     <div class="box_empty"></div>
@@ -240,6 +233,7 @@
         </div>
         <div class="nav_textbox">{{$titles3->top_subtitle}}</div>
     </div>
+
 
     @foreach($camps3 as $camps3)
     <div class="card">
@@ -262,27 +256,32 @@
         </div>
 
         <div class="reco_container">
-            <div class="cg_title_margin">
-                <div class="cg_title">{{$camps3->cg_title}}</div>
-            </div>
-            <div class="cg_title_under">Point</div>
-            <div class="reco_point_wrap">
-                @foreach($camps3->points as $point)
-                <div class="reco_point_unit">
-                    <div class="reco_point_left">
-
-                    </div>
-                    <div class="main_wrap">
-                        <div class="full_area">
-                            <div class="reco_number"><img src="/image/point/{{$point->point_masters->path}}"></div>
-                            <div class="text_area">
-                                <div class="reco_title2">{{$point->point_masters->point_comment}}</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="reco-main_margin">
+                <div class="cg_title_margin">
+                    <div class="cg_title">{{$camps3->cg_title}}</div>
                 </div>
-                @endforeach
+                <div class="cg_title_under">Point</div>
+                <div class="reco_point_wrap">
 
+
+                    @foreach($camps3->points as $point)
+
+                    <div class="recommend_item parallel">
+                        <div class="reco_point_left">
+                        <i class="material-icons large-size"><img src="/image/point/{{$point->point_masters->path}}" width=32px height=32px></i>
+                        </div>
+
+                        <div class="recommend_words">
+                        <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
+                        <p class="recommend_number">{{$loop->iteration}}</p>
+                        </div>
+                    </div> 
+
+                    @endforeach
+
+
+
+                </div>
             </div>
             <div class="detail_btn_width">
 
@@ -292,6 +291,10 @@
         </div>
     </div>
     @endforeach
+
+
+
+
 </body>
 
 
