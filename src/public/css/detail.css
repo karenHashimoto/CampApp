@@ -1374,6 +1374,10 @@ html {
     /* margin-right: 10px; */
     width: auto;
 }
+.button_flat:active{
+    width: auto;
+
+}
 
 .button_margin {
     height: 70px;
