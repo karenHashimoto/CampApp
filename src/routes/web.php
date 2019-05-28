@@ -41,24 +41,13 @@ Route::get('/test_02/{id}', 'Test_02Controller@index');
 
 Route::resource('/photos', 'PhotosController', ['only' => ['create', 'store']]);
 
-// Route::get('/peoplaaae/{id}', 'PersonController@index')->name('aaa');
-
-// Route::get('/peoplaaae/{id}', 'PersonController@index')->name('aaa');
 
 Route::get('/people/{id}', 'PersonController@index');
 
-// Route::get('/people', 'PersonController@store')->name('people');
-// Route::get('/people/{id}', 'PersonController@store')->name('people');
-
-
-// Route::post('/people/{id}', 'PersonController@store')->name('people');
-// Route::post('/people/{id}', 'PersonController@store');
-
-// Route::get('/date/{id}', 'PersonController@store');
 
 Route::post('/date', 'DateController@index');
 
-// Route::get('/date/{id}', 'DateController@store');
+
 Route::post('/rental_item', 'Rental_itemController@index');
 
 Route::post('/rental_car', 'Rental_carController@index');
@@ -74,4 +63,10 @@ Route::get('/terms', function () {
 });
 
 Route::get('/top_recommend','CampsController@recommend_index');
+
+//以下、登録フォームのルート
+Route::get ('/customer'         , 'CustomersController@input');
+Route::post('/customer/confirm' , 'CustomersController@confirm');
+Route::post('/customer/update'  , 'CustomersController@update');
+Route::get ('/customer/complete', 'CustomersController@complete');
 
