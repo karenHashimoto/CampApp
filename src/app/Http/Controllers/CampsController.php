@@ -34,7 +34,7 @@ class CampsController extends Controller
         return view('top', ['camps1' => $camps1, 'camps2' => $camps2, 'camps3' => $camps3, 'titles1' => $titles1, 'titles2' => $titles2, 'titles3' => $titles3]);
     }
 
-    public function recomend_index(Request $request){
+    public function recommend_index(Request $request){
 
         $camps1 = Camp::whereIn('id', [1, 2, 3])->get(); //collection_object
         $titles1 = Title::find(1);
