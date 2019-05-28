@@ -20,35 +20,18 @@
     <div class="header_fixed">
         <div class="header">
             <div class="before_button">
-                <!-- <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
-                    navigate_before
-                </i> </a> -->
+
             </div>
             <div class="logo_area">
                 <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
             </div>
             <div class="next_button">
-                    <!-- <a href="◯◯" class="button_before"><i class="material-icons large-size">
-                        navigate_before
-                    </i> </a> -->
+
             </div>
 
         </div>
 
-        <!-- <div class="tab">
-            <div class="tab_item is_on">
-                <div><i class="material-icons small-size">departure_board</i></div>
-                <div><a class="_is_color_deeppink" href="#title1">２時間</a></div>
-            </div>
-            <div class="tab_item">
-                <div><i class="material-icons small-size">sentiment_satisfied_alt</i></div>
-                <div><a href="#title2">豪華</a></div>
-            </div>
-            <div class="tab_item">
-                <div><i class="material-icons small-size">hot_tub</i></div>
-                <div><a href="#title3">海が見える</a></div>
-            </div>
-        </div> -->
+
         <div class="top_var">Recommend Campground</div>
     </div>
 
