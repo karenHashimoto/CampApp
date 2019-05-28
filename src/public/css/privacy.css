@@ -1,0 +1,13 @@
+.wrap_privacy {
+    margin: 16px;
+}
+
+body {
+    color: #86929D;
+}
+
+.privacy_title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 48px;
+}

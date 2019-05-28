@@ -7,7 +7,7 @@ use App\Camp_Point;
 use App\Person;
 use Illuminate\Http\Request;
 
-Route::get('/',function(){
+Route::get('/', function () {
     return '<html><body>
 
     <a href="top"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
@@ -49,3 +49,11 @@ Route::post('/rental_item', 'Rental_itemController@index');
 Route::post('/rental_car', 'Rental_carController@index');
 
 Route::post('/confirm', 'ConfirmController@index');
+
+Route::get('/privacy', function () {
+    return view('privacy');
+});
+
+Route::get('/terms', function () {
+    return view('terms');
+});
