@@ -73,5 +73,5 @@ Route::get('/terms', function () {
     return view('terms');
 });
 
-Route::get('/top_recommend','CampsController@recomend_index');
+Route::get('/top_recommend','CampsController@recommend_index');
 
