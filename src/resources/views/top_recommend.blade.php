@@ -34,18 +34,31 @@
         
         <ul class="tab-list">
     <!--タブ-->
-    <li class="tab is-active">Tab-A    </li>
-    <li class="tab">B</li>
-    <li class="tab">C   </li>
+    <li class="tab is-active">                
+                <div><i class="material-icons small-size">business_center</i></div>
+                <div><a class="_is_color_deeppink" href="#title1">キャンプ予約</a></div>  </li>
+    <li class="tab">
+                <div><i class="material-icons small-size">format_list_bulleted</i></div>
+                <div><a href="#title2">レンタル内容</a></div>
+
+    </li>
+    <li class="tab">  
+               <div><i class="material-icons small-size">access_time</i></div>
+                <div><a href="#title3">キャンプ当日</a></div>
+
+    </li>
 </ul>
+<div class="top_var">Recommend Campground</div>
+
 <div class="main">
     <!--タブを切り替えて表示するコンテンツ-->
-    <div class="content is-show">kari
-
+    <div class="content is-show">
+    <!-- ここを修正 -->
 
     
     </div>
     <div class="content">
+    <div class="box_empty -is_white_bg"></div>
         <div class="wrapper_item">
         <img src="/image/rental1.jpg" width="100%">
         <img src="/image/rental2.jpg" width="100%">
@@ -55,6 +68,7 @@
     </div>
 
     <div class="content">
+    <div class="box_empty -is_white_bg"></div>
         <div class="wrapper_flow">
             <img src="/image/flow1.jpg" width="100%" class="negativ_margin">
             <img src="/image/flow2.jpg" width="100%">
@@ -79,7 +93,7 @@
             </div>
         </div> -->
 
-        <div class="top_var">Recommend Campground</div>
+
     </div>
 
 <div class="wrapper_book">
