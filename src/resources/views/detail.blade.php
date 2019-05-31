@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>camcierge</title>
 
-  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet'
                     type='text/css'> -->
   <!-- <link rel="stylesheet" href="style.css" /> -->

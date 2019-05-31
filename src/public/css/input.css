@@ -1,3 +1,32 @@
+/* 180度以下はアフターの角度のみ動かす */
+/* 180度以上はサークル・アフターを＃３３３　０度固定、ビフォーを＃９９９で（０−１８０度）動かす */
+
+.circle{
+    background:#333;
+}
+
+.circle::before {
+    transform: rotate(124deg);
+    background: #999;
+  }
+  
+  .circle::after {
+    content: "";
+    /* display: block;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: #999;
+    transform-origin: left 30px;
+    z-index: 3; */
+    transform: rotate(0deg);
+    background: #333;
+    /* animation: rotate-circle-right 2s linear forwards; */
+  }
+
+
 body {
     color: #86929D;
 }
@@ -59,25 +88,35 @@ input[type="text"] {
 }
 
 .terms {
-    margin: 8px;
+    margin: 24px 0 8px;
 }
 
 .color_pink {
     color: #FA4466;
     display: flex;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    margin-top: 4px;
+    font-size: 0.8em;
+
 }
 
 .wrap_end {
-    margin: 16px;
-    font-size: smaller;
+    margin: 16px 32px;
+    font-size: 0.7em;
 }
 
 .kiyaku {
     color: #484848;
     text-decoration: underline;
+    font-size: 0.8em;
 }
 
 input[type="checkbox"] {
     transform: scale(1.9);
+}
+
+
+input[type="text"] {
+    font: 400 15px "Noto Sans JP";
+    text-indent: 16px;
 }
