@@ -11,7 +11,7 @@ class Book extends Model
         'user_name',
         'email',
         'phone',
-        'adlut_number',
+        'adult_number',
         'child_number',
         'inDate',
         'outDate',
