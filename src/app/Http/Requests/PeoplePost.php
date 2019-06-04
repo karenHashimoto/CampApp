@@ -36,6 +36,7 @@ class PeoplePost extends FormRequest
      */
     public function messages()
     {
+        
         return [
             'adult_number.between' => '大人は5人までです！！',
             'child_number.between' => 'ちゃんといれてね！'
