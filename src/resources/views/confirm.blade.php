@@ -51,7 +51,7 @@
     <div class="confirm_area">
         <div class="confirm_unit">
             <div class="confirm_title">予約人数</div>
-            <div class="confirm_textbox">大人{{$adlut_number}}人:子供{{$child_number}}人</div>
+            <div class="confirm_textbox">大人{{$adult_number}}人:子供{{$child_number}}人</div>
         </div>
 
         <div class="confirm_unit">
@@ -156,11 +156,13 @@
 
     <div class="hidden">
         <input type="hidden" name="camp_id" value="{{$camps->id}}">
-        <input type="hidden" name="adlut_number" value="{{$adlut_number}}">
+        <input type="hidden" name="adult_number" value="{{$adult_number}}">
         <input type="hidden" name="child_number" value="{{$child_number}}">
         <input type="hidden" name="inDate" value="{{$inDate}}">
         <input type="hidden" name="outDate" value="{{$outDate}}">
         <input type="hidden" name="isItemRental" value="{{$isItemRental}}">
+        <input type="hidden" name="isCarRental" value="{{$isCarRental}}">
+
     </div>
 
 
@@ -183,12 +185,6 @@
 
 
 
-    <input type="hidden" name="camp_id" value="{{$camps->id}}">
-    <input type="hidden" name="adlut_number" value="{{$adlut_number}}">
-    <input type="hidden" name="child_number" value="{{$child_number}}">
-    <input type="hidden" name="inDate" value="{{$inDate}}">
-    <input type="hidden" name="outDate" value="{{$outDate}}">
-    <input type="hidden" name="isItemRental" value="{{$isItemRental}}">
-</body>
+   
 
 </html>
