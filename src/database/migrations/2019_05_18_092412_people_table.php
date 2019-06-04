@@ -15,7 +15,7 @@ class PeopleTable extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('adlut_number', 1); //大人の人数
+            $table->string('adult_number', 1); //大人の人数
             $table->string('child_number', 1); //子供の人数
             $table->timestamps();
         });
