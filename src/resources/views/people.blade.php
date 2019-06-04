@@ -56,7 +56,7 @@
             {{-- <form action="{{url('/date' )}}" method="post">
             {{ csrf_field()}}
             <div>大人の人数</div>
-            <select name="adlut_number">
+            <select name="adult_number">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -89,7 +89,7 @@
                             <input type="button" name="spinner_down" class="spinner_down down js-spinner">
                         </div>
                         <div>
-                            <input class="input_number" type="number" name="adlut_number" value="1" tabindex="1">
+                            <input class="input_number" type="number" name="adult_number" value="1" tabindex="1">
                         </div>
                         <div>
                             <input type="button" name="spinner_up" class="spinner_up up js-spinner">
