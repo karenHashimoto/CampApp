@@ -9,7 +9,7 @@
                 <input id="file" type="file" name="image">
 
                 @if ($errors->has('image'))
-                    {{ $errors->first('image') }}
+                {{ $errors->first('image') }}
                 @endif
             </div>
         </fieldset>

@@ -62,11 +62,10 @@ Route::get('/terms', function () {
     return view('terms');
 });
 
-Route::get('/top_recommend','CampsController@recommend_index');
+Route::get('/top_recommend', 'CampsController@recommend_index');
 
 //以下、登録フォームのルート
-Route::get ('/customer'         , 'CustomersController@input');
-Route::post('/customer/confirm' , 'CustomersController@confirm');
-Route::post('/customer/update'  , 'CustomersController@update');
-Route::get ('/customer/complete', 'CustomersController@complete');
-
+Route::get('/customer', 'CustomersController@input');
+Route::post('/customer/confirm', 'CustomersController@confirm');
+Route::post('/customer/update', 'CustomersController@update');
+Route::get('/customer/complete', 'CustomersController@complete');

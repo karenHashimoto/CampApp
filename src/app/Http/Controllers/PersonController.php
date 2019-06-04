@@ -10,6 +10,7 @@ class PersonController extends Controller
 {
     public function index($id)
     {
+
         $camps = Camp::find($id);
 
         return view('people', ['camps' => $camps]);
