@@ -24,7 +24,7 @@ class PeoplePost extends FormRequest
     public function rules()
     {
         return [
-            'adlut_number' => 'required|integer|between:1,5',
+            'adult_number' => 'required|integer|between:1,5',
             'child_number' => 'required|integer|between:0,2'
         ];
     }
@@ -37,7 +37,7 @@ class PeoplePost extends FormRequest
     public function messages()
     {
         return [
-            'adlut_number.between' => '大人は5人までです！！',
+            'adult_number.between' => '大人は5人までです！！',
             'child_number.between' => 'ちゃんといれてね！'
         ];
     }
