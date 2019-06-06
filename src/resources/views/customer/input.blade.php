@@ -66,6 +66,17 @@
     @foreach ($errors->get('phone') as $errorMsg)
     {{ $errorMsg }}
     @endforeach
+
+    <div class="box_item">
+      <div class="user_item"> 備考</div>
+    </div>
+    <div class="form_item">
+      <input type="text" name="memo" value="{{ old('memo') }}"></div>
+    @foreach ($errors->get('memo') as $errorMsg)
+    {{ $errorMsg }}
+    @endforeach
+
+
     <div class="box_item">
       <div class="user_item"> 会員規約</div>
       <div class="required">※必須</div>

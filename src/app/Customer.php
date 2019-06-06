@@ -10,6 +10,7 @@ class Customer extends Model
         'name',
         'email',
         'phone',
+        'memo',
         'adult_number',
         'child_number',
         'inDate',
@@ -18,4 +19,3 @@ class Customer extends Model
         'isCarRental',
     ];
 }
-

@@ -91,28 +91,12 @@
     </div>
     <div class="button_wrap_wide">
         <div>
-        <label for="trigger" class="button_flat_wide">予約確定</label>
+            <label for="trigger" class="button_flat_wide">予約確定</label>
         </div>
-
-        <!-- <button class="button_flat_wide">
-
-                <div class="before_button">
-                </div>
-
-                <div class="center_button">予約確定</div>
-
-                <div class="next_button">
-                    <a href="◯◯" class="button_color_white"><i class="material-icons large-size">
-                            navigate_next
-                        </i> </a>
-                </div>
-            </button>
-        
-        </div> -->
     </div>
 
     <div class="modal_wrap">
-         <input id="trigger" type="checkbox">
+        <input id="trigger" type="checkbox">
         <div class="modal_overlay">
             <label for="trigger" class="modal_trigger"></label>
             <div class="modal_content">
@@ -120,11 +104,11 @@
                 <div class="-is_font_title">COMPLETE!</div>
                 <div class="pic_unit"><img src="/image/camp_complete_img.png" width=100%></div>
                 <div class="-is_font_small">
-                  予約リクエスト完了。日程と在庫確認の上『レンタル予約確定メール』をお送り致します。メールの案内に沿って「お支払い」ください。<br>楽しいキャンプを♪
+                    予約リクエスト完了。日程と在庫確認の上『レンタル予約確定メール』をお送り致します。メールの案内に沿って「お支払い」ください。<br>楽しいキャンプを♪
                 </div>
                 <div class="-is_font_middle">LET'S GO CAMPING</div>
                 <div class="button_wrap_wide">
-                    <div><button class="button_flat_wide_white -is_short" >
+                    <div><button class="button_flat_wide_white -is_short">
 
                             <div class="before_button"></div>
 
@@ -132,7 +116,7 @@
 
                             <div class="next_button">
                             </div>
-                    </button></div>
+                        </button></div>
                 </div>
             </div>
         </div>
@@ -185,6 +169,6 @@
 
 
 
-   
+
 
 </html>

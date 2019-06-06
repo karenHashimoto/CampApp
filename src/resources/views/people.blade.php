@@ -53,26 +53,7 @@
         </div>
 
         <div class="is_harf">
-            {{-- <form action="{{url('/date' )}}" method="post">
-            {{ csrf_field()}}
-            <div>大人の人数</div>
-            <select name="adult_number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <div>小人の人数</div>
-            <select name="child_number">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <input type="hidden" name="camp_id" value={{$camps->id}}>
-            <input type="submit" class="button_flat">
-            </form> --}}
+
 
 
 
