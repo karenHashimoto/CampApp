@@ -11,12 +11,7 @@ use Illuminate\Http\Request;
 
 class DateController extends Controller
 {
-    // public function index($id)
-    // {
-    //     $camps = Camp::find($id);
-
-    //     return view('date', ['camps' => $camps]);
-    // }
+    
     public function index(PeoplePost $request)
     {
 

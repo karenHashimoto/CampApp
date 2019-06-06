@@ -21,7 +21,6 @@ class PersonController extends Controller
         return view('people', ['camps' => $camps]);
     }
 
-
     //人数表示処理関数
     public function confirm()
     { }
