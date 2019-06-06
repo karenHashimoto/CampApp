@@ -45,6 +45,6 @@ class Rental_itemController extends Controller
         ]);
 
 
-        // return view('rental_item', ['camps' => $camps, 'adlut_number' => $adlut_number, 'child_number' => $child_number, 'inDate' => $inDate, 'outDate' => $outDate, 'item_yes' => $item_yes, 'item_no' => $item_no]);
+       
     }
 }

@@ -32,13 +32,7 @@ class ConfirmController extends Controller
         $request->session()->put('isCarRental', $isCarRental);
 
 
-        // $camps = $request->session()->get('camps');
-        // $adlut_number = $request->session()->get('adlut_number');
-        // $child_number  = $request->session()->get('child_number');
-        // $inDate = $request->session()->get('inDate');
-        // $outDate  = $request->session()->get('outDate');
-        // dd($camps,$adlut_number,$child_number,$inDate,$outDate);
-
+        
 
         
 
@@ -53,13 +47,7 @@ class ConfirmController extends Controller
 
 
         return view('customer.input', [
-            'camps' => $camps,
-            'adult_number' => $adult_number,
-            'child_number' => $child_number,
-            'inDate' => $inDate,
-            'outDate' => $outDate,
-            'isItemRental' => $isItemRental,
-            'isCarRental' => $isCarRental
+           
         ]);
     }
 }

@@ -74,9 +74,7 @@
                             <div class="-is-width-maxcontent align_right">チェックアウト</div></span>
                         </div>
 
-                        <input type="hidden" name="camp_id" value={{$camps->id}}>
-                        <input type="hidden" name="adult_number" value={{$adult_number}}>
-                        <input type="hidden" name="child_number" value={{$child_number}}>
+                        
                     </div>
 
 

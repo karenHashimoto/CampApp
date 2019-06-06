@@ -100,7 +100,7 @@
 
   <div class="button_wrap_wide">
     <div>
-      <label for="trigger" class="button_flat_wide">予約確定</label>
+      <input type="submit" name="予約確定" label for="trigger" class="button_flat_wide"></label>
     </div>
   </div>
 

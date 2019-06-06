@@ -29,20 +29,6 @@ class Rental_carController extends Controller
         $request->session()->put('isItemRental', $isItemRental);
 
 
-        //  $camps = $request->session()->get('camps');
-        // $adlut_number = $request->session()->get('adlut_number');
-        // $child_number  = $request->session()->get('child_number');
-        // dd($camps,$adlut_number,$child_number);
-
-        //以下session確認
-        // $camps = $request->session()->get('camps');
-        // $adlut_number = $request->session()->get('adlut_number');
-        // $child_number  = $request->session()->get('child_number');
-        // $inDate = $request->session()->get('inDate');
-        // $outDate  = $request->session()->get('outDate');
-        // // dd($camps,$adlut_number,$child_number,$inDate,$outDate);
-
-
 
 
         return view('rental_car', [

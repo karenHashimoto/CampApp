@@ -9,12 +9,7 @@ use App\Http\Requests\PeoplePost;
 
 class DateController extends Controller
 {
-    // public function index($id)
-    // {
-    //     $camps = Camp::find($id);
-
-    //     return view('date', ['camps' => $camps]);
-    // }
+    
     public function index(PeoplePost $request)
     {
 
@@ -22,11 +17,13 @@ class DateController extends Controller
         $adult_number = $request->adult_number;
         $child_number = $request->child_number;
 
+        
+
         $request->session()->put('camps', $camps);
         $request->session()->put('adult_number', $adult_number);
         $request->session()->put('child_number', $child_number);
 
 
-        return view('date', ['camps' => $camps, 'adult_number' => $adult_number, 'child_number' => $child_number]);
+        return view('date', ['camps' => $camps, ]);
     }
 }
