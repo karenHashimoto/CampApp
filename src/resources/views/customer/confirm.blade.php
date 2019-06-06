@@ -60,7 +60,10 @@
       <div class="confirm_title">備考</div>
       <div class="confirm_textbox">{{$customer->memo}}</div>
     </div>
-
+    <div class="confirm_unit">
+      <div class="confirm_title">キャンプ場名</div>
+      <div class="confirm_textbox"> {{$camps->camp_name}}</div>
+    </div>
     <div class="confirm_unit">
       <div class="confirm_title">予約人数</div>
       <div class="confirm_textbox">大人{{$adult_number}}人:子供{{$child_number}}人</div>
