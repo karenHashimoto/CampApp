@@ -49,6 +49,8 @@ class CustomersController extends Controller
     $request->session()->put('customer', $customer);
 
     // sessionから取得
+    // $customer = $request->session()->all();
+    
     $customer = $request->session()->get('customer');
     $camps = $request->session()->get('camps');
     $adult_number = $request->session()->get('adult_number');
@@ -59,7 +61,7 @@ class CustomersController extends Controller
     $isCarRental  = $request->session()->get('isCarRental');
 
 
-    // dd($camps,$adlut_number,$child_number,$inDate,$outDate,$isItemRental,$isCarRental);
+    // dd($customer,$camps,$adult_number,$child_number,$inDate,$outDate,$isItemRental,$isCarRental);
 
 
     
@@ -102,13 +104,23 @@ class CustomersController extends Controller
     // dd($camps,$adult_number,$child_number,$inDate,$outDate,$isItemRental,$isCarRental);
     
     //DBの更新
+    //以下$customerへの使いの仕方
+    $customer->camp_name = $camps->camp_name;
+    $customer->adult_number = $adult_number;
+    $customer->child_number = $child_number;
+    $customer->inDate = $inDate;
+    $customer->outDate = $outDate;
+    $customer->isItemRental = $isItemRental;
+    $customer->isCarRental = $isCarRental;
+    
     $customer->save();
-    $adult_number->save();
-    $child_number->save();
-    $inDate->save();
-    $outDate->save();
-    $isItemRental->save();
-    $isCarRental->save();
+
+    // $adult_number->save();
+    // $child_number->save();
+    // $inDate->save();
+    // $outDate->save();
+    // $isItemRental->save();
+    // $isCarRental->save();
     
     //ビューの表示
     return redirect('customer/complete');

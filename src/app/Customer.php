@@ -11,6 +11,7 @@ class Customer extends Model
         'email',
         'phone',
         'memo',
+        'camp_name',
         'adult_number',
         'child_number',
         'inDate',
