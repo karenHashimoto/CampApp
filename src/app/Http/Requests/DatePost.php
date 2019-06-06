@@ -24,8 +24,21 @@ class DatePost extends FormRequest
     public function rules()
     {
         return [
-            'inDate' => 'required|date|after:+tomorrow',
-            'outDate' => 'required|'
+            'inDate' => 'required|after:+tomorrow',
+            'outDate' => 'required|date|'
+        ];
+    }
+    /**
+     * 定義済みバリデーションルールのエラーメッセージ取得
+     *
+     * @return array
+     */
+    public function messages()
+    {
+
+        return [
+            'inDate.after' => 'ご予約は１週間前からです',
+            'outDate' => '子どもは2名まで添い寝可能です。'
         ];
     }
 }

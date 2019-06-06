@@ -8,11 +8,12 @@ use App\Date;
 use App\Perosn;
 use App\Rental_car;
 use App\Rental_item;
+use App\Http\Requests\DatePost;
 
 
 class Rental_itemController extends Controller
 {
-    public function index(Request $request)
+    public function index(DatePost $request)
     {
         // dd($request);
         $camps = Camp::find($request->camp_id);
@@ -26,7 +27,7 @@ class Rental_itemController extends Controller
         $request->session()->put('outDate', $outDate);
 
 
-       
+
 
         if ($request->has('item_yes')) {
             $isItemRental = '1';

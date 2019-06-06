@@ -35,20 +35,20 @@ Route::get('/questionnaire3', function () {
 
 Route::get('/top', 'CampsController@index');
 
-Route::get('/detail/{id}', 'DetailController@index');
+Route::get('/detail/{id}', 'DetailController@index')->name('detail');
 
 Route::get('/test_02/{id}', 'Test_02Controller@index');
 
 Route::resource('/photos', 'PhotosController', ['only' => ['create', 'store']]);
 
 
-Route::get('/people/{id}', 'PersonController@index');
+Route::get('/people/{id}', 'PersonController@index')->name('people');
 
 
-Route::post('/date', 'DateController@index');
+Route::post('/date', 'DateController@index')->name('date');
 
 
-Route::post('/rental_item', 'Rental_itemController@index');
+Route::post('/rental_item', 'Rental_itemController@index')->name('rental_item');
 
 Route::post('/rental_car', 'Rental_carController@index');
 

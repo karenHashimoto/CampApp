@@ -16,13 +16,8 @@ class PersonController extends Controller
 
         $camps = Camp::find($id);
 
-        
+
 
         return view('people', ['camps' => $camps]);
     }
-
-
-    //人数表示処理関数
-    public function confirm()
-    { }
 }

@@ -7,8 +7,6 @@ use App\Person;
 use App\Date;
 use App\Http\Requests\PeoplePost;
 
-use Illuminate\Http\Request;
-
 class DateController extends Controller
 {
     // public function index($id)
