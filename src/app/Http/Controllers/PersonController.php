@@ -16,6 +16,8 @@ class PersonController extends Controller
 
         $camps = Camp::find($id);
 
+        
+
         return view('people', ['camps' => $camps]);
     }
 
