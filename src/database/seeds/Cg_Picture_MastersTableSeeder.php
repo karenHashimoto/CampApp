@@ -86,39 +86,39 @@ class Cg_picture_MastersTableSeeder extends Seeder
             ],
             [
                 'id' => '19',
-                'path' => 'id2/cg19.jpg',
+                'path' => 'id3/cg19.jpg',
             ],
             [
                 'id' => '20',
-                'path' => 'cg20.jpg',
+                'path' => 'id3/cg20.jpg',
             ],
             [
                 'id' => '21',
-                'path' => 'cg21.jpg',
+                'path' => 'id3/cg21.jpg',
             ],
             [
                 'id' => '22',
-                'path' => 'cg22.jpg',
+                'path' => 'id3/cg22.jpg',
             ],
             [
                 'id' => '23',
-                'path' => 'cg23.jpg',
+                'path' => 'id3/cg23.jpg',
             ],
             [
                 'id' => '24',
-                'path' => 'cg24.jpg',
+                'path' => 'id3/cg24.jpg',
             ],
             [
                 'id' => '25',
-                'path' => 'cg25.jpg',
+                'path' => 'id3/cg25.jpg',
             ],
             [
                 'id' => '26',
-                'path' => 'cg26.jpg',
+                'path' => 'id3/cg26.jpg',
             ],
             [
                 'id' => '27',
-                'path' => 'cg27.jpg',
+                'path' => 'id3/cg27.jpg',
             ],
             [
                 'id' => '28',
