@@ -18,6 +18,8 @@ class CustomersController extends Controller
   public function input() {
     $request->session()->put('isCarRental', $isCarRental);
 
+    
+
     return view('customer.input');
   }
   
