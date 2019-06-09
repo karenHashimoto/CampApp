@@ -1,3 +1,8 @@
+.circle::after {
+    content: "";
+    transform: rotate(72deg);
+}
+
 .people-number_title {
     color: #FDB3AD;
 }
