@@ -174,7 +174,7 @@
                     // console.log(pDate)
                     $("#outDate").datepicker("option", "minDate", pDate);
                     // ここで宿泊数計算の関数を実行する
-                    assingStayDates(pDate)
+                    // assingStayDates(pDate)
                 }
             })
             $("#outDate").datepicker({

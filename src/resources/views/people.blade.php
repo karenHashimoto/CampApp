@@ -79,7 +79,7 @@
                             <input type="button" name="spinner_down" class="spinner_down down js-spinner">
                         </div>
                         <div>
-                            <input class="input_number" type="number" name="adult_number" value="1" tabindex="1">
+                            <input class="input_number" type="number" name="adult_number" value="2" tabindex="1">
                         </div>
                         <div>
                             <input type="button" name="spinner_up" class="spinner_up up js-spinner">
@@ -93,7 +93,7 @@
                             <input type="button" name="spinner_up_c" class="spinner_down down js-spinner">
                         </div>
                         <div>
-                            <input class="input_number" type="number" name="child_number" value="1" tabindex="1">
+                            <input class="input_number" type="number" name="child_number" value="0" tabindex="1">
                         </div>
                         <div>
                             <input type="button" name="spinner_up_c" class="spinner_up up js-spinner">
@@ -142,7 +142,7 @@
                 var current = parseInt($current.val());
                 if (direction === "up") {
                     $current.val(++current)
-                } else if (direction === "down" && current > 1) {
+                } else if (direction === "down" && current > 0) {
                     $current.val(--current)
                 }
             }
