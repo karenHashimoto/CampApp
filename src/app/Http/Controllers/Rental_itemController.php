@@ -41,10 +41,7 @@ class Rental_itemController extends Controller
             'adult_number' => $adult_number,
             'child_number' => $child_number,
             'inDate' => $inDate,
-            'outDate' => $outDate,
+            'outDate' => $outDate
         ]);
-
-
-       
     }
 }
