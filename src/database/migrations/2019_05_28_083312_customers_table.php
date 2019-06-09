@@ -14,11 +14,22 @@ class CustomersTable extends Migration
     public function up()
     {
         Schema::create('customers', function (Blueprint $table) {
+            
             $table->increments('id');
             $table->string('name');
             $table->string('email');
             $table->string('phone');
+            $table->string('memo',200);
+            $table->string('camp_name');
+            $table->string('adult_number');
+            $table->string('child_number');
+            $table->string('inDate');
+            $table->string('outDate');
+            $table->string('isItemRental');
+            $table->string('isCarRental');
             $table->timestamps();
+
+            
         });
     }
 

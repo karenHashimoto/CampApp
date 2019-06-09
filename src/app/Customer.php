@@ -10,6 +10,13 @@ class Customer extends Model
         'name',
         'email',
         'phone',
+        'memo',
+        'camp_name',
+        'adult_number',
+        'child_number',
+        'inDate',
+        'outDate',
+        'isItemRental',
+        'isCarRental',
     ];
 }
-

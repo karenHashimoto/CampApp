@@ -19,7 +19,7 @@
     <div class="fixed">
         <div class="header">
             <div class="before_button">
-                <a href="○○" class="button_color_glay"><i class="material-icons large-size">
+                <a href="{{ route('date', ['id' => $camps->id]) }}" class="button_color_glay"><i class="material-icons large-size">
                         navigate_before
                     </i> </a>
             </div>
@@ -80,11 +80,7 @@
             </div>
         </div>
 
-        <input type="hidden" name="camp_id" value="{{$camps->id}}">
-        <input type="hidden" name="adlut_number" value="{{$adlut_number}}">
-        <input type="hidden" name="child_number" value="{{$child_number}}">
-        <input type="hidden" name="inDate" value="{{$inDate}}">
-        <input type="hidden" name="outDate" value="{{$outDate}}">
+
 
     </form>
 </body>
