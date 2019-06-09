@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PeoplePost extends FormRequest
+class InputPost extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,12 @@ class PeoplePost extends FormRequest
     public function rules()
     {
         return [
-            'adult_number' => 'required|integer|between:1,2',
-            'child_number' => 'required|integer|between:0,2'
+            'name' => 'required',
+            'email' => 'required',
+            'phone' => 'required'
         ];
     }
+
 
     /**
      * 定義済みバリデーションルールのエラーメッセージ取得
@@ -38,8 +40,9 @@ class PeoplePost extends FormRequest
     {
 
         return [
-            'adult_number.between' => '3名以上お申し込みの場合は2名でご予約頂き、備考欄にご希望人数をご記入ください。',
-            'child_number.between' => '子どもは2名まで添い寝可能です。'
+            'name' => '必須項目です。',
+            'email' => '必須項目です。',
+            'phone' => '必須項目です。'
         ];
     }
 }

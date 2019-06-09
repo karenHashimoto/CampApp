@@ -35,17 +35,17 @@
 
 
   <div class="reserve_band">お客様情報入力</div>
-    <div class="stepper_wrap">
-        <div class="stepper">
-            <div class="circle">
-                <div class="circle-inner">85%</div>
-            </div>
-        </div>
-        <div class="purpose_unit">
-            <div class="purpose">レンタカー予約</div>
-            <div class="purpose_next">予約完了まで あとすこし♫</div>
-        </div>
+  <div class="stepper_wrap">
+    <div class="stepper">
+      <div class="circle">
+        <div class="circle-inner">85%</div>
+      </div>
     </div>
+    <div class="purpose_unit">
+      <div class="purpose">レンタカー予約</div>
+      <div class="purpose_next">予約完了まで あとすこし♫</div>
+    </div>
+  </div>
 
   <form method="POST" action="{{action('CustomersController@confirm')}}">
     @csrf
@@ -54,7 +54,7 @@
       <div class="required">※必須</div>
     </div>
     <div class="form_item">
-      <input type="text" name="name" value="{{ old('name') }}"></div>
+      <input type="text" name="name" required="required" value="{{ old('name') }}"></div>
     @foreach ($errors->get('name') as $errorMsg)
     {{ $errorMsg }}
     @endforeach
@@ -64,7 +64,7 @@
       <div class="required">※必須</div>
     </div>
     <div class="form_item">
-      <input type="text" name="email" value="{{ old('email') }}"></div>
+      <input type="text" name="email" required="required" value="{{ old('email') }}"></div>
     @foreach ($errors->get('email') as $errorMsg)
     {{ $errorMsg }}
     @endforeach
@@ -74,7 +74,7 @@
       <div class="required">※必須</div>
     </div>
     <div class="form_item">
-      <input type="text" name="phone" value="{{ old('phone') }}"></div>
+      <input type="text" name="phone" required="required" value="{{ old('phone') }}"></div>
     @foreach ($errors->get('phone') as $errorMsg)
     {{ $errorMsg }}
     @endforeach
