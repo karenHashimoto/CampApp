@@ -15,7 +15,7 @@ class CampsTableSeeder extends Seeder
         DB::table('camps')->insert([
             [
                 'id' => '1',
-                'camp_img' => 'cg1.jpg',
+                'camp_img' => 'id1/cg1.jpg',
                 'camp_name' => 'ボイボイキャンプ場',
                 'cg_title' => '何も遮るものがない、大分・くじゅう高原約1万坪もの広大な草原が広がる解放感抜群のキャンプ場！',
                 'cg_subtitle' => '野原のはるか向こうに阿蘇五岳、九州山地が一望出来る贅沢な景色が広がるオートキャンプ場☆お気に入りの場所を見つけ、自由にテントを張っていただけるフリーサイトスペースが自慢。',
@@ -42,7 +42,7 @@ class CampsTableSeeder extends Seeder
             ],
             [
                 'id' => '2',
-                'camp_img' => 'cg13.jpg',
+                'camp_img' => 'id2/cg10.jpg',
                 'camp_name' => '平尾台自然の郷キャンプ場',
                 'cg_title' => 'カルスト台地の開放的なキャンプ場',
                 'cg_subtitle' => '芝生の開放的なキャンプ場です。体験工房や遊具、草ソリ場など子供も楽しめるので家族連れにおすすめです。',
