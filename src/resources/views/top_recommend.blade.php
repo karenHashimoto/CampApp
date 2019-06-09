@@ -31,10 +31,72 @@
 
         </div>
 
+        
+        <ul class="tab-list">
+    <!--タブ-->
+    <li class="tab is-active">                
+                <div><i class="material-icons small-size">business_center</i></div>
+                <div><a class="_is_color_deeppink" href="#title1">キャンプ予約</a></div>  </li>
+    <li class="tab">
+                <div><i class="material-icons small-size">format_list_bulleted</i></div>
+                <div><a href="#title2">レンタル内容</a></div>
 
-        <div class="top_var">Recommend Campground</div>
+    </li>
+    <li class="tab">  
+               <div><i class="material-icons small-size">access_time</i></div>
+                <div><a href="#title3">キャンプ当日</a></div>
+
+    </li>
+</ul>
+<div class="top_var">Recommend Campground</div>
+
+<div class="main">
+    <!--タブを切り替えて表示するコンテンツ-->
+    <div class="content is-show">
+    <!-- ここを修正 -->
+
+    
+    </div>
+    <div class="content">
+    <div class="box_empty -is_white_bg"></div>
+        <div class="wrapper_item">
+        <img src="/image/rental1.jpg" width="100%">
+        <img src="/image/rental2.jpg" width="100%">
     </div>
 
+
+    </div>
+
+    <div class="content">
+    <div class="box_empty -is_white_bg"></div>
+        <div class="wrapper_flow">
+            <img src="/image/flow1.jpg" width="100%" class="negativ_margin">
+            <img src="/image/flow2.jpg" width="100%">
+            <img src="/image/flow3.jpg" width="100%">
+        </div>
+    </div>
+</div>
+
+
+        <!-- <div class="tab">
+            <div class="tab_item is_on">
+                <div><i class="material-icons small-size">departure_board</i></div>
+                <div><a class="_is_color_deeppink" href="#title1">キャンプ予約</a></div>
+            </div>
+            <div class="tab_item">
+                <div><i class="material-icons small-size">sentiment_satisfied_alt</i></div>
+                <div><a href="#title2">レンタル内容</a></div>
+            </div>
+            <div class="tab_item">
+                <div><i class="material-icons small-size">hot_tub</i></div>
+                <div><a href="#title3">キャンプ当日</a></div>
+            </div>
+        </div> -->
+
+
+    </div>
+
+<div class="wrapper_book">
     <div class="card_head">
         <div class="nav_title_wrap">
             <div id="title1" class="nav_title_img">
@@ -114,22 +176,37 @@
     </div>
     @endforeach
     <div class="box_empty"></div>
+ </div>
+
+<!-- <div class="wrapper_item">
+<img src="/image/rental1.jpg" width="100%">
+<img src="/image/rental2.jpg" width="100%">
+
+</div>
+
+<div class="wrapper_flow">
+<img src="/image/flow1.jpg" width="100%" class="negativ_margin">
+<img src="/image/flow2.jpg" width="100%">
+<img src="/image/flow3.jpg" width="100%"> -->
 
 
+</div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<script type="text/javascript">
+jQuery(function($){
+	$('.tab').click(function(){
+		$('.tab.is-active').removeClass('is-active');
+		$(this).addClass('is-active');
+		$(".content.is-show").removeClass('is-show');
+        // クリックしたタブからインデックス番号を取得
+		const index = $(this).index();
+        // クリックしたタブと同じインデックス番号をもつコンテンツを表示
+		$(".content").eq(index).addClass('is-show');
+	});
+});
+</script>
 </body>
 
 

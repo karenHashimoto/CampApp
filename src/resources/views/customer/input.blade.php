@@ -33,7 +33,19 @@
     </div>
   </div>
 
+
   <div class="reserve_band">お客様情報入力</div>
+    <div class="stepper_wrap">
+        <div class="stepper">
+            <div class="circle">
+                <div class="circle-inner">85%</div>
+            </div>
+        </div>
+        <div class="purpose_unit">
+            <div class="purpose">レンタカー予約</div>
+            <div class="purpose_next">予約完了まで あとすこし♫</div>
+        </div>
+    </div>
 
   <form method="POST" action="{{action('CustomersController@confirm')}}">
     @csrf
@@ -87,7 +99,7 @@
       <div class="terms">
         <a href="terms" class="kiyaku">キャンシェルジュ会員規約</a></div>
       <div>
-        <input type="checkbox" value="" name="agree_terms" id="agree" required="required">キャンシェルジュ規約に同意する</div>
+        <input type="checkbox" value="" name="agree_terms" id="agree" required="required"> キャンシェルジュ規約に同意する</div>
       <div class="color_pink">
         <div class="materiai_icons">
           <i class="material-icons">
@@ -115,8 +127,7 @@
     </div>
 
     <div class="wrap_end">
-      ・ご登録いただいたメールアドレスに予約確認メールをお送りさせていただきます。<br>
-      ・ご登録いただいたお電話番号に、確認のお電話をさせていただきます。
+      ご登録いただいたメールアドレスに予約確認メールが自動送信されます。その後48時間以内に担当者よりご登録いただいたお電話番号へ在庫確認のお電話をさせていただきます。
     </div>
 
   </form>
