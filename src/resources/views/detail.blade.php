@@ -6,7 +6,8 @@
   <title>camcierge</title>
 
   <meta name="viewport" content="width=device-width; initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href=
+  "/css/header.css">
   <link rel="stylesheet" href="/css/detail.css">
   <link rel="stylesheet" href="/css/reco_unit.css">
 
