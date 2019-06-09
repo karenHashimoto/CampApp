@@ -10,25 +10,12 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return '<html><body>
 
-    <a href="questionnaire1"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
+    <a href="top_recommend"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
     
     </body></html>';
 });
 
-Route::get('/questionnaire1', function () {
-    return '<html><body>
-    <a href="questionnaire2"><img src="/image/Q1.svg" width="100%" heigth="max"></a></body></html>';
-});
 
-Route::get('/questionnaire2', function () {
-    return '<html><body>
-    <a href="questionnaire3"><img src="/image/Q2.svg" width="100%" heigth="max"></a></body></html>';
-});
-
-Route::get('/questionnaire3', function () {
-    return '<html><body>
-    <a href="top_recommend"><img src="/image/Q3.svg" width="100%" heigth="max"></a></body></html>';
-});
 
 
 
@@ -37,9 +24,7 @@ Route::get('/top', 'CampsController@index');
 
 Route::get('/detail/{id}', 'DetailController@index')->name('detail');
 
-Route::get('/test_02/{id}', 'Test_02Controller@index');
 
-Route::resource('/photos', 'PhotosController', ['only' => ['create', 'store']]);
 
 
 Route::get('/people/{id}', 'PersonController@index')->name('people');
