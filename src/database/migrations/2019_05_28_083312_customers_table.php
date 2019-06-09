@@ -19,7 +19,7 @@ class CustomersTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('memo',200);
+            $table->string('memo',200)->nullable();
             $table->string('camp_name');
             $table->string('adult_number');
             $table->string('child_number');
