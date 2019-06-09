@@ -76,12 +76,7 @@
                     </div>
                 </button></div>
         </div>
-        <input type="hidden" name="camp_id" value="{{$camps->id}}">
-        <input type="hidden" name="adlut_number" value="{{$adlut_number}}">
-        <input type="hidden" name="child_number" value="{{$child_number}}">
-        <input type="hidden" name="inDate" value="{{$inDate}}">
-        <input type="hidden" name="outDate" value="{{$outDate}}">
-        <input type="hidden" name="isItemRental" value="{{$isItemRental}}">
+       
     </form>
 
 

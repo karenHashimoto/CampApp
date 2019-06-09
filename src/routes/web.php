@@ -7,10 +7,10 @@ use App\Camp_Point;
 use App\Person;
 use Illuminate\Http\Request;
 
-Route::get('/',function(){
+Route::get('/', function () {
     return '<html><body>
 
-    <a href="top"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
+    <a href="top_recommend"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
     
     </body></html>';
 });
@@ -18,34 +18,39 @@ Route::get('/',function(){
 
 
 
+
+
 Route::get('/top', 'CampsController@index');
 
-Route::get('/detail/{id}', 'DetailController@index');
-
-Route::get('/test_02/{id}', 'Test_02Controller@index');
-
-Route::resource('/photos', 'PhotosController', ['only' => ['create', 'store']]);
-
-// Route::get('/peoplaaae/{id}', 'PersonController@index')->name('aaa');
-
-// Route::get('/peoplaaae/{id}', 'PersonController@index')->name('aaa');
-
-Route::get('/people/{id}', 'PersonController@index');
-
-// Route::get('/people', 'PersonController@store')->name('people');
-// Route::get('/people/{id}', 'PersonController@store')->name('people');
+Route::get('/detail/{id}', 'DetailController@index')->name('detail');
 
 
-// Route::post('/people/{id}', 'PersonController@store')->name('people');
-// Route::post('/people/{id}', 'PersonController@store');
 
-// Route::get('/date/{id}', 'PersonController@store');
 
-Route::post('/date', 'DateController@index');
+Route::get('/people/{id}', 'PersonController@index')->name('people');
 
-// Route::get('/date/{id}', 'DateController@store');
-Route::post('/rental_item', 'Rental_itemController@index');
+
+Route::post('/date', 'DateController@index')->name('date');
+
+
+Route::post('/rental_item', 'Rental_itemController@index')->name('rental_item');
 
 Route::post('/rental_car', 'Rental_carController@index');
 
 Route::post('/confirm', 'ConfirmController@index');
+
+Route::get('/privacy', function () {
+    return view('privacy');
+});
+
+Route::get('/terms', function () {
+    return view('terms');
+});
+
+Route::get('/top_recommend', 'CampsController@recommend_index');
+
+//以下、登録フォームのルート
+Route::get('/customer', 'CustomersController@input');
+Route::post('/customer/confirm', 'CustomersController@confirm');
+Route::post('/customer/update', 'CustomersController@update');
+Route::get('/customer/complete', 'CustomersController@complete');

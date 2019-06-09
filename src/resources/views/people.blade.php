@@ -18,7 +18,7 @@
     <div class="fixed">
         <div class="header">
             <div class="before_button">
-                <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                <a href="{{ route('detail', ['id' => $camps->id]) }}" class="button_color_glay"><i class="material-icons large-size">
                         navigate_before
                     </i> </a>
             </div>
@@ -45,7 +45,6 @@
     <div class="wrapper -is-flexbox">
 
         <div class="is_harf">
-            <div class="plan_comment">{{$camps->plan_comment}}</div>
             <div class="plan_name">{{$camps->plan_name}}</div>
 
 
@@ -53,30 +52,20 @@
         </div>
 
         <div class="is_harf">
-            {{-- <form action="{{url('/date' )}}" method="post">
-            {{ csrf_field()}}
-            <div>大人の人数</div>
-            <select name="adlut_number">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <div>小人の人数</div>
-            <select name="child_number">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-            </select>
-            <input type="hidden" name="camp_id" value={{$camps->id}}>
-            <input type="submit" class="button_flat">
-            </form> --}}
 
 
 
 
+
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
 
             <form action="{{url('/date' )}}" method="post">
                 {{ csrf_field()}}
@@ -89,7 +78,7 @@
                             <input type="button" name="spinner_down" class="spinner_down down js-spinner">
                         </div>
                         <div>
-                            <input class="input_number" type="number" name="adlut_number" value="1" tabindex="1">
+                            <input class="input_number" type="number" name="adult_number" value="2" tabindex="1">
                         </div>
                         <div>
                             <input type="button" name="spinner_up" class="spinner_up up js-spinner">
@@ -103,7 +92,7 @@
                             <input type="button" name="spinner_up_c" class="spinner_down down js-spinner">
                         </div>
                         <div>
-                            <input class="input_number" type="number" name="child_number" value="1" tabindex="1">
+                            <input class="input_number" type="number" name="child_number" value="0" tabindex="1">
                         </div>
                         <div>
                             <input type="button" name="spinner_up_c" class="spinner_up up js-spinner">
@@ -152,7 +141,7 @@
                 var current = parseInt($current.val());
                 if (direction === "up") {
                     $current.val(++current)
-                } else if (direction === "down" && current > 1) {
+                } else if (direction === "down" && current > 0) {
                     $current.val(--current)
                 }
             }

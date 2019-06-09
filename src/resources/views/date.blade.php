@@ -22,7 +22,7 @@
     <div class="fixed">
         <div class="header">
             <div class="before_button">
-                <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                <a href="{{ route('people', ['id' => $camps->id]) }}" class="button_color_glay"><i class="material-icons large-size">
                         navigate_before
                     </i> </a>
             </div>
@@ -74,9 +74,7 @@
                             <div class="-is-width-maxcontent align_right">チェックアウト</div></span>
                         </div>
 
-                        <input type="hidden" name="camp_id" value={{$camps->id}}>
-                        <input type="hidden" name="adlut_number" value={{$adlut_number}}>
-                        <input type="hidden" name="child_number" value={{$child_number}}>
+                        
                     </div>
 
 
@@ -176,7 +174,7 @@
                     // console.log(pDate)
                     $("#outDate").datepicker("option", "minDate", pDate);
                     // ここで宿泊数計算の関数を実行する
-                    assingStayDates(pDate)
+                    // assingStayDates(pDate)
                 }
             })
             $("#outDate").datepicker({

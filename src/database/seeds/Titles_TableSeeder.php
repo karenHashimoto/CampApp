@@ -15,8 +15,8 @@ class Titles_TableSeeder extends Seeder
         DB::table('titles')->insert([
             [
                 'id' => '1',
-                'top_title' => '福岡県からドライブ２時間のキャンプ場',
-                'top_subtitle' => '意外と近くに素敵なキャンプ場が！おすすめをピックアップ♪',
+                'top_title' => 'キャンシェルジュがピックアップ♫',
+                'top_subtitle' => '初めてのキャンプ！でも大丈夫！安心して楽しめます！',
                 'top_img' => 'hoge.jpeg'
             ],
             [
