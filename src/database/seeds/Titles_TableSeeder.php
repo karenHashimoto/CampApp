@@ -15,8 +15,8 @@ class Titles_TableSeeder extends Seeder
         DB::table('titles')->insert([
             [
                 'id' => '1',
-                'top_title' => 'キャンシェルジュがピックアップ♫',
-                'top_subtitle' => '初めてのキャンプ！でも大丈夫！安心して楽しめます！',
+                'top_title' => 'キャンシェルジュのおすすめのキャンプ場',
+                'top_subtitle' => '女性向けキャンプコミュニティ『キャンジョ』でも話題。はじめてでも安心して楽しめるキャンプ場。',
                 'top_img' => 'hoge.jpeg'
             ],
             [
