@@ -110,7 +110,7 @@
             <div class="nav_layertext">Recommend</div>
 
             <div  class="nav_title">
-                <div><i class="material-icons">departure_board</i></div>
+                <div><i class="material-icons">check_box</i></div>
                 <div>{{$titles1->top_title}}</div>
             </div>
         </div>
