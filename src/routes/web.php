@@ -25,6 +25,14 @@ Route::get('/top', 'CampsController@index');
 Route::get('/detail/{id}', 'DetailController@index')->name('detail');
 
 
+Route::get('/about_us', function () {
+    return view('about_us');
+});
+
+Route::get('/how_to_spend', function () {
+    return view('how_to_spend');
+});
+
 
 
 Route::get('/people/{id}', 'PersonController@index')->name('people');
