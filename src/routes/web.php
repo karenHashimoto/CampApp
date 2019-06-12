@@ -38,6 +38,7 @@ Route::get('/how_to_spend', function () {
 Route::get('/people/{id}', 'PersonController@index')->name('people');
 
 
+Route::get('/date', 'DateController@review');
 Route::post('/date', 'DateController@index')->name('date');
 
 
