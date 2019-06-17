@@ -24,7 +24,7 @@ class DatePost extends FormRequest
     public function rules()
     {
         return [
-            'inDate' => 'required|after:+tomorrow',
+            'inDate' => 'required|after:+1 week',
             'outDate' => 'required|date|'
         ];
     }
