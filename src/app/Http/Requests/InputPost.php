@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class DatePost extends FormRequest
+class InputPost extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,13 @@ class DatePost extends FormRequest
     public function rules()
     {
         return [
-            'inDate' => 'required|after:+1 week',
-            'outDate' => 'required|date|'
+            'name' => 'required',
+            'email' => 'required',
+            'phone' => 'required'
         ];
     }
+
+
     /**
      * 定義済みバリデーションルールのエラーメッセージ取得
      *
@@ -37,8 +40,9 @@ class DatePost extends FormRequest
     {
 
         return [
-            'inDate.after' => 'ご予約は１週間前からです',
-            'outDate' => '子どもは2名まで添い寝可能です。'
+            'name' => '必須項目です。',
+            'email' => '必須項目です。',
+            'phone' => '必須項目です。'
         ];
     }
 }

@@ -45,7 +45,6 @@
     <div class="wrapper -is-flexbox">
 
         <div class="is_harf">
-            <div class="plan_comment">{{$camps->plan_comment}}</div>
             <div class="plan_name">{{$camps->plan_name}}</div>
 
 

@@ -148,10 +148,10 @@
     </div>
     <div class="plan_amount_unit">
       <div class="plan_amount">
-        <div>2,000</div>
+        <div>{{$camps->plan_fee}}</div>
         <div class="fontsize_smaller">円/泊〜</div>
       </div>
-      <div class="plan_max_people">（最大5名OK）</div>
+      <div class="plan_max_people">（最大{{$camps->max_people}}名OK）</div>
     </div>
   </div>
 

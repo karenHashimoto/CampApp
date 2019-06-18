@@ -403,13 +403,19 @@ html {
 .purpose {
     font-size: 1.7em;
     font-weight: bold;
-    text-align: center;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .purpose_next {
     font-size: 0.7em;
-    text-align: right;
     vertical-align: bottom;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 /* レンタル商材の画像 */

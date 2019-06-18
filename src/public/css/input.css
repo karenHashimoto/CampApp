@@ -1,16 +1,16 @@
 /* 180度以下はアフターの角度のみ動かす */
 /* 180度以上はサークル・アフターを＃３３３　０度固定、ビフォーを＃９９９で（０−１８０度）動かす */
 
-.circle{
-    background:#333;
+.circle {
+    background: #333;
 }
 
 .circle::before {
     transform: rotate(124deg);
     background: #999;
-  }
-  
-  .circle::after {
+}
+
+.circle::after {
     content: "";
     /* display: block;
     position: absolute;
@@ -24,10 +24,14 @@
     transform: rotate(0deg);
     background: #333;
     /* animation: rotate-circle-right 2s linear forwards; */
-  }
+}
 
+.wrap_bottom {
+    color: #86929D;
 
-body {
+}
+
+.wrap_end {
     color: #86929D;
 }
 

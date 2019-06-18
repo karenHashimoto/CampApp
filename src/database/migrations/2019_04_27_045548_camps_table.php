@@ -19,9 +19,9 @@ class CampsTable extends Migration
             $table->string('camp_name', 30); //キャンプ場名
             $table->string('cg_title', 50); //キャンプ場見出し
             $table->string('cg_subtitle', 100); //キャンプ場サブ見出し
-            $table->string('reco_text1', 50); //おすすめ１
-            $table->string('reco_text2', 50); //おすすめ2
-            $table->string('reco_text3', 50); //おすすめ3
+            $table->string('reco_text1', 100); //おすすめ１
+            $table->string('reco_text2', 100); //おすすめ2
+            $table->string('reco_text3', 100); //おすすめ3
             $table->string('state', 8); //都道府県名
             $table->string('city', 24); //市町村名
             $table->string('address', 64); //番地

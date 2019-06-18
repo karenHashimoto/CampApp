@@ -35,17 +35,17 @@
 
 
   <div class="reserve_band">お客様情報入力</div>
-    <div class="stepper_wrap">
-        <div class="stepper">
-            <div class="circle">
-                <div class="circle-inner">85%</div>
-            </div>
-        </div>
-        <div class="purpose_unit">
-            <div class="purpose">レンタカー予約</div>
-            <div class="purpose_next">予約完了まで あとすこし♫</div>
-        </div>
+  <div class="stepper_wrap">
+    <div class="stepper">
+      <div class="circle">
+        <div class="circle-inner">85%</div>
+      </div>
     </div>
+    <div class="purpose_unit">
+      <div class="purpose">レンタカー予約</div>
+      <div class="purpose_next">予約完了まで あとすこし♫</div>
+    </div>
+  </div>
 
   <form method="POST" action="{{action('CustomersController@confirm')}}">
     @csrf

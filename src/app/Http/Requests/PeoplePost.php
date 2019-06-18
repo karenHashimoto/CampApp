@@ -24,7 +24,7 @@ class PeoplePost extends FormRequest
     public function rules()
     {
         return [
-            'adult_number' => 'required|integer|between:1,4',
+            'adult_number' => 'required|integer|between:1,2',
             'child_number' => 'required|integer|between:0,2'
         ];
     }
@@ -38,7 +38,7 @@ class PeoplePost extends FormRequest
     {
 
         return [
-            'adult_number.between' => '5名以上お申し込みの場合は4名でご予約頂き、備考欄にご希望人数をご記入ください。',
+            'adult_number.between' => '3名以上お申し込みの場合は2名でご予約頂き、備考欄にご希望人数をご記入ください。',
             'child_number.between' => '子どもは2名まで添い寝可能です。'
         ];
     }
