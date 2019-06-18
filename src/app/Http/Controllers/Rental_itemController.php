@@ -15,7 +15,7 @@ class Rental_itemController extends Controller
 {
     public function index(DatePost $request)
     {
-        dd($request);
+        ($request);
         $camps = Camp::find($request->camp_id);
         $adult_number = $request->adult_number;
         $child_number = $request->child_number;
