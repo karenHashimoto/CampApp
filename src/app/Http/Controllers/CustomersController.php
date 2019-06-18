@@ -114,9 +114,12 @@ class CustomersController extends Controller
     $customer->isItemRental = $isItemRental;
     $customer->isCarRental = $isCarRental;
     
+
+
     $customer->save();
 
-    
+    $request->session()->flush();
+
     //ビューの表示
     return redirect('customer/complete');
   }
