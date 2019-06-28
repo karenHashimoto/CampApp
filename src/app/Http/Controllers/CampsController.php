@@ -50,7 +50,7 @@ class CampsController extends Controller
                    
 
         $camps = Camp::whereBetween('id', [4, 56])->get(); //collection_object
-        dd($camps);
+        // dd($camps);
        
 
         return view('list', ['camps' => $camps]);
