@@ -63,3 +63,6 @@ Route::get('/customer', 'CustomersController@input');
 Route::post('/customer/confirm', 'CustomersController@confirm');
 Route::post('/customer/update', 'CustomersController@update');
 Route::get('/customer/complete', 'CustomersController@complete');
+
+
+Route::get('/list', 'CampsController@list');
