@@ -187,6 +187,23 @@
         </div>
     </div>
     @endforeach
+
+    <div class="button_wrap_wide">
+            <div><button class="button_flat_wide" >
+
+                    <div class="before_button">
+                    </div>
+
+                    <div class="center_button">その他キャンプ場</div>
+
+                    <div class="next_button">
+                        <a href="" class="button_color_white"><i class="material-icons large-size">
+                                navigate_next
+                            </i> </a>
+                    </div>
+                </button></div>
+        </div>
+
     <div class="box_empty"></div>
  </div>
 
