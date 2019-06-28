@@ -1,13 +1,13 @@
 ul {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
 
 
 /* ヘッダー等 */
 a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
 
 .body {
@@ -91,9 +91,10 @@ a {
     border-top:none;
     background:#eee;
 } */
-.content{
-    display:none;
+.content {
+    display: none;
 }
+
 .tab.is-active {
     /* background: #F00; */
     /* color: #FFF; */
@@ -102,8 +103,8 @@ a {
     color: white;
 }
 
-.content.is-show{
-    display:block;
+.content.is-show {
+    display: block;
 }
 
 /* ここまで追加 */
@@ -129,7 +130,7 @@ a {
     cursor: pointer;
 }
 
- .-is_color_deeppink {
+.-is_color_deeppink {
     /* display: flex;
     justify-content: center;
     width: 100%;
@@ -163,9 +164,9 @@ a {
     color: white;
 }
 
-a .-is_color_deeppink{
-        color: #DC8A8C;
-    }
+a .-is_color_deeppink {
+    color: #DC8A8C;
+}
 
 
 .tabmenu {
@@ -391,9 +392,9 @@ testSVG>svg {
 /* .reco_point{
     margin: 0px 20px;
   } */
-.reco-main_margin{
+.reco-main_margin {
 
-    padding:0 30px;
+    padding: 0 30px;
 }
 
 
@@ -488,8 +489,9 @@ testSVG>svg {
     /* align-items: center; */
 }
 
-} */
+}
 
+*/
 /* 仮入力 */
 
 *,
@@ -627,7 +629,7 @@ html {
   
   } */
 
-.card_img{
+.card_img {
     /* height:200px; */
 }
 
@@ -639,7 +641,7 @@ html {
     height: 200px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    object-position: 0 100%;
+    /* object-position: 0 100%; */
     background-position: center center;
     /* padding-top: 100%; */
 
@@ -773,7 +775,7 @@ html {
     position: relative;
 }
 
-.nav_title_img img{
+.nav_title_img img {
 
     width: 100%;
 }
@@ -1008,7 +1010,7 @@ html {
 
 .recommend_word {
     color: #bbb;
-    */ z-index: 10;
+    z-index: 10;
     font-size: 0.5em;
     /* position: absolute; */
     /* display: flex; */
@@ -1049,7 +1051,7 @@ img.negativ_margin {
     margin-top: 20px;
 } */
 
-.-is_white_bg{
+.-is_white_bg {
     background-color: #FFFFFF;
 }
 

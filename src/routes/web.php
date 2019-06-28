@@ -7,18 +7,17 @@ use App\Camp_Point;
 use App\Person;
 use Illuminate\Http\Request;
 
-Route::get('/', function () {
-    return '<html><body>
+// Route::get('/', function () {
+//     return '<html><body>
 
-    <a href="top_recommend"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
+//     <a href="top_recommend"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
     
-    </body></html>';
-});
+//     </body></html>';
+// });
 
-
-
-
-
+// Route::get('/',function(){
+//     return view('top_recommend');
+// });
 
 Route::get('/top', 'CampsController@index');
 
@@ -56,10 +55,13 @@ Route::get('/terms', function () {
     return view('terms');
 });
 
-Route::get('/top_recommend', 'CampsController@recommend_index');
+Route::get('/', 'CampsController@recommend_index');
 
 //以下、登録フォームのルート
 Route::get('/customer', 'CustomersController@input');
 Route::post('/customer/confirm', 'CustomersController@confirm');
 Route::post('/customer/update', 'CustomersController@update');
 Route::get('/customer/complete', 'CustomersController@complete');
+
+
+Route::get('/list', 'CampsController@list');

@@ -44,6 +44,22 @@ class CampsController extends Controller
 
     }
 
+    public function list(Request $request){
+
+       
+                   
+
+        $camps = Camp::whereBetween('id', [4, 56])->get(); //collection_object
+        // dd($camps);
+       
+
+        return view('list', ['camps' => $camps]);
+        
+
+
+    }
+
+
 
 
 
