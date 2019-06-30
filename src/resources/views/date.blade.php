@@ -95,15 +95,7 @@
                     </div>
 
 
-                    @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    @endif
+
 
                     <div class="date_pick_unit">
                         <div class="date_inputbox date_inputbox_borderright">
@@ -117,6 +109,15 @@
                     </div>
                 </div>
             </div>
+            @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    @endif
 
             <!-- <input type="submit" class="button_flat" value="選択した日付で予約する"> -->
             <div class="button_wrap">

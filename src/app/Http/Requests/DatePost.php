@@ -37,7 +37,7 @@ class DatePost extends FormRequest
     {
 
         return [
-            'inDate.after' => 'ご予約はご利用日から7日前より可能です。',
+            'inDate.after' => 'ご予約は本日から7日後から可能です。',
             'outDate' => ''
         ];
     }

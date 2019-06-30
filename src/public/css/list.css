@@ -1,0 +1,150 @@
+a{
+    text-decoration: none;
+        color: inherit;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+}
+
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    margin:8px;
+    color: #86929D;
+  }
+  /* .item {
+    border-radius: 10px;
+    background: #edf;
+    padding: 15px;
+    text-align: center;
+  } */
+
+  .item {
+    border-radius: 10px;
+    background: #edf;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    background-color: #FDF8F2;
+    background-image: url(//tenshoku.mynavi.jp/event/common/images/arrow_calender.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* background-size: 28px; */
+    position: relative;
+}
+
+
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+  .item p {
+    text-align: left;
+  }
+
+  .prefecture {
+    display: block;
+    /* margin: 15px; */
+    font-size: 22.5px;
+    font-weight: bold;
+    display: block;
+    /* padding: 10px; */
+    background-color: #FFF;
+    width: 135px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* position: absolute; */
+    margin: auto;
+}
+
+.cg-name {
+    padding-top: 16px;
+    font-size:0.9em;
+}
+
+
+.list-wrap h3:before {
+    margin: -1.5vw 0.3em 0 0;
+    content: " ";
+    display: inline-block;
+    width: 10vw;
+    height: 10vw;
+    background: url(//tenshoku.mynavi.jp/event/common/images/icon_calender.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.cg-name-sub{
+    font-size: 1.4em;
+    margin: 24px 0 16px;
+    font-weight: bold;
+    color: #86929D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notes {
+    color: #86929D;
+    font-size: 0.6em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.-is_center{
+    text-align: center;
+}
+
+.item_bg-gray{
+    border-radius: 10px;
+    background: #edf;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    /* background-size: 28px; */
+    color: #000;
+    position: relative;
+    background-color: #F1F1F1;
+}
+.-is_gray{
+    color:#999999;
+}
+.button_flat_wide {
+    /* margin-right: 10px; */
+    width: 200px!important;
+    background: #dbd1d0!important;
+    border-color: #a8a2a1!important;
+
+
+
+}
