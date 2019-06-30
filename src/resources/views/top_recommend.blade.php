@@ -200,7 +200,6 @@
             </div>
         </div>
         @endforeach
-        <div class="box_empty"></div>
     </div>
 
 
