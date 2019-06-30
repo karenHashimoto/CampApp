@@ -202,7 +202,7 @@
         @endforeach
         <div class="box_empty"></div>
     </div>
-    @endforeach
+
 
     <div class="button_wrap_wide">
             <div><button class="button_flat_wide" >
