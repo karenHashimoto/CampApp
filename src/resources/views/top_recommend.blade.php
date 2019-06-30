@@ -5,11 +5,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-142770356-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142770356-1');
     </script>
 
 
@@ -24,6 +27,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Pacifico|Gaegu|Sacramento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="/image/icon/favicon.ico">
+
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
 
 </head>
@@ -47,51 +56,51 @@
 
         </div>
 
-        
+
         <ul class="tab-list">
-    <!--タブ-->
-    <li class="tab is-active">                
+            <!--タブ-->
+            <li class="tab is-active">
                 <div><i class="material-icons small-size">business_center</i></div>
                 <div><a class="_is_color_deeppink" href="#title1">キャンプ場を選ぶ</a></div>  </li>
     <li class="tab">
                 <div><i class="material-icons small-size">format_list_bulleted</i></div>
                 <div><a href="#title2">レンタル内容</a></div>
 
-    </li>
-    <li class="tab">  
-               <div><i class="material-icons small-size">access_time</i></div>
+            </li>
+            <li class="tab">
+                <div><i class="material-icons small-size">access_time</i></div>
                 <div><a href="#title3">キャンプ当日</a></div>
 
     </li>
 </ul>
 <div class="top_var">【福岡限定】国内初グランピング宅配＆設営サービス開始</div>
 
-<div class="main">
-    <!--タブを切り替えて表示するコンテンツ-->
-    <div class="content is-show">
-    <!-- ここを修正 -->
-
-    
-    </div>
-    <div class="content">
-    <div class="box_empty -is_white_bg"></div>
-        <div class="wrapper_item">
-        <img src="/image/rental1.jpg" width="100%">
-        <img src="/image/rental2.jpg" width="100%">
-    </div>
+        <div class="main">
+            <!--タブを切り替えて表示するコンテンツ-->
+            <div class="content is-show">
+                <!-- ここを修正 -->
 
 
-    </div>
+            </div>
+            <div class="content">
+                <div class="box_empty -is_white_bg"></div>
+                <div class="wrapper_item">
+                    <img src="/image/rental1.jpg" width="100%">
+                    <img src="/image/rental2.jpg" width="100%">
+                </div>
 
-    <div class="content">
-    <div class="box_empty -is_white_bg"></div>
-        <div class="wrapper_flow">
-            <img src="/image/flow1.jpg" width="100%" class="negativ_margin">
-            <img src="/image/flow2.jpg" width="100%">
-            <img src="/image/flow3.jpg" width="100%">
+
+            </div>
+
+            <div class="content">
+                <div class="box_empty -is_white_bg"></div>
+                <div class="wrapper_flow">
+                    <img src="/image/flow1.jpg" width="100%" class="negativ_margin">
+                    <img src="/image/flow2.jpg" width="100%">
+                    <img src="/image/flow3.jpg" width="100%">
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
 
         <!-- <div class="tab">
@@ -125,70 +134,73 @@
 
             <!-- <div class="nav_layertext"><img class="-is_white" src="/image/logo.svg"></div> -->
 
-            <div  class="nav_title">
-                <div><i class="material-icons">check_box</i></div>
-                <div>{{$titles1->top_title}}</div>
+                <div class="nav_title">
+                    <div><i class="material-icons">check_box</i></div>
+                    <div>{{$titles1->top_title}}</div>
+                </div>
             </div>
+            <div class="nav_textbox">{{$titles1->top_subtitle}}</div>
         </div>
-        <div class="nav_textbox">{{$titles1->top_subtitle}}</div>
-    </div>
 
 
-    
-    @foreach($camps1 as $camps1)
-    <div class="card">
 
-        <div class="card_img_wrap">
-            <div class="card_img">
-                <img src="/image/camps_img/{{$camps1->camp_img}}">
+        @foreach($camps1 as $camps1)
+        <div class="card">
+
+            <div class="card_img_wrap">
+                <div class="card_img">
+                    <img src="/image/camps_img/{{$camps1->camp_img}}">
+                </div>
+
+
+                <div class="layer_padding">
+                    <div class="card_layer">
+                        <div class="title2">
+                            <div class="camp_id">{{$camps1->camp_name}}</div>
+                            <div class="camp_area">（{{$camps1->state}}/
+                                {{$camps1->city}})</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <div class="reco_container">
+                <div class="reco-main_margin">
+                    <div class="cg_title_margin">
+                        <div class="cg_title">{{$camps1->cg_title}}</div>
+                    </div>
+                    <div class="cg_title_under">Point</div>
+                    <div class="reco_point_wrap">
 
-            <div class="layer_padding">
-                <div class="card_layer">
-                    <div class="title2">
-                        <div class="camp_id">{{$camps1->camp_name}}</div>
-                        <div class="camp_area">（{{$camps1->state}}/
-                            {{$camps1->city}})</div>
+
+                        @foreach($camps1->points as $point)
+
+                        <div class="recommend_item parallel">
+                            <div class="reco_point_left">
+                                <i class="material-icons large-size"><img src="/image/point/{{$point->point_masters->path}}" width=32px height=32px></i>
+                            </div>
+
+                            <div class="recommend_words">
+                                <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
+                                <p class="recommend_number">{{$loop->iteration}}</p>
+                            </div>
+                        </div>
+
+                        @endforeach
+
+
+
+                    </div>
+                </div>
+                <div class="detail_btn_width">
+
+                    <div class="detail_btn"><a href="detail/{{$camps1->id}}">もっと詳しくみる</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="reco_container">
-            <div class="reco-main_margin">
-                <div class="cg_title_margin">
-                    <div class="cg_title">{{$camps1->cg_title}}</div>
-                </div>
-                <div class="cg_title_under">Point</div>
-                <div class="reco_point_wrap">
-
-
-                    @foreach($camps1->points as $point)
-
-                    <div class="recommend_item parallel">
-                        <div class="reco_point_left">
-                        <i class="material-icons large-size"><img src="/image/point/{{$point->point_masters->path}}" width=32px height=32px></i>
-                        </div>
-
-                        <div class="recommend_words">
-                        <p class="recommend_word">{{$point->point_masters->point_comment}}</p>
-                        <p class="recommend_number">{{$loop->iteration}}</p>
-                        </div>
-                    </div> 
-
-                    @endforeach
-
-
-
-                </div>
-            </div>
-            <div class="detail_btn_width">
-
-                <div class="detail_btn"><a href="detail/{{$camps1->id}}">もっと詳しくみる</a>
-                </div>
-            </div>
-        </div>
+        @endforeach
+        <div class="box_empty"></div>
     </div>
     @endforeach
 
@@ -211,7 +223,7 @@
     <div class="box_empty"></div>
  </div>
 
-<!-- <div class="wrapper_item">
+    <!-- <div class="wrapper_item">
 <img src="/image/rental1.jpg" width="100%">
 <img src="/image/rental2.jpg" width="100%">
 
@@ -225,21 +237,21 @@
 </div></div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<script type="text/javascript">
-jQuery(function($){
-	$('.tab').click(function(){
-		$('.tab.is-active').removeClass('is-active');
-		$(this).addClass('is-active');
-		$(".content.is-show").removeClass('is-show');
-        // クリックしたタブからインデックス番号を取得
-		const index = $(this).index();
-        // クリックしたタブと同じインデックス番号をもつコンテンツを表示
-		$(".content").eq(index).addClass('is-show');
-	});
-});
-</script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $('.tab').click(function() {
+                $('.tab.is-active').removeClass('is-active');
+                $(this).addClass('is-active');
+                $(".content.is-show").removeClass('is-show');
+                // クリックしたタブからインデックス番号を取得
+                const index = $(this).index();
+                // クリックしたタブと同じインデックス番号をもつコンテンツを表示
+                $(".content").eq(index).addClass('is-show');
+            });
+        });
+    </script>
 </body>
 
 
