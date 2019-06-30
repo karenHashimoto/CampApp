@@ -7,7 +7,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-142770356-1');
@@ -35,7 +38,7 @@
   <div class="fixed">
     <div class="header">
       <div class="before_button">
-        <a href="/top_recommend" class="button_color_glay"><i class="material-icons large-size">
+        <a href="/" class="button_color_glay"><i class="material-icons large-size">
             navigate_before
           </i> </a>
       </div>
