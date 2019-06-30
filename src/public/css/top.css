@@ -1095,49 +1095,67 @@ img.negativ_margin {
 
 .button_flat_wide {
     /* margin-right: 10px; */
-    width: 300px!important;
-    background: #dbd1d0!important;
-    border-color: #a8a2a1!important;
+    width: 300px !important;
+    background: #dbd1d0 !important;
+    border-color: #a8a2a1 !important;
 
 
 
 }
 
-.is_white{
-    color:#FFFFFF;
+.is_white {
+    color: #FFFFFF;
 }
 
 
-@media screen and (min-width:781px){
-    
-      /*画面幅が781pxで*/
-    .wrapper{
+@media screen and (min-width:781px) {
+
+    /*画面幅が781pxで*/
+    .wrapper {
 
         display: flex;
         justify-content: center;
     }
-    .wrapper_child{
-        width:100%;
-        width:781px;
+
+    .wrapper_child {
+        width: 100%;
+        width: 781px;
     }
-    body{
-        background-color: #FDF8F2!important;
+
+    body {
+        background-color: #FDF8F2 !important;
     }
-    .top_var{
-        margin:0 -200%;
-        padding:0 200%;
+
+    .top_var {
+        margin: 0 -200%;
+        padding: 0 200%;
     }
+
     .card_img img {
         height: 435.02px;
     }
 
     .logo img {
-        width: 288.97px!important;
+        width: 288.97px !important;
     }
 
     .card {
         background-color: #FFFFFF;
     }
 
-    }
-    
+}
+
+.footer {
+    height: 60px;
+    /* color: #FE7B93; */
+    /* padding: 10px 0px 5px 20px; */
+    /* font-size: 18px; */
+    /* font-family: 'Gaegu', cursive; */
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDF8F2;
+    border-top: 2px solid #F2D2BC;
+}
