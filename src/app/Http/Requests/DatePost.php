@@ -37,8 +37,8 @@ class DatePost extends FormRequest
     {
 
         return [
-            'inDate.after' => 'ご予約は１週間前からです',
-            'outDate' => '子どもは2名まで添い寝可能です。'
+            'inDate.after' => 'ご予約はご利用日から7日前より可能です。',
+            'outDate' => ''
         ];
     }
 }
