@@ -18,7 +18,7 @@
 
     <meta charset="utf-8">
     <title>camcierge</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <link rel="stylesheet" href="/css/top.css">
     <link rel="stylesheet" href="/css/header.css">
     <!-- <link rel="stylesheet" href="/css/detail.css"> -->
@@ -38,7 +38,7 @@
 </head>
 
 <body>
-
+    <div class="wrapper"><div class="wrapper_child">
 
 
 
@@ -61,9 +61,8 @@
             <!--タブ-->
             <li class="tab is-active">
                 <div><i class="material-icons small-size">business_center</i></div>
-                <div><a class="_is_color_deeppink" href="#title1">キャンプ予約</a></div>
-            </li>
-            <li class="tab">
+                <div><a class="_is_color_deeppink" href="#title1">キャンプ場を選ぶ</a></div>  </li>
+    <li class="tab">
                 <div><i class="material-icons small-size">format_list_bulleted</i></div>
                 <div><a href="#title2">レンタル内容</a></div>
 
@@ -72,9 +71,9 @@
                 <div><i class="material-icons small-size">access_time</i></div>
                 <div><a href="#title3">キャンプ当日</a></div>
 
-            </li>
-        </ul>
-        <div class="top_var">Recommend Campground</div>
+    </li>
+</ul>
+<div class="top_var">【福岡限定】国内初グランピング宅配＆設営サービス開始</div>
 
         <div class="main">
             <!--タブを切り替えて表示するコンテンツ-->
@@ -122,18 +121,18 @@
 
     </div>
 
-    <div class="wrapper_book">
-        <div class="card_head">
-            <div class="nav_title_wrap">
-                <div id="title1" class="nav_title_img">
-                    <img width="max" src="/image/title/titles1.jpg"></a>
-                </div>
+<div class="wrapper_book">
+    <div class="card_head">
+        <div class="nav_title_wrap">
+            <div id="title1" class="nav_title_img">
+                <img width="max" src="/image/title/titles.png"></a>
+            </div>
 
 
 
 
 
-                <div class="nav_layertext">Recommend</div>
+            <!-- <div class="nav_layertext"><img class="-is_white" src="/image/logo.svg"></div> -->
 
                 <div class="nav_title">
                     <div><i class="material-icons">check_box</i></div>
@@ -203,6 +202,26 @@
         @endforeach
         <div class="box_empty"></div>
     </div>
+    @endforeach
+
+    <div class="button_wrap_wide">
+            <div><button class="button_flat_wide" >
+
+                    <div class="before_button">
+                    </div>
+
+                    <div class="center_button">その他キャンプ場</div>
+
+                    <div class="next_button">
+                        <a href="" class="button_color_white"><i class="material-icons large-size">
+                                navigate_next
+                            </i> </a>
+                    </div>
+                </button></div>
+        </div>
+
+    <div class="box_empty"></div>
+ </div>
 
     <!-- <div class="wrapper_item">
 <img src="/image/rental1.jpg" width="100%">
@@ -215,8 +234,8 @@
 <img src="/image/flow2.jpg" width="100%">
 <img src="/image/flow3.jpg" width="100%"> -->
 
-
-    </div>
+</div></div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
