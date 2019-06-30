@@ -6,11 +6,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-142770356-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142770356-1');
     </script>
 
 
@@ -88,7 +91,7 @@
                     </div>
                 </button></div>
         </div>
-       
+
     </form>
 
 
@@ -110,16 +113,15 @@
 @foreach($camps as $camps)
 
 <div class="recommend_item parallel">
-   
-    
 
+    {{$camps -> camp_name}}
     {{$camps -> camp_name}}
     {{$camps -> state}}
     {{$camps -> city}}
+    <a href="/people/{{$camps->id}}"> 予約</a>
 
 
 
-    
-</div> 
+</div>
 
 @endforeach
