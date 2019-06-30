@@ -116,7 +116,7 @@
     <div class="card_head">
         <div class="nav_title_wrap">
             <div id="title1" class="nav_title_img">
-                <img width="max" src="/image/title/titles1.jpg"></a>
+                <img width="max" src="/image/title/titles.png"></a>
             </div>
 
 
