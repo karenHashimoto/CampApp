@@ -22,17 +22,17 @@
     <link rel="stylesheet" href="/css/top.css">
     <link rel="stylesheet" href="/css/header.css">
 
-    <!-- <link rel="stylesheet" href="/css/detail.css"> -->
+
     <link rel="stylesheet" href="/css/reco_unit.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Pacifico|Gaegu|Sacramento" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- ファビコン -->
+
     <link rel="icon" href="/image/icon/favicon.ico">
 
-    <!-- スマホ用アイコン -->
+
     <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
 
