@@ -6,7 +6,7 @@
 }
 
 .circle::before {
-    transform: rotate(124deg);
+    transform: rotate(140deg);
     background: #999;
 }
 

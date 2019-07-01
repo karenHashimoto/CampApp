@@ -32,12 +32,10 @@
   <div class="fixed">
     <div class="header">
       <div class="before_button">
-        <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
-            navigate_before
-          </i> </a>
+
       </div>
       <div class="logo_area">
-        <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
+        <a class="logo" href="/"><img src="/image/logo.svg"></a>
       </div>
       <div class="next_button">
       </div>
@@ -47,17 +45,17 @@
 
 
   <div class="reserve_band">お客様情報入力</div>
-  <div class="stepper_wrap">
-    <div class="stepper">
-      <div class="circle">
-        <div class="circle-inner">85%</div>
-      </div>
+    <div class="stepper_wrap">
+        <div class="stepper">
+            <div class="circle">
+                <div class="circle-inner">90%</div>
+            </div>
+        </div>
+        <div class="purpose_unit">
+            <div class="purpose">予約内容の確認</div>
+            <div class="purpose_next">もうすぐ予約完了</div>
+        </div>
     </div>
-    <div class="purpose_unit">
-      <div class="purpose">レンタカー予約</div>
-      <div class="purpose_next">予約完了まで あとすこし♫</div>
-    </div>
-  </div>
 
   <form method="POST" action="{{action('CustomersController@confirm')}}">
     @csrf
@@ -92,7 +90,7 @@
     @endforeach
 
     <div class="box_item">
-      <div class="user_item"> 備考</div>
+      <div class="user_item"> 備考欄</div>
     </div>
     <div class="form_item">
       <input type="text" name="memo" value="{{ old('memo') }}"></div>

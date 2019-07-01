@@ -70,9 +70,9 @@
   <nav class="global-nav">
     <p><a href="#top">トップ</a></p>
     <p><a href="#plan">予約</a></p>
-    <p><a href="#facility">写真・設備</a></p>
+    <p><a href="#facility">施設情報</a></p>
+    <p><a href="#photo">写真</a></p>
     <p><a href="#access">アクセス</a></p>
-    <p><a href="#owner">オーナー</a></p>
     <span class="global-nav--bar"></span>
   </nav>
 
@@ -164,9 +164,9 @@
     <div class="plan_amount_unit">
       <div class="plan_amount">
         <div>{{$camps->plan_fee}}</div>
-        <div class="fontsize_smaller">円/泊〜</div>
+        <div class="fontsize_smaller">円/人</div>
       </div>
-      <div class="plan_max_people">（最大{{$camps->max_people}}名OK）</div>
+      <div class="plan_max_people">（１テントに最大{{$camps->max_people}}名）</div>
     </div>
   </div>
 
@@ -223,7 +223,7 @@
 
 
 
-      <div class="topic">写真一覧</div>
+      <div id="photo" class="topic">写真一覧</div>
 
       <div class="grid-3images">
 
@@ -261,12 +261,7 @@
           </div>
         </div>
 
-        <div class="cg_detail">
-          <div class="cg_detail_column">
-            <div class="bold">電話番号</div>
-            <div class="cg_detail_box">{{$camps->phone}}</div>
-          </div>
-        </div>
+
 
         <div class="cg_detail_noborder">
           <div class="cg_detail_column">
@@ -279,13 +274,7 @@
 
 
 
-      <div id="owner" class="topic">オーナー情報</div>
 
-      <div class="owner_pic"><img src="/image/owner/{{$camps->owner_pic}}"></div>
-
-      <div class="owner_comment">
-        {{$camps->owner_comment}}
-      </div>
 
 
 
@@ -294,11 +283,11 @@
         <div class="footer">
 
           <div class="plan_amount_unit">
-            <div class="plan_amount">
+            <div class="plan_amount"><div class="plan_max_people">全部コミコミで</div>
               <div>{{$camps->plan_fee}}</div>
-              <div class="fontsize_smaller">円/泊〜</div>
+              <div class="fontsize_smaller">円/泊</div>
             </div>
-            <div class="plan_max_people">（最大{{$camps->max_people}}名OK）</div>
+            <div class="plan_max_people">（１テントあたり最大{{$camps->max_people}}名OK）</div>
           </div>
           <div class="reserve_button">
             <div><button class="button_flat"><a href="/people/{{$camps->id}}">いますぐ予約</a></button></div>

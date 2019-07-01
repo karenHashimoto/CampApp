@@ -1285,7 +1285,7 @@ html {
 
 .plan_name {
     color: #86929D;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
 }
 
@@ -1294,7 +1294,7 @@ html {
     justify-content: center;
     align-items: center;
     color: #FDB3AD;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     margin: 12px 8px 0px;
 }

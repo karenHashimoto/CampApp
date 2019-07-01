@@ -63,7 +63,7 @@
                     <!--タブ-->
                     <li class="tab is-active">
                         <div><i class="material-icons small-size">business_center</i></div>
-                        <div><a class="_is_color_deeppink" href="#title1">キャンプ場を選ぶ</a></div>
+                        <div><a class="_is_color_deeppink" href="#title1">場所を選ぶ</a></div>
                     </li>
                     <li class="tab">
                         <div><i class="material-icons small-size">format_list_bulleted</i></div>
@@ -76,7 +76,7 @@
 
                     </li>
                 </ul>
-                <div class="top_var">【福岡限定】国内初グランピング宅配＆設営サービス開始</div>
+                <div class="top_var">【福岡先行】グランピング宅配＆設営サービス</div>
 
                 <div class="main">
                     <!--タブを切り替えて表示するコンテンツ-->
@@ -88,7 +88,7 @@
                     <div class="content">
                         <div class="box_empty -is_white_bg"></div>
                         <div class="wrapper_item">
-                            <img src="/image/rental1.jpg" width="100%">
+                            <img src="/image/rental1.png" width="100%">
                             <img src="/image/rental2.jpg" width="100%">
                         </div>
 
@@ -98,7 +98,7 @@
                     <div class="content">
                         <div class="box_empty -is_white_bg"></div>
                         <div class="wrapper_flow">
-                            <img src="/image/flow1.jpg" width="100%" class="negativ_margin">
+                            <img src="/image/flow1.png" width="100%" >
                             <img src="/image/flow2.jpg" width="100%">
                             <img src="/image/flow3.jpg" width="100%">
                         </div>
@@ -180,7 +180,6 @@
                     </div>
                 </div>
                 @endforeach
-                <div class="box_empty"></div>
             </div>
 
 
@@ -200,11 +199,9 @@
                     </button></div>
             </div>
         </div>
-        <div> <a href="privacy">プライバシーポリシー</a></div>
-        <div><a href="terms">利用規約</a></div>
+        <div class="box_empty"> <a href="privacy" class=privacy>プライバシーポリシー</a><a href="terms" class="privacy">利用規約</a></div>
 
 
-        <div class="box_empty">
         </div>
     </div>
 

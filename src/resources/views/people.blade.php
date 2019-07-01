@@ -72,8 +72,10 @@
 
 
 
-
+        <div class="alert">毎日２組。４名限定で受付中</div>
             @if ($errors->any())
+
+            
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)

@@ -850,6 +850,9 @@ html {
 .box_empty {
     background-color: #FCFAF5;
     height: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 /* ここから２ページ目 */
@@ -1098,7 +1101,7 @@ img.negativ_margin {
     width: 300px !important;
     background: #dbd1d0 !important;
     border-color: #a8a2a1 !important;
-
+    margin-bottom: 24px;
 
 
 }
@@ -1158,4 +1161,11 @@ img.negativ_margin {
     align-items: center;
     background-color: #FDF8F2;
     border-top: 2px solid #F2D2BC;
+}
+
+a.privacy {
+    font-size: xx-small;
+    color: #dbd1d0;
+    margin: 0 8px ;
+
 }

@@ -48,9 +48,16 @@ input.input_number_c {
     color: #86929D;
 }
 
+.alert{
+    font-size:0.6em;
+    color:#86929D;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
 .alert.alert-danger {
     font-size: 0.8em;
     color: #AA5358;
     font-weight: bold;
-    margin-bottom: 8px;
 }
+

@@ -52,8 +52,8 @@
 
 <div class="list-wrap"></div>    
 <div class="cg-name-sub -is_center"><i class="material-icons small-size">check_box</i>『福岡県』その他キャンプ場</div>
-<div class="notes">※設備・環境が厳しい上級者向けキャンプ場も含みます<br>
-※快適に過ごしたい方は<a href="/">前ページ</a>のキャンプ場がおすすめ</div>
+<div class="notes">※設備・環境が厳しい上級者向けキャンプ場も含まれます<br>
+※初心者の方は<a href="/">前ページ</a>のキャンプ場をおすすめします</div>
 
  
 <!-- <div class="cg-name-sub">福岡県内</div> -->
