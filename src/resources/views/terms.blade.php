@@ -40,12 +40,12 @@
     <div class="fixed">
         <div class="header">
             <div class="before_button">
-                <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                <a href="/" class="button_color_glay"><i class="material-icons large-size">
                         navigate_before
                     </i> </a>
             </div>
             <div class="logo_area">
-                <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
+                <a class="logo" href="/"><img src="/image/logo.svg"></a>
             </div>
             <div class="next_button">
             </div>

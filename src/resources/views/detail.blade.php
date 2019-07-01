@@ -50,7 +50,7 @@
           </i> </a>
       </div>
       <div id="top" class="logo_area">
-        <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
+        <a class="logo" href="/"><img src="/image/logo.svg"></a>
       </div>
       <div class="next_button">
       </div>
