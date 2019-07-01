@@ -4,7 +4,7 @@
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBunFa8M5cUXVfE2ewS5ZCueUIh-AxtB5Y&language=ja"></script>
+    <script src="//maps.google.com/maps/api/js?key=AIzaSyBunFa8M5cUXVfE2ewS5ZCueUIh-AxtB5Y&language=ja"></script>
     <title>Document</title>
 
     <!-- ファビコン -->
