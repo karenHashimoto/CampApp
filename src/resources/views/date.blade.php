@@ -4,7 +4,7 @@
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -29,7 +29,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
 
 
     <!-- ファビコン -->
@@ -50,7 +50,7 @@
                     </i> </a>
             </div>
             <div class="logo_area">
-                <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
+                <a class="logo" href="/"><img src="/image/logo.svg"></a>
             </div>
             <div class="next_button">
 

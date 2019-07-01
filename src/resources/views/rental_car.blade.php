@@ -4,7 +4,7 @@
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -47,7 +47,7 @@
                     </i> </a> --}}
             </div>
             <div class="logo_area">
-                <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
+                <a class="logo" href="/"><img src="/image/logo.svg"></a>
             </div>
             <div class="next_button">
             </div>
