@@ -26,6 +26,11 @@
   <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- ファビコン -->
+  <link rel="icon" href="/image/icon/favicon.ico">
+
+  <!-- スマホ用アイコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
 
   <title>お客様確認画面</title>

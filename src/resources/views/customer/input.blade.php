@@ -7,7 +7,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-142770356-1');
@@ -24,6 +27,11 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!-- ファビコン -->
+  <link rel="icon" href="/image/icon/favicon.ico">
+
+  <!-- スマホ用アイコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
   <title>お客様情報入力</title>
 </head>
@@ -45,17 +53,17 @@
 
 
   <div class="reserve_band">お客様情報入力</div>
-    <div class="stepper_wrap">
-        <div class="stepper">
-            <div class="circle">
-                <div class="circle-inner">90%</div>
-            </div>
-        </div>
-        <div class="purpose_unit">
-            <div class="purpose">予約内容の確認</div>
-            <div class="purpose_next">もうすぐ予約完了</div>
-        </div>
+  <div class="stepper_wrap">
+    <div class="stepper">
+      <div class="circle">
+        <div class="circle-inner">90%</div>
+      </div>
     </div>
+    <div class="purpose_unit">
+      <div class="purpose">予約内容の確認</div>
+      <div class="purpose_next">もうすぐ予約完了</div>
+    </div>
+  </div>
 
   <form method="POST" action="{{action('CustomersController@confirm')}}">
     @csrf

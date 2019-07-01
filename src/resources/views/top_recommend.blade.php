@@ -98,7 +98,7 @@
                     <div class="content">
                         <div class="box_empty -is_white_bg"></div>
                         <div class="wrapper_flow">
-                            <img src="/image/flow1.png" width="100%" >
+                            <img src="/image/flow1.png" width="100%">
                             <img src="/image/flow2.jpg" width="100%">
                             <img src="/image/flow3.jpg" width="100%">
                         </div>
@@ -202,7 +202,7 @@
         <div class="box_empty"> <a href="privacy" class=privacy>プライバシーポリシー</a><a href="terms" class="privacy">利用規約</a></div>
 
 
-        </div>
+    </div>
     </div>
 
     </div>

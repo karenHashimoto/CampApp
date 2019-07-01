@@ -31,6 +31,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- グーグルマップAPI -->
 
+  <!-- ファビコン -->
+  <link rel="icon" href="/image/icon/favicon.ico">
+
+  <!-- スマホ用アイコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
+
+
 </head>
 
 <body>
@@ -283,7 +290,8 @@
         <div class="footer">
 
           <div class="plan_amount_unit">
-            <div class="plan_amount"><div class="plan_max_people">全部コミコミで</div>
+            <div class="plan_amount">
+              <div class="plan_max_people">全部コミコミで</div>
               <div>{{$camps->plan_fee}}</div>
               <div class="fontsize_smaller">円/泊</div>
             </div>
