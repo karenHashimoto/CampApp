@@ -62,7 +62,7 @@
         </div>
     </div>
     <div class="rental_image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLShsgDnFDj7H6DJt4oFPIb_gMce2GMx_KQJAqEQoh3A4nfj3_">
+        <img src="/image/rental_car.jpg">
 
     </div>
     <form action="{{url('/confirm/' )}}" method="post">
