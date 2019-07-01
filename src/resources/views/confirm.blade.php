@@ -29,6 +29,12 @@
 
 
     <title>Document</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="/image/icon/favicon.ico">
+
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
+
 </head>
 
 <body>

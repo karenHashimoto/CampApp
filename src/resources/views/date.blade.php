@@ -31,6 +31,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
 
+
+    <!-- ファビコン -->
+    <link rel="icon" href="/image/icon/favicon.ico">
+
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
+
+
 </head>
 
 <body>
@@ -110,14 +118,14 @@
                 </div>
             </div>
             @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    @endif
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
 
             <!-- <input type="submit" class="button_flat" value="選択した日付で予約する"> -->
             <div class="button_wrap">

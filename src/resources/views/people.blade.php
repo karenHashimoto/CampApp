@@ -27,6 +27,14 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+    <!-- ファビコン -->
+    <link rel="icon" href="/image/icon/favicon.ico">
+
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
+
 </head>
 
 <body>
@@ -72,10 +80,10 @@
 
 
 
-        <div class="alert">毎日２組。４名限定で受付中</div>
+            <div class="alert">毎日２組。４名限定で受付中</div>
             @if ($errors->any())
 
-            
+
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
