@@ -7,18 +7,6 @@ use App\Camp_Point;
 use App\Person;
 use Illuminate\Http\Request;
 
-// Route::get('/', function () {
-//     return '<html><body>
-
-//     <a href="top_recommend"><img src="/image/index_camcierge.jpg" width="100%" height="max"></a>
-    
-//     </body></html>';
-// });
-
-// Route::get('/',function(){
-//     return view('top_recommend');
-// });
-
 Route::get('/top', 'CampsController@index');
 
 Route::get('/detail/{id}', 'DetailController@index')->name('detail');

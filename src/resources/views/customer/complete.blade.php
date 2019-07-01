@@ -7,7 +7,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-142770356-1');
@@ -23,6 +26,11 @@
   <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- ファビコン -->
+  <link rel="icon" href="/image/icon/favicon.ico">
+
+  <!-- スマホ用アイコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
 
   <title>お客様確認画面</title>
@@ -31,7 +39,7 @@
 
 
 <div class="modal_wrap">
-  <input id="trigger" type="checkbox" checked = "true" >
+  <input id="trigger" type="checkbox" checked="true">
   <div class="modal_overlay">
     <label for="trigger" class="modal_trigger"></label>
     <div class="modal_content">
@@ -47,7 +55,7 @@
 
             <div class="before_button"></div>
 
-            <a href="/top_recommend" class="center_button">トップへ</a>
+            <a href="/" class="center_button">トップへ</a>
 
             <div class="next_button">
             </div>

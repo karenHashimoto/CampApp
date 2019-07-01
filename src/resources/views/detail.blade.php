@@ -7,7 +7,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-142770356-1');
@@ -28,6 +31,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- グーグルマップAPI -->
 
+  <!-- ファビコン -->
+  <link rel="icon" href="/image/icon/favicon.ico">
+
+  <!-- スマホ用アイコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
+
+
 </head>
 
 <body>
@@ -35,7 +45,7 @@
   <div class="fixed">
     <div class="header">
       <div class="before_button">
-        <a href="/top_recommend" class="button_color_glay"><i class="material-icons large-size">
+        <a href="/" class="button_color_glay"><i class="material-icons large-size">
             navigate_before
           </i> </a>
       </div>
@@ -67,9 +77,9 @@
   <nav class="global-nav">
     <p><a href="#top">トップ</a></p>
     <p><a href="#plan">予約</a></p>
-    <p><a href="#facility">写真・設備</a></p>
+    <p><a href="#facility">施設情報</a></p>
+    <p><a href="#photo">写真</a></p>
     <p><a href="#access">アクセス</a></p>
-    <p><a href="#owner">オーナー</a></p>
     <span class="global-nav--bar"></span>
   </nav>
 
@@ -161,9 +171,9 @@
     <div class="plan_amount_unit">
       <div class="plan_amount">
         <div>{{$camps->plan_fee}}</div>
-        <div class="fontsize_smaller">円/泊〜</div>
+        <div class="fontsize_smaller">円/人</div>
       </div>
-      <div class="plan_max_people">（最大{{$camps->max_people}}名OK）</div>
+      <div class="plan_max_people">（１テントに最大{{$camps->max_people}}名）</div>
     </div>
   </div>
 
@@ -220,7 +230,7 @@
 
 
 
-      <div class="topic">写真一覧</div>
+      <div id="photo" class="topic">写真一覧</div>
 
       <div class="grid-3images">
 
@@ -258,12 +268,7 @@
           </div>
         </div>
 
-        <div class="cg_detail">
-          <div class="cg_detail_column">
-            <div class="bold">電話番号</div>
-            <div class="cg_detail_box">{{$camps->phone}}</div>
-          </div>
-        </div>
+
 
         <div class="cg_detail_noborder">
           <div class="cg_detail_column">
@@ -276,13 +281,7 @@
 
 
 
-      <div id="owner" class="topic">オーナー情報</div>
 
-      <div class="owner_pic"><img src="/image/owner/{{$camps->owner_pic}}"></div>
-
-      <div class="owner_comment">
-        {{$camps->owner_comment}}
-      </div>
 
 
 
@@ -292,10 +291,11 @@
 
           <div class="plan_amount_unit">
             <div class="plan_amount">
+              <div class="plan_max_people">全部コミコミで</div>
               <div>{{$camps->plan_fee}}</div>
-              <div class="fontsize_smaller">円/泊〜</div>
+              <div class="fontsize_smaller">円/泊</div>
             </div>
-            <div class="plan_max_people">（最大{{$camps->max_people}}名OK）</div>
+            <div class="plan_max_people">（１テントあたり最大{{$camps->max_people}}名OK）</div>
           </div>
           <div class="reserve_button">
             <div><button class="button_flat"><a href="/people/{{$camps->id}}">いますぐ予約</a></button></div>

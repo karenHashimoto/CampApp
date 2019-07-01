@@ -6,11 +6,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-142770356-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142770356-1');
     </script>
 
 
@@ -23,17 +26,25 @@
     <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- ファビコン -->
+    <link rel="icon" href="/image/icon/favicon.ico">
 
-    <title>Document</title>
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
+
+    <title>レンタカー予約</title>
 </head>
 
 <body>
     <div class="fixed">
         <div class="header">
             <div class="before_button">
-                <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+                <div class="button_color_glay"><i class="material-icons large-size">
                         navigate_before
-                    </i> </a>
+                    </i> </div>
+                {{-- <a href="/rental_item" class="button_color_glay"><i class="material-icons large-size">
+                        navigate_before
+                    </i> </a> --}}
             </div>
             <div class="logo_area">
                 <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
@@ -56,7 +67,7 @@
         </div>
     </div>
     <div class="rental_image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLShsgDnFDj7H6DJt4oFPIb_gMce2GMx_KQJAqEQoh3A4nfj3_">
+        <img src="/image/rental_car.jpg">
 
     </div>
     <form action="{{url('/confirm/' )}}" method="post">
@@ -88,7 +99,7 @@
                     </div>
                 </button></div>
         </div>
-       
+
     </form>
 
 

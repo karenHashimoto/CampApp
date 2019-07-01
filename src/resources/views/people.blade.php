@@ -5,11 +5,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-142770356-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142770356-1');
     </script>
 
 
@@ -24,6 +27,14 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+    <!-- ファビコン -->
+    <link rel="icon" href="/image/icon/favicon.ico">
+
+    <!-- スマホ用アイコン -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
+
 </head>
 
 <body>
@@ -69,8 +80,10 @@
 
 
 
-
+            <div class="alert">毎日２組。４名限定で受付中</div>
             @if ($errors->any())
+
+
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
@@ -118,37 +131,37 @@
                 </div>
 
 
-                @if ($errors->any())
+                {{-- @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                @endif
-
-                <div class="button_wrap">
-
-                    <div>
-                        <button type="submit" class="button_flat">
-                            <div class="before_button">
-                            </div>
-
-                            <div class="center_button">次へ</div>
-
-                            <div class="next_button">
-                                <a href="◯◯" class="button_color_white"><i class="material-icons large-size">
-                                        navigate_next
-                                    </i> </a>
-                            </div>
-                            <input type="hidden" name="camp_id" value={{$camps->id}}>
-                        </button>
-                    </div>
-                </div>
-            </form>
-
+                @endforeach
+                </ul>
         </div>
+        @endif --}}
+
+        <div class="button_wrap">
+
+            <div>
+                <button type="submit" class="button_flat">
+                    <div class="before_button">
+                    </div>
+
+                    <div class="center_button">次へ</div>
+
+                    <div class="next_button">
+                        <a href="◯◯" class="button_color_white"><i class="material-icons large-size">
+                                navigate_next
+                            </i> </a>
+                    </div>
+                    <input type="hidden" name="camp_id" value={{$camps->id}}>
+                </button>
+            </div>
+        </div>
+        </form>
+
+    </div>
     </div>
 
 

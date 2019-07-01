@@ -7,7 +7,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142770356-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-142770356-1');
@@ -24,6 +27,11 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <!-- ファビコン -->
+  <link rel="icon" href="/image/icon/favicon.ico">
+
+  <!-- スマホ用アイコン -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
   <title>お客様確認画面</title>
 </head>
@@ -31,9 +39,13 @@
 <div class="fixed">
   <div class="header">
     <div class="before_button">
-      <a href="◯◯" class="button_color_glay"><i class="material-icons large-size">
+      <div class="button_color_glay"><i class="material-icons large-size">
           navigate_before
-        </i> </a>
+        </i>
+      </div>
+      {{-- <a href="/rental_item" class="button_color_glay"><i class="material-icons large-size">
+                        navigate_before
+                    </i> </a> --}}
     </div>
     <div class="logo_area">
       <a class="logo" href="index.html"><img src="/image/logo.svg"></a>
