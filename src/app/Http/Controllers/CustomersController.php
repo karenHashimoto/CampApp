@@ -15,19 +15,10 @@ class CustomersController extends Controller
 {
   public function confirm(Request $request)
   {
+    
     //入力値の取得
     $customer = new Customer($request->all());
 
-
-
-
-
-    //入力チェック
-    // $this->validate($request, [
-    //   'name' => 'required',
-    //   'email' => 'required|email',
-    //   'phone' => 'required',
-    // ]);
 
     //セッションに保存
     $request->session()->put('customer', $customer);
@@ -76,7 +67,7 @@ class CustomersController extends Controller
     $outDate  = $request->session()->get('outDate');
     $isItemRental = $request->session()->get('isItemRental');
     $isCarRental  = $request->session()->get('isCarRental');
-
+    
 
 
     //DBの更新

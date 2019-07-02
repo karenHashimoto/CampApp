@@ -51,4 +51,4 @@ Route::get('/terms', function () {
 });
 
 
-Route::get('log_test', 'LogTestController @index');
+Route::get('log_test', 'LogTestController@index');

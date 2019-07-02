@@ -19,11 +19,37 @@
     <meta charset="utf-8">
     <title>camcierge</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <style>
+        body {
+            background: #FFF;
+        }
+        
+        .pace-running .scrollblock {
+            opacity: 0;
+        }
+        
+        .pace-done .scrollblock {
+            opacity: 1;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+        }
+    </style>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+
+
+
     <link rel="stylesheet" href="/css/top.css">
     <link rel="stylesheet" href="/css/header.css">
 
 
     <link rel="stylesheet" href="/css/reco_unit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-center-circle.min.css" />
 
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Pacifico|Gaegu|Sacramento" rel="stylesheet">
@@ -35,6 +61,7 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
+    
 
 </head>
 
@@ -126,6 +153,7 @@
 
                 @foreach($camps1 as $camps1)
                 <div class="card">
+                    <a href="detail/{{$camps1->id}}">
 
                     <div class="card_img_wrap">
                         <div class="card_img">
@@ -178,6 +206,7 @@
                             </div>
                         </div>
                     </div>
+                </a>
                 </div>
                 @endforeach
             </div>
@@ -199,7 +228,8 @@
                     </button></div>
             </div>
         </div>
-        <div class="box_empty"> <a href="privacy" class=privacy>プライバシーポリシー</a><a href="terms" class="privacy">利用規約</a></div>
+        <!-- <div class="box_empty">  -->
+        <footer class="footer"><a href="privacy" class=privacy>プライバシーポリシー</a><a href="terms" class="privacy">利用規約</a></footer>
 
 
     </div>
@@ -209,7 +239,6 @@
     </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <script type="text/javascript">
         jQuery(function($) {
@@ -223,6 +252,11 @@
                 $(".content").eq(index).addClass('is-show');
             });
         });
+
+        Pace.on('done', function(){
+            $('.wrapper').fadeIn();
+        });
+
     </script>
 </body>
 

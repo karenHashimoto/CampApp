@@ -9,34 +9,7 @@ a {
 }
 
 
-/* ヘッダー等 */
-/* a {
-    text-decoration: none;
-} */
 
-/* body {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-family: 'Roboto', sans-serif;
-
-    /* width: 100%; */
-/* background-color: #FEFFFE; */
-/* margin: 0px; */
-/* }  */
-
-/* .header{
-    height:80px; */
-/* color:#FE7B93; */
-/* padding:10px 0px 5px 20px; */
-/* font-size:18px; */
-/* font-family: 'Gaegu', cursive; */
-/* font-weight: bold;
-    text-decoration:none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FDF8F2;
-    
-    } */
 
 
 .fixed {
@@ -68,103 +41,6 @@ a {
     font-weight: bold;
     font-family: 'Pacifico', cursive;
     padding: 8px;
-}
-
-
-/* タブ */
-.tab {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-bottom: 1px solid #DC8A8C;
-    color: #DC8A8C;
-    font-size: 0.9em;
-    background-color: #FDF8F2;
-    /* border: 1px solid black; */
-}
-
-.tab_item {
-    display: flex;
-    justify-content: center;
-    /* 子要素をflexboxにより中央に配置する */
-    align-items: center;
-    /* 子要素をflexboxにより中央に配置する */
-    border: 1px solid #DC8A8C;
-    background-color: #FFFFFF;
-    width: 100%;
-    margin: -1px 5px;
-    padding: 3px;
-    text-align: center;
-    border-radius: 3px 3px 0 0;
-}
-
-
-.tabmenu {
-    position: relative;
-    width: 320px;
-    height: 200px;
-    font-size: 0;
-}
-
-
-.tabmenu span {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    display: block;
-    margin: 4px 0 0;
-    padding: 10px;
-    width: 100%;
-    height: 140px;
-    border: 1px solid #0ae;
-    -webkit-border-radius: 0 6px 6px 6px;
-    border-radius: 0 6px 6px 6px;
-    font-size: 14px;
-}
-
-.tabmenu input[type="radio"] {
-    display: none;
-}
-
-.tabmenu input[type="radio"]+em {
-    position: relative;
-    z-index: 100;
-    display: inline-block;
-    margin: 0 4px 0 0;
-    padding: 4px 0 0;
-    min-width: 80px;
-    -webkit-border-radius: 6px 6px 0 0;
-    border-radius: 6px 6px 0 0;
-    background: #ddd;
-    color: #000;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 30px;
-    cursor: pointer;
-}
-
-.tabmenu input[type="radio"]:checked+em {
-    background: #0ae;
-    color: #fff;
-}
-
-.tabmenu input[type="radio"]:checked+em::after {
-    position: absolute;
-    left: 50%;
-    display: block;
-    margin-left: -9px;
-    /* border: 9px solid transparent; */
-    /* border-top: 9px solid #0ae; */
-    content: "";
-}
-
-.tabmenu input[type="radio"]+em~span {
-    display: none;
-}
-
-.tabmenu input[type="radio"]:checked+em~span {
-    display: block;
 }
 
 /* Material iconsを利用する */
@@ -236,92 +112,11 @@ a {
     font-size: 15px;
 }
 
-/* テントのマーク */
-
-
-
-.tent_mark {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* padding: 10px; */
-
-    position: relative;
-    /* display: inline-block; */
-    margin: 1em;
-    color: #C7A570;
-
-
-}
-
-/*以下で線を表示*/
-.tent_mark:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    /*線の上下位置*/
-    display: inline-block;
-    width: 80px;
-    /*線の長さ*/
-    height: 2px;
-    /*線の太さ*/
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    /*位置調整*/
-    background-color: #C7A570;
-    /*線の色*/
-    border-radius: 2px;
-    /*線の丸み*/
-}
-
-testSVG>svg {
-    fill: currentColor;
-}
-
-/* コンテナ */
-
-.card_container {
-    /* background-color: #F3F3F3; */
-    /* padding:4px 0px 0px 0px; */
-    padding-bottom: 0.1px;
-}
-
-/* キャンプ詳細ボタン */
-
-.btn-square-little-rich {
-    position: relative;
-    display: inline-block;
-    padding: 0.25em 0.5em;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.1em;
-    color: #FFF;
-    width: 90%;
-    background: #FCA0B1;
-    /*色*/
-    /* border: solid 1px #0f9ada;線色 */
-    border-radius: 4px;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-}
-
-
-.btn-square-little-rich:active {
-    /*押したとき*/
-    border: solid 1px #03A9F4;
-    box-shadow: none;
-    text-shadow: none;
-}
 
 
 /* キャンプ場の３つのおすすめポイント */
 
 
-/* .reco_point{
-    margin: 0px 20px;
-  } */
 .cg_title_margin {
     display: flex;
     justify-content: center;
@@ -1358,9 +1153,10 @@ html {
 }
 
 .fixed_bottom {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     z-index: 9999;
+    margin-top: 24px;
 }
 
 .fixed_bottom .footer .reserve_button {
@@ -1384,4 +1180,70 @@ html {
 .button_margin {
     height: 70px;
     padding-top: 16px;
+}
+
+
+@media screen and (min-width:781px) {
+
+    /*画面幅が781pxで*/
+    .wrapper {
+
+        display: flex;
+        justify-content: center;
+    }
+
+  
+    .wrapper_child {
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+    width: 781px;
+    text-align: center;
+    }
+
+    /* body {
+        background-color: #FDF8F2 !important;
+    } */
+
+    /* .top_var {
+        margin: 0 -200%;
+        padding: 0 200%;
+    } */
+
+    .card_img img {
+        height: 435.02px;
+    }
+
+    .logo img {
+        width: 288.97px !important;
+    }
+
+  /* 20グリッド */
+.grid-5images {
+    grid-gap: 4px;
+    margin: 4px;
+}
+
+.image-5container {
+    width: 147px;
+    height: 147px;
+}
+
+.image-5container_white {
+    width: 147px;
+    height: 147px;
+}
+
+.facility_text {
+
+    font-size: 1.3em;
+
+    margin-top: -20px;
+}
+
+.image-container {
+    width: 250px;
+    height:250px;
+}
+
 }

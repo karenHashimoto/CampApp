@@ -18,7 +18,7 @@
 
     <meta charset="utf-8">
     <title>camcierge</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/people.css">
@@ -93,7 +93,7 @@
             </div>
             @endif
 
-            <form action="{{url('/date' )}}" method="post">
+            <form action="{{ route('date') }}" method="post">
                 {{ csrf_field()}}
                 <div class="people-number">
                     <div class="people-number_title">大人</div>
@@ -131,43 +131,32 @@
                 </div>
 
 
-                {{-- @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                @endforeach
-                </ul>
-        </div>
-        @endif --}}
 
-        <div class="button_wrap">
+                <div class="button_wrap">
 
-            <div>
-                <button type="submit" class="button_flat">
-                    <div class="before_button">
+                    <div>
+                        <button type="submit" class="button_flat">
+                            <div class="before_button">
+                            </div>
+
+                            <div class="center_button">次へ</div>
+
+                            <div class="next_button">
+                                <div class="button_color_white"><i class="material-icons large-size">
+                                        navigate_next
+                                    </i> </div>
+                            </div>
+                            <input type="hidden" name="camp_id" value={{$camps->id}}>
+                        </button>
                     </div>
+                </div>
+            </form>
 
-                    <div class="center_button">次へ</div>
-
-                    <div class="next_button">
-                        <a href="
-                        
-                        ◯◯" class="button_color_white"><i class="material-icons large-size">
-                                navigate_next
-                            </i> </a>
-                    </div>
-                    <input type="hidden" name="camp_id" value={{$camps->id}}>
-                </button>
-            </div>
         </div>
-        </form>
-
-    </div>
     </div>
 
 
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
         var counter = function() {
             return function(e) {
