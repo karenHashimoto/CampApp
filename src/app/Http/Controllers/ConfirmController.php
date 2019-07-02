@@ -31,7 +31,7 @@ class ConfirmController extends Controller
         }
         $request->session()->put('isCarRental', $isCarRental);
 
-        return view('customer', [
+        return view('customer.input', [
             'camps' => $camps,
             'adult_number' => $adult_number,
             'child_number' => $child_number,
