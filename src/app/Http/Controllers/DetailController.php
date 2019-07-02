@@ -28,6 +28,6 @@ class DetailController extends Controller
            
 
         return view('detail', ['camps' => $camps, 'titles' => $titles]);
-        // return view('test_detail',['titles' => $titles]);         
+          
     }
 }
