@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <title>camcierge</title>
 
-  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/detail.css">
   <link rel="stylesheet" href="/css/reco_unit.css">
@@ -41,7 +41,9 @@
 </head>
 
 <body>
-
+<div class="wrapper">
+  
+<div class="wrapper_child">
   <div class="fixed">
     <div class="header">
       <div class="before_button">
@@ -303,9 +305,12 @@
 
         </div>
       </div>
-
+      </div>
+      </div>
 
 
 
 
 </body>
+
+

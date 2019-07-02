@@ -1120,19 +1120,23 @@ img.negativ_margin {
         justify-content: center;
     }
 
+  
     .wrapper_child {
-        width: 100%;
-        width: 781px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 100%; */
+    width: 781px;
+    text-align: center;
     }
 
     body {
         background-color: #FDF8F2 !important;
     }
 
-    .top_var {
+    /* .top_var {
         margin: 0 -200%;
         padding: 0 200%;
-    }
+    } */
 
     .card_img img {
         height: 435.02px;
@@ -1149,18 +1153,14 @@ img.negativ_margin {
 }
 
 .footer {
-    height: 60px;
-    /* color: #FE7B93; */
-    /* padding: 10px 0px 5px 20px; */
-    /* font-size: 18px; */
-    /* font-family: 'Gaegu', cursive; */
+    height: 20px;
     font-weight: bold;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FDF8F2;
-    border-top: 2px solid #F2D2BC;
+    border-top: 1px solid #F2D2BC;
 }
 
 a.privacy {
@@ -1169,3 +1169,68 @@ a.privacy {
     margin: 0 8px ;
 
 }
+
+.detail_btn a{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* プログレスバー */
+
+/* * {
+    padding: 0;
+    margin: 0;
+    } */
+    
+    .wrap {
+    display: none;
+    background-color: #333;
+    height: 100vh;
+    width: 100%;
+    position: ralative;
+    }
+    
+    /* p {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    } */
+    
+    
+    /*  paceよりコピーしたCSS*/
+    .pace {
+        -webkit-pointer-events: none;
+        pointer-events: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      
+      .pace-inactive {
+        display: none;
+      }
+      
+      .pace .pace-progress {
+        background-color: rgba(221, 110, 40, 0.19999999999999996);
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        width: 100%;
+      }
+      
+
+      .pace-running .wrapper {
+        
+                    display:none;
+        
+                }
+        
