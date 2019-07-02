@@ -28,11 +28,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="//maps.google.com/maps/api/js?key=AIzaSyBunFa8M5cUXVfE2ewS5ZCueUIh-AxtB5Y&language=ja"></script>
     <title>Document</title>
-
-    <!-- ファビコン -->
     <link rel="icon" href="/image/icon/favicon.ico">
-
-    <!-- スマホ用アイコン -->
     <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
 </head>

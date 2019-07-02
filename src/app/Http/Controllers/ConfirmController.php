@@ -21,8 +21,8 @@ class ConfirmController extends Controller
         $inDate = $request->inDate;
         $outDate = $request->outDate;
         $isItemRental = $request->isItemRental;
-        
-        
+        $isCarRental = $request->isCarRental;
+
 
         if ($request->has('car_yes')) {
             $isCarRental = '1';
@@ -31,23 +31,14 @@ class ConfirmController extends Controller
         }
         $request->session()->put('isCarRental', $isCarRental);
 
-
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-        return view('customer.input', [
-           
+        return view('customer', [
+            'camps' => $camps,
+            'adult_number' => $adult_number,
+            'child_number' => $child_number,
+            'inDate' => $inDate,
+            'outDate' => $outDate,
+            'isItemRental' => $isItemRental,
+            'isCarRental' => $isCarRental
         ]);
     }
 }
