@@ -13,42 +13,12 @@ use App\Rental_item;
 
 class CustomersController extends Controller
 {
-
-
-
-  public function input(Request $request)
-  {
-    $request->session()->put('isCarRental', $isCarRental);
-
-    
-
-    return view('customer.input');
-  }
-
-
-
-
-
-
-
-
-
-
   public function confirm(Request $request)
   {
+    
     //入力値の取得
     $customer = new Customer($request->all());
 
-
-
-
-
-    //入力チェック
-    // $this->validate($request, [
-    //   'name' => 'required',
-    //   'email' => 'required|email',
-    //   'phone' => 'required',
-    // ]);
 
     //セッションに保存
     $request->session()->put('customer', $customer);
@@ -86,14 +56,6 @@ class CustomersController extends Controller
 
 
 
-
-
-
-
-
-
-
-
   public function update(Request $request)
   {
     //セッションから取得
@@ -105,7 +67,7 @@ class CustomersController extends Controller
     $outDate  = $request->session()->get('outDate');
     $isItemRental = $request->session()->get('isItemRental');
     $isCarRental  = $request->session()->get('isCarRental');
-
+    
 
 
     //DBの更新

@@ -151,7 +151,9 @@
                     <div class="center_button">次へ</div>
 
                     <div class="next_button">
-                        <a href="◯◯" class="button_color_white"><i class="material-icons large-size">
+                        <a href="
+                        
+                        ◯◯" class="button_color_white"><i class="material-icons large-size">
                                 navigate_next
                             </i> </a>
                     </div>

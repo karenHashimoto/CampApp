@@ -9,6 +9,18 @@ use App\Perosn;
 
 class Rental_carController extends Controller
 {
+
+    public function input(Request $request)
+  {
+    $request->session()->put('isCarRental', $isCarRental);
+    
+    return view('customer.input');
+  }
+
+
+
+
+
     public function index(Request $request)
     {
         // dd($request->has('car_yes'), $request->has('car_no'));
@@ -17,16 +29,17 @@ class Rental_carController extends Controller
         $child_number = $request->child_number;
         $inDate = $request->inDate;
         $outDate = $request->outDate;
-        
-        
-       
+        $isItemRental = $request->isCarRental;
+
+
+
         if ($request->has('item_yes')) {
             $isItemRental = '1';
         } else {
             $isItemRental = '0';
         }
-
         $request->session()->put('isItemRental', $isItemRental);
+
 
 
 

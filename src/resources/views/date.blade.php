@@ -30,12 +30,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto|Noto+Serif+JP" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/hot-sneaks/jquery-ui.css">
-
-
-    <!-- ファビコン -->
     <link rel="icon" href="/image/icon/favicon.ico">
-
-    <!-- スマホ用アイコン -->
     <link rel="apple-touch-icon" sizes="180x180" href="/image/icon/sumaho.ico">
 
 
@@ -126,8 +121,6 @@
                 </ul>
             </div>
             @endif
-
-            <!-- <input type="submit" class="button_flat" value="選択した日付で予約する"> -->
             <div class="button_wrap">
 
                 <button input type="submit" class="button_flat" value="選択した日付で予約する">
@@ -155,14 +148,6 @@
 
 
     <script type="text/javascript">
-        // var inDate = new Date();
-
-        // var yyyy = inDate.getFullYear();
-        // var mm = ("0"+(inDate.getMonth()+1)).slice(-2);
-        // var dd = ("0"+inDate.getDate()).slice(-2);
-
-        // document.getElementById("today").value=yyyy+'-'+mm+'-'+dd;
-
         function assingStayDates(date) {
 
             var dates = stayDates(date);
