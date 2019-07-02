@@ -13,27 +13,6 @@ use App\Rental_item;
 
 class CustomersController extends Controller
 {
-
-
-
-  public function input(Request $request)
-  {
-    $request->session()->put('isCarRental', $isCarRental);
-
-    
-
-    return view('customer.input');
-  }
-
-
-
-
-
-
-
-
-
-
   public function confirm(Request $request)
   {
     //入力値の取得
@@ -81,14 +60,6 @@ class CustomersController extends Controller
       'isCarRental' => $isCarRental
     ]);
   }
-
-
-
-
-
-
-
-
 
 
 

@@ -17,16 +17,17 @@ class Rental_carController extends Controller
         $child_number = $request->child_number;
         $inDate = $request->inDate;
         $outDate = $request->outDate;
-        
-        
-       
-        if ($request->has('item_yes')) {
-            $isItemRental = '1';
+        $isItemRental = $request->isCarRental;
+
+
+
+        if ($request->has('Car_yes')) {
+            $isCarRental = '1';
         } else {
-            $isItemRental = '0';
+            $isCarRental = '0';
         }
 
-        $request->session()->put('isItemRental', $isItemRental);
+        $request->session()->put('isCarRental', $isCarRental);
 
 
 
